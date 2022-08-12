@@ -71,6 +71,9 @@ nav a { color: #02b1f7; display: block; text-decoration: none; }
 nav a:hover { color: black; background-color: #02b1f7; }
 .nav-img-logo { width: 150px; display: block; padding: 10px 10px; margin: auto; margin-bottom: 20px;}
 
+section { min-height: 60vh; margin: 20px 0px 20px 0px;}
+section[id=links] a { display: block;}
+
 footer { bottom:0px; margin: auto; padding: 20px; font-size: 10px; color: gray; text-align: center; }
 .hamburger-icon {display: none; cursor: pointer;}
 .menu-phones {display: none;}
@@ -84,7 +87,7 @@ footer { bottom:0px; margin: auto; padding: 20px; font-size: 10px; color: gray; 
 .schrift-unterstrichen {text-decoration: underline;} .schrift-durchgestrichen {text-decoration: line-through;}
 .schrift-gross {font-size:18px;} .schrift-gross1 {font-size:20px;} .schrift-gross2 {font-size:26px;} .schrift-gross3 {font-size:32px;} .schrift-gross4 {font-size:38px;} .schrift-gross5 {font-size:46px;} .schrift-gross6 {font-size:52px;}
 
-::-webkit-scrollbar { width: 10px; height: 4px;}
+::-webkit-scrollbar { width: 10px; height: 14px;}
 ::-webkit-scrollbar-track { /*border: 1px solid #15aaea; */ background-color: black; }
 ::-webkit-scrollbar-thumb { background: #15aaea; }
 

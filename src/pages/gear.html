@@ -218,7 +218,7 @@ function printTable() {
 				if  ((list[i][cols[j]]) == "todaytoday" ) {cell.innerHTML = "<span style=\"color: greenyellow;\">"+dateString+"</span>"}
 				else { cell.innerHTML = (list[i][cols[j]]) } //otherwise print normal date
 			} //links
-			else if (j == 5) { if  ((list[i][cols[j]]) != "" ) {cell.innerHTML = "<a href=\""+list[i][cols[j]]+"\">Link</a>"}; } //links
+			else if (j == 5) { if  ((list[i][cols[j]]) != "" ) {cell.innerHTML = "<a href=\""+list[i][cols[j]]+"\" target=\"_blank\">Link</a>"}; } //links
 			else { cell.innerHTML = list[i][cols[j]]; } //filling rest
 		}
 	}

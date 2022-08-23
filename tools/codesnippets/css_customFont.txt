@@ -1,0 +1,11 @@
+@font-face {
+    font-family:"PressStartFont";
+    src: url("../../assets/fonts/prstart.ttf") 
+}
+body {
+    font-family: 'PressStartFont', sans-serif; 
+    font-weight: bold;
+    text-align: center; 
+    letter-spacing: -2px;
+    white-space: nowrap; //kein Brechen von Leerzeichen
+}

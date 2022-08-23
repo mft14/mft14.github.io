@@ -1,0 +1,4 @@
+background-image: url("../../assets/header\(lawn_pixelart\).png");
+background-repeat: repeat-x;
+background-position: top;
+background-size: auto 90px;

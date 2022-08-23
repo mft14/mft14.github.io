@@ -1,0 +1,24 @@
+p {
+
+}
+
+//The CSS rule below will be applied to the HTML element with id="para1": 
+#para1 {
+
+}
+//classes
+.center {
+
+}
+
+//In this example only <p> elements with class="center" will be red and center-aligned: 
+p.center {
+
+}
+//The universal selector (*) selects all HTML elements on the page.
+* {}
+
+//grouping - more tags at once
+h1, h2, p, a, img {
+    
+}

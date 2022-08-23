@@ -1,0 +1,22 @@
+//If you need more or less grids, add/remove another "auto" in grid-template-columns. Fixed size works too
+//https://www.w3schools.com/css/css_grid.asp
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    max-width: 900px;
+    margin: auto;
+}
+.grid-container-3>div {
+    text-align: center;
+    padding: 10px;
+}
+
+<div class="grid-container-2">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>

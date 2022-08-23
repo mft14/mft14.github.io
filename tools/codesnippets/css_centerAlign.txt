@@ -1,0 +1,8 @@
+//3 Möglichkeiten. Nicht gleich alle auf einmal verwenden. margin: auto ist für ganze Container
+
+text-align: center;
+
+margin: auto;
+
+display: flex;
+justify-content: center;

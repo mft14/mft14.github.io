@@ -1,0 +1,8 @@
+# JavaScript:
+<script type="text/javascript"> window.location = "http://google.com"; </script>
+
+# HTML:
+<meta http-equiv="refresh" content="0; URL='http://google.com'"/> 
+
+# PHP:
+<?php header('Location: http://www.google.com');

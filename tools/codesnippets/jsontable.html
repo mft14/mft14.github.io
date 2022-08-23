@@ -1,0 +1,44 @@
+<style>
+        table{width: 100%; border:1px solid #C0C0C0; border-collapse:collapse; padding:5px; }
+        th { border:1px solid #C0C0C0; padding:4px; background:#F0F0F0; }
+        td { border:1px solid #C0C0C0; padding:4px; color: black;}
+        tr:hover { text-decoration: underline;}
+</style>
+
+<table id="table"></table>
+
+<script>
+    let list = [
+    {"Nr.":"","Category":"Computer","Gear Name":"Lenovo Legion 5 Pro",  "From":"04.11.2021","To":"today","Link":""},
+    {"Nr.":"","Category":"Computer","Gear Name":"Lenovo Thinkpad P51",  "From":"29.05.2021","To":"today","Link":""},
+    {"Nr.":"","Category":"Computer","Gear Name":"Lenovo Thinkpad X250", "From":"21.01.2021","To":"today","Link":""},
+    ];        
+
+    function printTable() {
+        var cols = [];
+        for (var i = 0; i < list.length; i++) { for (var k in list[i]) { if (cols.indexOf(k) == -1) { cols.push(k); } } } //push(add) to the array "cols"
+        var table = document.createElement("table");// Create a table element
+        var tr = table.insertRow(-1);// Create table row tr element of a table
+        for (var i = 0; i < cols.length; i++) {
+            var theader = document.createElement("th");// Create the table header th element
+            theader.innerHTML = cols[i];
+            tr.appendChild(theader);// Append columnName to the table row
+        }
+        for (var i = 0; i < list.length; i++) {// Adding the data to the table
+            trow = table.insertRow(-1);// Create a new row
+            for (var j = 0; j < cols.length; j++) {
+                var cell = trow.insertCell(-1);
+
+                /////////////////////////////
+                //i = row ; j = Column
+                if (j == 0) {cell.innerHTML = i+1  } //ID col, automatic filling
+                else { cell.innerHTML = list[i][cols[j]]; } //filling rest
+                /////////////////////////////
+            }
+        }
+        var e = document.getElementById("table");// Add the newly created table containing json data
+            e.innerHTML = "";
+            e.appendChild(table);
+    }
+    printTable();
+</script>

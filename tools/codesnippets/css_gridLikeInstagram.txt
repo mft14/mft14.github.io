@@ -1,0 +1,26 @@
+<style>
+    /*Diese Gallerie geht von links nach rechts. Mit column count geht das nicht, da ist es von oben nach unten */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+.gallery img { /*Um die Spalten zu ändern, müssen beide Prozentzahl mit der Spaltenanzahl geteilt werden, also bei 2 col = 50%, 4 = 25%*/
+        width: 33.3%;
+        height: auto;
+        flex: 0 1 33.3%;
+    }
+</style>
+
+<div class="gallery">
+    <img class="" src="">
+    <img class="" src="">
+    <img class="" src="">
+    <img class="" src="">
+    <img class="" src="">
+    <img class="" src="">
+    <img class="" src="">
+    <img class="" src="">
+    <img class="" src="">
+</div>

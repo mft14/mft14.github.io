@@ -1,0 +1,2 @@
+/*x offset, y offset, blur, color*/
+box-shadow: 2px 2px 1px #15aaea;

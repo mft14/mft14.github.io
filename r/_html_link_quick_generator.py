@@ -1,7 +1,7 @@
 import os
 from pathlib import Path  #core python module
 
-html_name = "_menu.html"
+html_name = "menu.html"
 
 def generate_links(user_path):
 

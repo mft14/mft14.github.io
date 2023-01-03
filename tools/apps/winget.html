@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://mft14.github.io/src/main.css">
+    </head>
+    <a href="../index.html"></a>
+    <title>Winget</title>
+    <div class="grid-container-2">
+        <div class="uberschrift-2">Winget (still in work)</div>
+        <div><img src="../icons/winget.png" class="pixelart-icon"></div>
+        <div>
+            <input type="checkbox" id="acrobat32" name="acrobat32" value="Adobe.Acrobat.Reader.32-bit">
+            <label for="acrobat32">Adobe.Acrobat.Reader.32-bit</label><br> 
+        </div>
+        <div>
+            <input type="checkbox" id="vlc" name="vlc" value="VideoLAN.VLC">
+            <label for="vlc">VideoLAN.VLC</label><br>
+        </div>
+        <div>
+            <input type="checkbox" id="acrobat64" name="acrobat64" value="Adobe.Acrobat.Reader.64-bit">
+            <label for="acrobat64">Adobe.Acrobat.Reader.64-bit</label><br>
+        </div>
+    </div>
+
+    <input type="button" onclick="updateText()" value="Generate winget command!" id="generate">
+
+    <p>Output</p>
+    <textarea id="output" name="output" cols="30" rows="10"></textarea>
+
+    <!-------------------- JavaScript -------------------->
+        <script type="text/javascript">
+            function updateText() {
+                document.getElementById('output').innerHTML = "Test";
+                console.log('Button Pressed');
+
+            } 
+        </script>
+</html>

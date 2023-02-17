@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mixing and Mastering - Metal Fortress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../src/main.css">
+    <link rel="shortcut icon" href="../assets/icons/mflogo_64x64.ico">
+</head>
+<body>
+
+<nav class="menu-widescreen">
+    <a href="../index.html"><img class="nav-img-logo" src="../assets/img/mf14-logo_2020_klein.png"></a>
+    <iframe src="menu.html" style="width: 90%; height: 80vh; border: none;"></iframe>
+</nav>
+
+<main>
+<header></header> 
+<nav class="menu-phones"> 
+    <a href="../index.html#links">Home</a>
+    <iframe src="menu.html" style="width: 90%; height: 80vh; border: none;"></iframe>
+</nav>
+
+    <div class="uberschrift">My ways of mixing & mastering</div>
+
+    <div class="uberschrift-navbox">
+        <div class="uberschrift-4">Quick navigation</div>
+        <a href="#mix-cs">My Current Setup (2020 - now)</a>
+        <a href="#mix-mc-win">My mastering chain - On Windows:</a>
+        <a href="#mix-mc-lnx">My mastering chain - On Linux:</a>
+        <a href="#mix-kxexpl">Short explanation of KX repositories:</a>
+        <a href="#trackorder">Track order</a>
+        <a href="#mixinginstruments">Mixing instruments</a>
+        <a href="#guitarbass">Guitar and Bass </a>
+        <a href="#drumsperc">Drums and Percussion</a>
+        <a href="#sidechain">Sidechain with a signal follower</a>
+        <a href="#otherinstruments">All other instrument</a>
+    </div>
+
+    <p>Mixing is an essential part in music production - it obviously manages to balance audio clips to its right volume so in the end, the whole song sounds well balanced. On this page, I want to share my ways of mixing and what I have learned over all these years. 
+        <div class="uberschrift-warnung">
+            Please note that I am not a professional audio engineer. My skills in this area are limited and are based on personal preferences, try & error and tutorials from all over the web. 
+            However, if you may want to achieve a similar/exact sound like me, follow these steps. Mixing is very niggling though, it could sound completely bad with your recordings. Thanks for reading and let's go: </p>
+        </div>
+    <div class="uberschrift-3" id="mix-cs">My current mastering setup:</div>
+    <p>At the moment, my master chain consists of an EQ, a limiter and a Multiband Compressor. Around Janury 2021, I aimed for a stronger low end with a decent amount of highs and a softer mid range area. 
+        Especially in heavier genres like metal and dubstep, bass can make the change being heavy or not.</p>
+    <p>You can recreate my chain easily on Windows or Linux. On Windows I use ReaPlugins, which you can <a href="https://www.reaper.fm/reaplugs/">download for free here</a>. 
+    On Linux, I use Calf plugins, powered by Carla from the <a href="https://kx.studio/Repositories">KX repositories</a>. </p>
+
+
+    <p><div class="uberschrift-4" id="mix-mc-win">Mastering chain - On Windows:</div></p> 
+    <p> On Windows you just need to download the free <a href="https://www.reaper.fm/reaplugs/">ReaPlugins</a>. If you install it with the basic settings, it is going to be installed into <code class="codeinline">C:\Programs\VSTplugins\</code> </p>
+    <img src="../assets/img/tut-mixing/reaxcomp-1.png">
+    <details>
+        <summary class="uberschrift-faq">The other ReaXComp band settings:</summary>
+        <img src="../assets/img/tut-mixing/reaxcomp-2.png">
+        <img src="../assets/img/tut-mixing/reaxcomp-3.png">
+        <img src="../assets/img/tut-mixing/reaxcomp-4.png">
+    </details>
+
+    <p>These are my settings. A Multiband splits usually 3 or more parts of the whole frequency spectrum, where you can now control the compression of this area. This is what really enhances, for example,
+    bass in your songs - not (only) an EQ. (This is what they do when you stumble across "Bass Bosted" on Youtube for your favourite bass song.).</p>
+    <p>I use these settings for longer now and they are perfect. But <b><u>please note</u></b> that this can vary from style to arrangement; it could be That
+        this mastering chain does not sound any good for your song. Here are my settings: If you have your own mutliband compression, they should have similar options:</p>
+    <p>
+        <table class="tablegear">
+            <thead> <tr> <th>Band</th> <th>Top Freq(Hz)</th> <th>Threshold (dB)</th> <th>Ratio (:1)</th> <th>Knee (dB)</th> <th>Attack (ms)</th> <th>Release (ms)</th> <th>Auto makeup gain</th> </tr> </thead>
+            <tbody>
+                <tr> <td>1: Sub</td> <td>128</td> <td>-22</td> <td>10</td> <td>0</td> <td>34</td> <td>204</td> <td>✓</td> </tr>
+                <tr> <td>2: Low-Mid</td> <td>1500</td> <td>-22</td> <td>3</td> <td>0</td> <td>20</td> <td>204</td> <td></td> </tr>
+                <tr> <td>3: High-Mid&nbsp;</td> <td>8000</td> <td>-22</td> <td>4</td> <td>0</td> <td>20</td> <td>86</td> <td></td> </tr>
+                <tr> <td>4: Treble</td> <td>24000</td> <td>-19,6</td> <td>8</td> <td>0,2</td> <td>10</td> <td>12</td> <td></td> </tr>
+            </tbody>
+        </table>
+    </p>
+
+    <!-- Linux installatoin-->
+    <p><div class="uberschrift-4" id="mix-mc-lnx">Mastering chain - On Linux:</div></p> 
+
+    <div class="uberschrift-box2" id="mix-kxexpl">
+        <div class="uberschrift-4">Short explanation of KX repositories:</div>
+        <p>
+        KX repositories are basically a collection of free and opensource audio plugins and applications. This repo is neither enabled by default nor are (most of) the plugins available on the offical servers from Ubuntu.<br>
+        If you run a debian based Linux distrobution like Linux Mint or Ubuntu, just go the KX repositories link and execute the 4 commands being shown on that site. 
+        After that, you might want to run another time <code class="codeinline">sudo apt update</code> if the next step is not working. The update function updates the new added repo.</p>
+        <p>Then you can go to the <a href="https://kx.studio/Repositories:Plugins">KX Plugins</a> page, where you see a list of all plugins, you can download! 
+        Doing that is very simple: You just need the package(s) name you want to try and type
+        <code class="codeblock">sudo apt install PACKAGENAME //example<br>sudo apt install carla calf-plugins</code></p>
+        <p>This is going to download Carla + Calf plugins that I use. Of course you can check out all the other cool plugins there as well as audio applications if you so wish. vitalum-vst is 
+        my new go-to synthesizer on Linux, I highly recommend installing it too! Carla is the plugin host, that you are going to need to run more plugins in Linux. It helps handling all the plugin
+        formats if your DAW does not support it natively. My DAW of choice is Renoise at the moment. It supports LADSPA format but not LV2. If your DAW does support it, you probably won't need Carla.
+        </p>
+    </div>
+
+    <img src="../assets/img/tut-mixing/calf-multiband-1.png">
+
+    <p>The settings here are similar but not exact the same. However, this is both my alternative chain as well as my standard-goto chain on Linux. As you can see in the picture, here you are not able to
+        adjust the areas for example. They are predefined by Calf itself, which does not mean any bad. I just personally had to adjust these settings.   
+    </p>
+
+    <p> <table class="tablegear">
+            <thead> <tr> <th>Band</th> <th>Threshold (dB)</th> <th>Ratio (:1)</th> <th>Makeup (dB)</th> <th>Attack (ms)</th> <th>Release (ms)</th> </tr> </thead>
+                <tr> <td>Sub Band:</td> <td>-18,4</td> <td>10,011</td> <td>7,9</td> <td>34</td> <td>204,988</td> </tr>
+                <tr> <td>Low Band:</td> <td>-22,9</td> <td>3,029</td> <td>0</td> <td>34,671</td> <td>203</td> </tr>
+                <tr> <td>Mid Band:</td> <td>-22,6</td> <td>4,04</td> <td>2,9</td> <td>19,969</td> <td>85,96</td> </tr>
+                <tr> <td>High Band:</td> <td>-19,6</td> <td>8</td> <td>0</td> <td>10,23</td> <td>12,556</td> </tr>
+    </table> </p>
+
+    <details>
+        <summary class="uberschrift-faq">The other Calf Multiband band settings:</summary>
+        <img src="../assets/img/tut-mixing/calf-multiband-2.png">
+        <img src="../assets/img/tut-mixing/calf-multiband-3.png">
+        <img src="../assets/img/tut-mixing/calf-multiband-4.png">
+    </details>
+
+    <p>As addition, I also like to put Calf Limiter before the multiband compression. This step is not needed but I do it because the whole routing in Renoise feels a bit different and I have
+        more control over the dynamics.</p>
+    <img src="../assets/img/tut-mixing/calf-limiter.png">
+
+    <p><div class="uberschrift-4" id="trackorder">Track order:</div></p> 
+    <p>When I start a new fresh song, I generally start sorting the tracks a bit. I always start with the drums, which are seperated into more drum tracks:<br>
+    <ul>
+        <li>Dubstep /E Drum (usually drum and snare only)</li>
+        <li>Percussion 1 (Hi hats, Claps, Crashes)</li>
+        <li>Percussion 2 (usually I load up here "Damage" from Kontakt, general percussion + (FX) <abbr title="Foleys are percussive sounds, that can be anything - e.g. clicky sounds from kitchen tools like fork, spoon or your oven when you open/close it">Foleys</abbr></li>
+        <li>Acoustic Drum Set (<a href="http://themetalkickdrum.com" target="_blank">TMDK</a> - free Metal Drumkit)</li>
+        <li><u>Sidechain Group</u> (every following is inside this group)</li>
+        <li>Guitar 1 + Guitar 2 (each has its own cab but the same amp)</li>
+        <li>Bass + Sub (bass being a real bass guitar while sub mostly being a static sine tone or dense attack)</li>
+        <li>Dubstep Growls Track </li>   
+        <li>Trumpet/Synth Leads (additionally with a distortion)</li>
+        <li>Strings, Pads</li>
+        <li>Other synths</li>
+        <li>Other Instruments</li>
+        <li>Low Pass Filter Track</li>   
+        <li>Effects like White Noise, SFX and more</li>   
+    </ul>
+    </p>
+
+    <p> <div class="uberschrift-3" id="mixinginstruments">Mixing instruments</div> </p>
+
+    <!-- <p>For the guitar sound, check out this page (in work). </p> -->
+    <div class="uberschrift-4" id="guitarbass">Guitar and Bass</div>
+    <p>Mixing guitar is always a tricky topic. I tend to use the lows to make space for the bass guitar not removing all
+        lows will also sound less heavier. It's
+        always a matter of small Hz which makes the difference. There is not really a standard setting, I always rely on for
+        the EQ but around 400-500Hz is, where I lower the bass.
+        However, it depends, in my opinion, always on the song. My bass I currently use, is the Kraken VST, which has a
+        crunchy sounding. I noticed this helps a lot supporting the guitar
+        tone. Enhancing this with an EQ helps too. If I feel like, the bass needs more low end, I either use a normal EQ as
+        well or I take a gainer, who just pushes volume and slightly
+        distort the sound. I prefer not to push too much of the low level as a bass is already a bass. </p>
+    <p>
+        When I have my tones, I add another guitar to add stereo width. I usually have everything in mono for a "tighter"
+        sound but the second guitar plays the same riff with the same
+        amp model only with just another cab. Note that even if you copy your rhythm guitar track, this still can get phasing
+        issues, which does not sound good unless you want
+        to achieve that sound in the first place.
+    </p>
+
+
+    <p>
+    <div class="uberschrift-4" id="drumsperc">Drums and Percussions</div>
+    </p>
+    <p>When the guitar tone is properly set, I start off with the electronic dubstep. I usually tend to use strong kicks and
+        nasty snares, that are super loud. I
+        personally prefer that the raw samples are already strong enough so I do not need no more mixing on that. In very
+        rare cases, I add a compressor on this track to
+        bring both on a same level. But depending on how the sidechain is set up, this is mostly not needed </p>
+    <p>This track also triggers the sidechain, which is pretty much important, if you work with strong electronic drums. In
+        the case of Renoise, sidechaining is pretty simple:<br>
+
+    <!-- <p> <div class="uberschrift-4" id="sidechain">Sidechain with a compressor (here in Reaper)</div> </p>
+    The track with the compressor and the sidechain track/group. In the first track, we need to actually insert the FX. Click on that gray/green FX button to insert it ; in the 
+    new window, choose "ReaComp". Leave the settings alone for now except "Detector Input", where "Main Inputs" are selected by default. Change it to "Auxiliary Inputs". 
+    Now sadly by default, the routing button of your tracks are not being displayed anymore since a newer Reaper version. I recommend to activate it pretty quick. 
+    At the top, select Options > Themes > Theme Adjuster / Color Controls. <br>
+    On the top, where it says "Global settings", click the right arrow, until you come across with "Track Control Panel". This one displays all available controls, you can display on
+    your tracks. What we need is the routing button, which is the one with a green, yellow and blue stripe. On that row, remove all "Hide" on the right so it will displayed overall.<br>
+    Now close this window and it's super easy now to create a send. Just click and hold the route button on the track with the compressor and drag the mouse to the other route button of the sidechain group. 
+    You can see it is working, when hovering over the other route button, your mouse gets an input jack icon. Release the mouse and that's all. Now the compressor track sends its signals to 
+    the group.  -->
+
+
+    <p> <div class="uberschrift-4" id="sidechain">Sidechain with a signal follower (here in Renoise)</div> </p>
+
+    On your e-drum track, you put a "Signal Follower" effect. This triggers every output that happens on this track. This
+    "signal" can be then routed into another and
+    into a certain effect. You could now just route this to the mixer of the sidechain group, but I prefer to route it to
+    the input of "Hydra" -
+    in Renoise Hydra is basically a makro, where you on the other hand assign 8 more levers with one main lever. This
+    main lever however will be now controlled by the signal follower of the drum track. Whenever the kick&snare is playing,
+    it should now lower the volume. Let's sum up the FX Chains:<br>
+    <ul>
+        <li>Signal Follower on EDrum Track</li>
+        <li>Hydra (the Makro FX) on Group track for Sidechain</li>
+        <li>Prefered volume plugin on Group track for Sidechain (in my case: Gainer)</li>
+    </ul>
+    <figure>
+        <img src="../assets/img/tut-mixing/sidechain-mixer.png">
+        <figcaption>On the left, Signal follower gives a signal to Hydra, then Hydra controls the mixer or the gainer. I
+            prefer the gainer so I still
+            can be flexible with the volume and add distortion when I need to on a drop. Controlling the volume would be
+            possible too surely.
+        </figcaption>
+    </figure>
+    </p>
+    <p>
+        The signal follower indeed needs a small tweak before using. The standard setting would mute the sidechain all the
+        time and opens the gate when drums are playing.
+        We want to have it exactly vice versa. But before let's take a look on Hydra:
+    </p>
+    <figure>
+        <img src="../assets/img/tut-mixing/sidechain-hydra.png">
+        <figcaption>Reading from "Out 1": "CT" means current track, so this means, we want to control an FX in the same
+            track. The second column is targeting the
+            FX plugin, while the third column controls its knob from the targeted FX. If you did not add a gainer, you need
+            to add one before. In renoise, you can also
+            add the mixer in that column. If you are using a different DAW, you need to check, how this works. It should be
+            similar. The min and max values are untouched
+            are for the area of volume that my sidechain is being in. The min definitely should go to zero or -INFdb.
+        </figcaption>
+    </figure>
+    <p>When this is done, let's now take a look at how the Signal Follower should be set up:</p>
+
+    <figure>
+        <img src="../assets/img/tut-mixing/sidechain-signalfollower.png">
+        <figcaption>Starting from Dest: the 10 just again targets the track, now this is not CT but another track - select
+            it here.
+            Then it's the same in Hydra. Select Hydra and its main knob for controlling all the parameters. Or, if you just
+            use a volume knob, select Mixer > Volume.
+        </figcaption>
+    </figure>
+    <p>The Dest Min. means the "off" state, so when nothing is playing. This should be in the middle at 50% right? If you
+        would make it 100%, then the gainer would
+        be on 100% too, which causes clipping in hell. Dest Max. then adjusts the value where you want to go after your
+        drums are playing. In this case, it needs
+        to e on 0% - your volume/gain should lower whenever you play.
+    </p>
+    <p>Now there are more interesting fine tune parameters, that I often change within a song. The Attack controls how fast
+        your signal will be taken - in this case, I
+        want the sidechain immediately lowering its volume, since my edrums are having a high transient. The release should
+        have at least some miliseconds to go back to
+        normal state. If you set the release as quick as your attack, this could create some unwanted clicky noises. </p>
+    <p>The sensitivy may not be in every signal follower chain but this can easily control on how strong the sidechain
+        effect should affect the volume.
+        In Renoise, being around 90% is light, 70% is mid-strong while down below is very strong and can "annoy" by creating
+        this pumping effect. since my edrums
+        are not getting any kind of compression, this would sound too strong, ending up having that raw kick your ears while
+        sound is not getting back again quickly enough
+        and trust me, this does not sound too good.
+    </p>
+    <p>It's also pretty neat that you can specify the scaling, which controls a quicker reduce and longer release or the
+        other way around. In some songs, this
+        could sound more better than the other. There's no rule for that, just a matter of personal preference and, as I
+        said, the song itself.
+    </p>
+
+    <p> <div class="uberschrift-5">These two settings are making my sound</div> </p>
+    <p> I explained this topic of my mixing chain and the side chain very detailed, as I noticed that this was the game
+        changer, when I went from
+        "classic" metal/rock mixing to metalstep mixing. EDM and dubstep has taught me plenty of new things in mixing that I
+        said to myself: this is the
+        perfect mix of my classic metal tone combining with dubstep elements and sounds. If you are not familiar with that
+        genre, I hope I could bring
+        you an insight of how I make my particular sound.
+    </p>
+    <p> <div class="uberschrift-4" id="otherinstruments">All the other instruments:</div> </p>
+    <p> The rest is pretty straight forward. To cut through the mix, metal and especially synths, classic instruments need
+        more gain, power, and exciting trebles.
+        I mostly achieve that through distortion or Exciters beside an EQ, that should always remove the noisy low ends,
+        since natural instruments are always
+        being recorded (more or less good) with a microphone, which always brings a little hiss to the samples.
+    </p>
+
+    <p> <div class="uberschrift-5">Trumpets:</div> </p>
+    <p>Trumpets are getting Reverb and Distortion from me. The thing I like mostly about good trumpet libraries are that
+        they are super flexible in their sound.
+        They can do staccato, chopped, growlish and many more sounds. Crystal clear recorded trumpets (I use Sessoin Horns
+        Pro from Native Instruments) have a good
+        balance of high ends, so they can easily cut through the mix of a wild metal arrangement. I can just relegate to my
+        TF2 Final Remix album, which uses
+        trumpets only to keep the TF2 vibe - all of them have no problem to shine in the mix. It was a lot of fun to use
+        them, in particular with the articulations.
+    </p>
+
+    <p> <div class="uberschrift-5">Strings and Pads:</div> </p>
+
+    <p>Strings and soft Pads are always getting Reverb, Delay, eventually Phaser/Flanger effects. The good thing is that
+        they do not need to cut through, but they
+        just need to be there. I prefer to remove the lows completely, while keeping a lot of mids and boost, as always, the
+        highs. If I need more "appearance" from them,
+        I prefer to put a stereo expander on the track, which increases the existance of them even more. Depending on the
+        song, I put them sometimes outside or inside the
+        sidechain. Inside the sidechain group can create a cool pumping affect too!
+    </p>
+
+    <p> <div class="uberschrift-5">Dubstep sounds and growls</div> </p>
+
+    <p>Dubstep growls are often very random in terms of sounds and design. This makes it hard to bring them all under the hood.
+        I usually use a bandreject filter to remove the mids as personally,
+        I think the sounds are matching better together, since different dubstep sounds tend to be heavy on certain
+        frequencies. I know that growls often tend to be mid-heavy so a bandreject would do the opposite. But that's how I got to like it over the years.
+        I rarely use a multiband compression too to adjust this inequality and still boost some parts of the spectrum.
+        Also since growls are often very loud, a limiter is a duty most of the time. But this is just one approach - 
+        in my opinion, you can never really tell the best settings for each dubstep track - it depends on the song.</p>
+
+</main>
+
+<iframe style="width: 100%; border: none;" src="../src/pages/footer.html"></iframe>
+
+<!----Top Button----->
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">⏫</button> <script src="../src/js/scrollButtons.js"></script>
+<script src="../src/js/topbutton.js">
+document.addEventListener('keyup', function (event) { if (event.key === 'q') { window.location.href = 'index.html'; } });
+</script>
+
+</body>
+</html>

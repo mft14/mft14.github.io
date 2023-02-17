@@ -1,0 +1,46 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+var list  = {
+    "gear": [
+        {"category":"DAW","gearname":"Renoise","from":"30.06.2021"},
+        {"category":"DAW","gearname":"Reaper","from":"01.05.2016"},
+        {"category":"DAW","gearname":"Mixcraft","from":"07.08.2012"},
+    ]
+}
+    
+$(document).ready(function(){
+    var table_body = '<table class="tablecss" id="table"><thead><tr>';
+    table_body += '<th>Nr.</th>';
+    table_body += '<th>Category</th>';
+    table_body += '<th>Name</th>';
+    table_body += '<th>From</th>';
+    table_body += '</tr></thead><tbody>';
+
+    for(i =0;i<list.gear.length;i++){ //change the content here
+        table_body+='<tr>';
+        table_body +='<td>'+(i+1)+'</td>';//Number using i
+        table_body +='<td>'; table_body +=list.gear[i]["category"]; table_body +='</td>';
+        table_body +='<td>'; table_body +=list.gear[i]["gearname"]; table_body +='</td>';
+        table_body +='<td>'; table_body +=list.gear[i]["from"]; table_body +='</td>';
+        table_body+='</tr>';
+    }
+
+    table_body+='</tbody></table>';
+    $('#createTable').html(table_body);
+
+    //search function
+    $("#search").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("table tr").filter(function(index) {
+            if(index>0){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            }
+        });
+    }); //end keyup
+
+}); //end ready function
+</script>
+
+<div id="createTable"></div>
+<input type="text" id="search" placeholder="Search here">

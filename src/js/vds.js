@@ -15,7 +15,7 @@
 //2022
 {"date":"30.12.2022", "vgm":"GTA San Andreas", "song":"GTA San Andreas Theme", "link":"UyXPX4mTkqI", "composer":"Michael Hunter", "key":"G Minor", "bpm":"97", "genre":"House", },
 {"date":"23.12.2022", "vgm":"Terraria", "song":"Underground Corruption", "link":"m1mCtKs0WVI", "composer":"Scott Lloyd Shelly", "key":"G Major", "bpm":"116", "genre":"Metal", },
-{"date":"16.12.2022", "vgm":"Payday 2", "song":"Death Row (Assault)", "link":"9KUEXSPdwBg", "composer":"Scott Lloyd Shelly", "key":"C Major", "bpm":"126", "genre":"Metal", },
+{"date":"16.12.2022", "vgm":"Payday 2", "song":"Death Row (Assault)", "link":"9KUEXSPdwBg", "composer":"Simon Viklund", "key":"C Major", "bpm":"126", "genre":"Metal", },
 {"date":"03.12.2022", "vgm":"Terraria", "song":"Frost Moon", "link":"9KUEXSPdwBg", "composer":"Scott Lloyd Shelly", "key":"C Major", "bpm":"126", "genre":"Metal", },
 {"date":"10.11.2022", "vgm":"Team Fortress 2", "song":"MEDIC!", "link":"O_lmHGCm0HA", "composer":"Mike Morasky", "key":"C Minor", "bpm":"130", "genre":"Hard Rock", },
 {"date":"04.11.2022", "vgm":"The Legend of Zelda: Ocarina of Time", "song":"Hyrule Field", "link":"TaTB9grtgM4", "composer":"Koji Kondo", "key":"G Major", "bpm":"150", "genre":"Metal", },

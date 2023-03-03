@@ -1,6 +1,0 @@
-document.addEventListener('keyup', function (event) {
-    if (event.key === 'ArrowUp') { document.getElementById("g").focus() }
-    if (event.key === 'ArrowDown') { document.getElementById("p").select() }
-    if (event.key === '6') { window.location.href = 'https://www.youtube.com/account_notifications'; }
-    if (event.key === 'Enter') { calculate() }
-});

@@ -1,6 +1,7 @@
       var songlist  = {
           "vds": [
 //2023
+{"date":"17.03.2023", "vgm":"Terraria", "song":"The Hallow", "link":"2FEKqPzrKa4", "composer":"Scott Llyod Shelly", "key":"G Major", "bpm":"132", "genre":"Metal", },
 {"date":"10.03.2023", "vgm":"Terraria", "song":"Jungle", "link":"SttF3AOBqW8", "composer":"Scott Llyod Shelly", "key":"E Minor", "bpm":"100", "genre":"Metal", },
 {"date":"03.03.2023", "vgm":"F1 Games", "song":"Formula 1 Theme", "link":"UoM24Q5LzqQ", "composer":"Brian Tyler", "key":"D Minor", "bpm":"100", "genre":"Orchestra<br>Metal", },
 {"date":"24.02.2023", "vgm":"Payday 2", "song":"Payday (Alesso Heist)", "link":"UbQDzOb7n1s", "composer":"Alesso", "key":"G# Minor", "bpm":"126", "genre":"EDM<br>Metal", },

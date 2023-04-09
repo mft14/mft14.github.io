@@ -2,6 +2,7 @@
           "vds": [
 //2023
 
+{"date":"08.04.2023", "vgm":"Terraria", "song":"Crimson", "link":"5hthmbOAF3o", "composer":"Scott Llyod Shelly", "key":"C Minor", "bpm":"110", "genre":"Metal", },
 {"date":"23.03.2023", "vgm":"Resident Evil 4", "song":"Save Theme", "link":"FAl1gLYRYa8", "composer":"Misao Senbongi, Shusaku Uchiyama", "key":"E Minor", "bpm":"80", "genre":"Metal<br>Ambient", },
 {"date":"17.03.2023", "vgm":"Terraria", "song":"The Hallow", "link":"2FEKqPzrKa4", "composer":"Scott Llyod Shelly", "key":"G Major", "bpm":"132", "genre":"Metal", },
 {"date":"10.03.2023", "vgm":"Terraria", "song":"Jungle", "link":"SttF3AOBqW8", "composer":"Scott Llyod Shelly", "key":"E Minor", "bpm":"100", "genre":"Metal", },

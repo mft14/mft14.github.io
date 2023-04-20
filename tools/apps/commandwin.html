@@ -57,7 +57,7 @@ var list  = {
         {"command":"mmsys.cpl","action":"Sound Settings (Multimedia)",                              "category":"Control Panel Settings","whereto":"run"},
         {"command":"powercfg.cpl","action":"Energy Options (Energieoptionen)",                      "category":"Control Panel Settings","whereto":"run"},
         {"command":"sndvol","action":"Volume Mixer (old)",                                          "category":"Control Panel Settings","whereto":"run"},
-        {"command":"sysdm.cpl","action":"Systemsettings (Device Manager)",                          "category":"Control Panel Settings","whereto":"run"},
+        {"command":"sysdm.cpl","action":"System Settings (Device Manager)",                          "category":"Control Panel Settings","whereto":"run"},
         {"command":"taskmgr","action":"Task Manager",                                               "category":"Control Panel Settings","whereto":"run"},
         {"command":"wscui.cpl","action":"Win Security UI Settings",                                 "category":"Control Panel Settings","whereto":"run"},
 
@@ -133,11 +133,31 @@ var list  = {
         //Random Commands
         {"command":"diskpart --> list volume","action":"show your hard drives / partitions","category":"Random commands","whereto":"cmd"},
         {"command":"copy con name.txt","action":"writing an empty file within cmd, then hit CTRL+S and C","category":"Random commands","whereto":"cmd"},
-        {"command":"","action":"","category":"Random commands","whereto":"cmd"},
-        {"command":"","action":"","category":"Random commands","whereto":"cmd"},
+        {"command":"time","action":"Change time (time 12:34) - needs ADMIN","category":"Random commands","whereto":"cmd"},
+        {"command":"date","action":"Change date (date 20.03.2023) - needs ADMIN - depends on your YYYYMMDD layout","category":"Random commands","whereto":"cmd"},
+        {"command":"color 3","action":"Change Terminal Color","category":"Random commands","whereto":"cmd"},
+        {"command":"fc /b file1.txt file2.txt","action":"File Comparison","category":"Random commands","whereto":"cmd"},
+        //{"command":"","action":"","category":"Random commands","whereto":"cmd"},
+
+        //net commands
+        {"command":"net user USERNAME PW /add","action":"Add new User with Password","category":"Net Commands","whereto":"cmd"},
+        {"command":"net user Administrator /active:yes","action":"Activate Administrator Account","category":"Net Commands","whereto":"cmd"},
+        {"command":"net user USERNAME *","action":"Reset Password for User Account","category":"Net Commands","whereto":"cmd"},
+
+        {"command":"net use Z: \\\\server\\path /persistent:Yes","action":"Add network drive","category":"Net Commands","whereto":"cmd"},
+        //{"command":"","action":"","category":"Net Use Commands","whereto":"cmd"},
+
+        //Random Commands
+        {"command":"sconfig","action":"Open CLI Configuration","category":"Windows Server Commands","whereto":"run"},
+        {"command":"control admintools","action":"Open all Management Tools","category":"Windows Server Commands","whereto":"run"},
+        {"command":"dsa.msc","action":"Active Directory User and Computer","category":"Windows Server Commands","whereto":"run"},
+        {"command":"dnsmgmt.msc","action":"DNS Manager","category":"Windows Server Commands","whereto":"run"},
+        {"command":"gpmc.msc","action":"Group Policy Management Console (Gruppenrichtlinienverwaltung)","category":"Windows Server Commands","whereto":"run"},
+        {"command":"printmanagement.msc","action":"Print Management (Druckerverwaltung für's Netzwerk)","category":"Windows Server Commands","whereto":"run"},
+        //{"command":"","action":"","category":"Windows Server Commands","whereto":"run"},
 
 
-// TODO: add this to net use commands: ==== net use Z: \\server\pfad /persistent:Yes	Schnelle Möglichkeit für Netzlaufwerke
+// TODO: add this to net use commands: ==== 
 
     ]
 }

@@ -43,10 +43,10 @@ var list  = {
         // Control Panels
 
         {"command":"control desktop","action":"Desktop Settings (RKL)",                             "category":"Control Panel Settings","whereto":"run"},
-        {"command":"control firewall / firewall.cpl","action":"",                                   "category":"Control Panel Settings","whereto":"run"},
+        {"command":"control firewall / firewall.cpl","action":"Firewall Settings",                  "category":"Control Panel Settings","whereto":"run"},
         {"command":"control folders","action":"Folder Options",                                     "category":"Control Panel Settings","whereto":"run"},
         {"command":"control keyboard","action":"Keyboard Settings (Tastatur)",                      "category":"Control Panel Settings","whereto":"run"},
-        {"command":"control keymgr.dll","action":"Windows Credentials (Anmeldeinformationsverwaltung)",     "category":"Control Panel Settings","whereto":"run"},
+        {"command":"control keymgr.dll","action":"Windows Credentials (Anmeldeinformationsverwaltung)","category":"Control Panel Settings","whereto":"run"},
         {"command":"control mouse / main.cpl","action":"Mouse Settings",                            "category":"Control Panel Settings","whereto":"run"},
         {"command":"control printers","action":"Printer Settings",                                  "category":"Control Panel Settings","whereto":"run"},
         {"command":"control system","action":"System Info (rename PC for example)",                 "category":"Control Panel Settings","whereto":"run"},
@@ -93,14 +93,11 @@ var list  = {
         {"command":"msinfo32","action":"System Informations","category":"System Informations","whereto":"run"},
         {"command":"winver","action":"Show Windows Version","category":"System Informations","whereto":"run"},
         {"command":"dxdiag","action":"DirectX Dialogue (show graphic card for example)","category":"System Informations","whereto":"run"},
-        {"command":"","action":"","category":"System Informations","whereto":"run"},
 
         {"command":"systeminfo","action":"","category":"System Informations","whereto":"cmd"},
         {"command":"systeminfo | find \"Speicher\"	","action":"","category":"System Informations","whereto":"cmd"},
         {"command":"wmic path win32_VideoController get name","action":"Check graphic card in CMD","category":"System Informations","whereto":"cmd"},
         {"command":"wmic memorychip","action":"Check RAM info in CMD","category":"System Informations","whereto":"cmd"},
-
-        {"command":"","action":"","category":"System Informations","whereto":"cmd"},
 
         //Windows Apps
         {"command":"calc","action":"Calculator (Taschenrechner)","category":"Built-in Tools","whereto":"run"},
@@ -146,6 +143,27 @@ var list  = {
 
         {"command":"net use Z: \\\\server\\path /persistent:Yes","action":"Add network drive","category":"Net Commands","whereto":"cmd"},
         //{"command":"","action":"","category":"Net Use Commands","whereto":"cmd"},
+
+
+        //MS Settings
+
+        {"command":"ms-settings:","action":"New Win10 Settings","category":"New Control Panel","whereto":"run"},
+        {"command":"ms-settings:display","action":"Display Settings","category":"New Control Panel","whereto":"run"},
+        {"command":"ms-settings:yourinfo","action":"System Information","category":"New Control Panel","whereto":"run"},
+        {"command":"ms-settings:workplace","action":"Change Accounts (Auf Arbeits, oder Schulkonto zugreifen)","category":"New Control Panel","whereto":"run"},
+        {"command":"ms-settings:dateandtime","action":"Date/Time Settings","category":"New Control Panel","whereto":"run"},
+        {"command":"ms-settings:startupapps","action":"Startup Apps","category":"New Control Panel","whereto":"run"},
+        {"command":"ms-settings:defaultapps","action":"Default Apps","category":"New Control Panel","whereto":"run"},
+        //{"command":"ms-settings:","action":"","category":"New Control Panel","whereto":"run"},
+
+        {"command":"control /name Microsoft.FileHistory","action":"File History","category":"New Control Panel","whereto":"run"},
+        {"command":"control /name Microsoft.Language","action":"Language Settings","category":"New Control Panel","whereto":"run"},
+        {"command":"control /name Microsoft.Taskbar","action":"Taskbar Settings","category":"New Control Panel","whereto":"run"},
+        {"command":"control /name Microsoft.WindowsDefender ","action":"Win Defender (use wf.msc, it's shorter)","category":"New Control Panel","whereto":"run"},
+        {"command":"control /name Microsoft.WindowsUpdate","action":"Windwows Updates","category":"New Control Panel","whereto":"run"},
+        {"command":"control /name Microsoft.LocationSettings","action":"Location Settings","category":"New Control Panel","whereto":"run"},
+
+        //{"command":"","action":"","category":"New Control Panel","whereto":"run"},
 
         //Random Commands
         {"command":"sconfig","action":"Open CLI Configuration","category":"Windows Server Commands","whereto":"run"},

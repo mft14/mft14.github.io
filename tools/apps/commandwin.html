@@ -110,7 +110,6 @@ var list  = {
         {"command":"shell:RecycleBinFolde","action":"Trash bin(Papierkorb)","category":"Built-in Tools","whereto":"run"},
         {"command":"quickassist	","action":"Remote Help (not RDP) (Remotehilfe)","category":"Built-in Tools","whereto":"run"},
 
-
         //Network commands
         {"command":"arp -a","action":"all ip addresses at the gateway","category":"Network","whereto":"cmd"},
         {"command":"ipconfig (/all)","action":"Network informations","category":"Network","whereto":"cmd"},
@@ -136,6 +135,10 @@ var list  = {
         {"command":"fc /b file1.txt file2.txt","action":"File Comparison","category":"Random commands","whereto":"cmd"},
         //{"command":"","action":"","category":"Random commands","whereto":"cmd"},
 
+        //Outlook
+        {"command":"outlook.exe /manageprofiles","action":"Open profile manager","category":"Outlook","whereto":"run"},
+        {"command":"outlook.exe /save","action":"Open Outlook in safe mode","category":"Outlook","whereto":"run"},
+
         //net commands
         {"command":"net user USERNAME PW /add","action":"Add new User with Password","category":"Net Commands","whereto":"cmd"},
         {"command":"net user Administrator /active:yes","action":"Activate Administrator Account","category":"Net Commands","whereto":"cmd"},
@@ -146,7 +149,6 @@ var list  = {
 
 
         //MS Settings
-
         {"command":"ms-settings:","action":"New Win10 Settings","category":"New Control Panel","whereto":"run"},
         {"command":"ms-settings:display","action":"Display Settings","category":"New Control Panel","whereto":"run"},
         {"command":"ms-settings:yourinfo","action":"System Information","category":"New Control Panel","whereto":"run"},

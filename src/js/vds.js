@@ -2,6 +2,8 @@
           "vds": [
 //2023
 
+{"date":"21.04.2023", "vgm":"Terraria", "song":"Queen Slime", "link":"g95GqbalSBE", "composer":"Scott Llyod Shelly", "key":"C E F", "bpm":"120", "genre":"Metal", },
+{"date":"13.04.2023", "vgm":"", "song":"Guitar Raving 2", "link":"NjiE9TM6DJU", "composer":"Metal Fortress", "key":"G# Major", "bpm":"130", "genre":"Bass House", },
 {"date":"08.04.2023", "vgm":"Terraria", "song":"Crimson", "link":"5hthmbOAF3o", "composer":"Scott Llyod Shelly", "key":"C Minor", "bpm":"110", "genre":"Metal", },
 {"date":"23.03.2023", "vgm":"Resident Evil 4", "song":"Save Theme", "link":"FAl1gLYRYa8", "composer":"Misao Senbongi, Shusaku Uchiyama", "key":"E Minor", "bpm":"80", "genre":"Metal<br>Ambient", },
 {"date":"17.03.2023", "vgm":"Terraria", "song":"The Hallow", "link":"2FEKqPzrKa4", "composer":"Scott Llyod Shelly", "key":"G Major", "bpm":"132", "genre":"Metal", },

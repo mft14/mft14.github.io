@@ -2,6 +2,7 @@
           "vds": [
 //2023
 
+{"date":"20.05.2023", "vgm":"Serious Sam 3",                             "song":"Boss Fight Strings",           "link":"3VbjGF_1P8w", "composer":"Damjan Mravunac",                    "key":"A Minor",  "bpm":"120", "genre":"Metal",              },
 {"date":"12.05.2023", "vgm":"The Legend of Zelda: Tears of the Kingdom", "song":"Queen Gibdo",                  "link":"C4Bo1epVEzQ", "composer":"",                                   "key":"C# Minor", "bpm":"180", "genre":"Metalstep",          },
 {"date":"21.04.2023", "vgm":"Terraria",                                  "song":"Queen Slime",                  "link":"g95GqbalSBE", "composer":"Scott Llyod Shelly",                 "key":"C E F",    "bpm":"120", "genre":"Metal",              },
 {"date":"13.04.2023", "vgm":"",                                          "song":"Guitar Raving 2",              "link":"NjiE9TM6DJU", "composer":"Metal Fortress",                     "key":"G# Major", "bpm":"130", "genre":"Bass House",         },

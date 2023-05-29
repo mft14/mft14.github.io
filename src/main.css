@@ -27,7 +27,7 @@ h1,h2,h3,h4 {color: var(--headline); text-decoration: underline;}
 .home-links a { border: 1px solid var(--accentcolor); margin: 6px 0 6px 0; padding: 12px; display: block; transition: 0.1s;}
 .home-links a:hover { border: 1px solid orange;}
 .center {margin: auto; text-align: center;}
-.codeblock {display: block; background-color: var(--codecolorbg); border-left: 8px solid var(--codecolorborder); padding: 16px; margin: 16px; color: var(--codecolor);}
+.codeblock {display: block; overflow-x: auto; max-width: 100%; white-space: pre; background-color: var(--codecolorbg); border-left: 8px solid var(--codecolorborder); padding: 16px; margin: 16px; color: var(--codecolor);}
 .codeinline {display: inline;background-color: var(--codecolorbg); padding: 3px; color: var(--codecolor);}
 .justify {margin: auto; text-align: justify;}
 .erg {display: block; color: greenyellow; font-size: 1.5rem; text-decoration: underline;}

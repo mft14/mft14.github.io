@@ -2,6 +2,7 @@
           "vds": [
 //2023
 
+{"date":"14.07.2023", "vgm":"Team Fortress 2",                           "song":"Surgeons Squeezebox",          "link":"c0b8sV281EU", "composer":"Mike, is that you?",                 "key":"F Major",  "bpm":"140", "genre":"Accordion",          },
 {"date":"26.05.2023", "vgm":"Final Fantasy 7",                           "song":"One Winged Angel",             "link":"4X16ZQE03Sw", "composer":"Nobuo Uematsu",                      "key":"E Minor",  "bpm":"150", "genre":"Metalstep",          },
 {"date":"24.05.2023", "vgm":"Commander & Conquer:<br>Red Alert 3",       "song":"Soviet March",                 "link":"hcEjAmWH9Q4", "composer":"James Hannigan",                     "key":"D Minor",  "bpm":"122", "genre":"Metal",              },
 {"date":"20.05.2023", "vgm":"Serious Sam 3",                             "song":"Boss Fight Strings",           "link":"3VbjGF_1P8w", "composer":"Damjan Mravunac",                    "key":"A Minor",  "bpm":"120", "genre":"Metal",              },

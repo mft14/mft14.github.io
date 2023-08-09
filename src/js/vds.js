@@ -1,6 +1,7 @@
       var songlist  = {
           "vds": [
 //2023
+{"date":"11.08.2023", "vgm":"Team Fortress 2",                           "song":"Mannrobics",                   "link":"5Q_4fESOlYM", "composer":"Mike Morasky",                       "key":"G Major",  "bpm":"153", "genre":"EDM Metal",          },
 {"date":"03.08.2023", "vgm":"Team Fortress 2",                           "song":"DeGroot Keep",                 "link":"37AERtJ7q8s", "composer":"Mike Morasky",                       "key":"B Major",  "bpm":"90",  "genre":"Folkmetal",          },
 {"date":"28.07.2023", "vgm":"Team Fortress 2",                           "song":"Conga",                        "link":"P3J1CF_qMy4", "composer":"Mike Morasky",                       "key":"E Blues",  "bpm":"167", "genre":"Percussion / Metal", },
 {"date":"23.07.2023", "vgm":"Super Mario World",                         "song":"Bonus Screen",                 "link":"3xmksk5P3ns", "composer":"Koji Kondo",                         "key":"F Major",  "bpm":"158", "genre":"Metal",              },

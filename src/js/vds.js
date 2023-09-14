@@ -1,6 +1,8 @@
       var songlist  = {
           "vds": [
 //2023
+{"date":"14.09.2023", "vgm":"Team Fortress 2",                           "song":"Do You Believe in Magic",      "link":"FQo9YY4xqa0", "composer":"The Lovin Spoonful",                 "key":"B Major",  "bpm":"138", "genre":"Acoustic<br>Metal",  },
+{"date":"28.08.2023", "vgm":"Star Fox Adventures",                       "song":"Andross Boss Battle",          "link":"12g1vWNDDs8", "composer":"David Wise",                         "key":"C Minor",  "bpm":"150", "genre":"Hardstyle",          },
 {"date":"24.08.2023", "vgm":"Team Fortress 2",                           "song":"Upgrade Station",              "link":"jmHMtb_Eq_w", "composer":"Mike Morasky",                       "key":"E Minor",  "bpm":"160", "genre":"Metal",              },
 {"date":"19.08.2023", "vgm":"Left 4 Dead 2",                             "song":"Skin on our teeth",            "link":"UJjTB0A-JtE", "composer":"Mike Morasky",                       "key":"A Minor",  "bpm":"154", "genre":"Hard Rock",          },
 {"date":"11.08.2023", "vgm":"Team Fortress 2",                           "song":"Mannrobics",                   "link":"5Q_4fESOlYM", "composer":"Mike Morasky",                       "key":"G Major",  "bpm":"153", "genre":"EDM Metal",          },

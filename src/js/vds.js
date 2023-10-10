@@ -1,6 +1,9 @@
       var songlist  = {
           "vds": [
 //2023
+
+{"date":"06.10.2023", "vgm":"Five Nights At Freddy's",                   "song":"Die In A Fire",                "link":"BpJwIposy8Q", "composer":"The Living Tombstone",               "key":"",              "bpm":"", "genre":"Dubstep",              }, 
+{"date":"30.09.2023", "vgm":"Team Fortress 2",                           "song":"Seven Nation Army",            "link":"d7mQC-mok3g", "composer":"The White Stripes",                  "key":"E Minor",       "bpm":"", "genre":"Metal",              }, 
 {"date":"21.09.2023", "vgm":"Team Fortress 2",                           "song":"True Scotsmans Call",          "link":"niPWiChbWik", "composer":"RICE",                               "key":"Bb Mixolydian", "bpm":"122", "genre":"Metal",              },
 {"date":"14.09.2023", "vgm":"Team Fortress 2",                           "song":"Do You Believe in Magic",      "link":"FQo9YY4xqa0", "composer":"The Lovin Spoonful",                 "key":"B Major",       "bpm":"138", "genre":"Acoustic<br>Metal",  },
 {"date":"28.08.2023", "vgm":"Star Fox Adventures",                       "song":"Andross Boss Battle",          "link":"12g1vWNDDs8", "composer":"David Wise",                         "key":"C Minor",       "bpm":"150", "genre":"Hardstyle",          },

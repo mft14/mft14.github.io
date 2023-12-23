@@ -2,6 +2,8 @@
           "vds": [
 //2023
 
+{"date":"15.12.2023", "vgm":"Team Fortress 2",                           "song":"Frontier Justice",             "link":"H71e76J_5Hs ","composer":"Dapper Dog",                  "key":"F Minor",       "bpm":"96", "genre":"Midtempo<br>Metal",              },
+{"date":"10.11.2023", "vgm":"Pokemon Pokemon Ruby/Sapphire/Emerald",     "song":"Route 120",                    "link":"Qc_u0lgSv1A", "composer":"Go Ichinose<br>Junichi Masuda<br>Hitomi Sato<br>Morikazu Aoki","key":"A Major", "bpm":"130", "genre":"Metal", },
 {"date":"30.10.2023", "vgm":"Kingdom Hearts",                            "song":"Spooks of Halloween Town",     "link":"HmuXvRxRHhA", "composer":"Yoko Shimomura",                     "key":"Too many keys", "bpm":"160", "genre":"Metal<br>Hardstyle", },
 {"date":"26.10.2023", "vgm":"Terraria",                                  "song":"The Twins",                    "link":"kJXHQbx5kyY", "composer":"Scott Lloyd Shelly",                 "key":"E Minor",       "bpm":"135", "genre":"Metalstep",          },
 {"date":"06.10.2023", "vgm":"",                                          "song":"Sublime Sunset",               "link":"DCQ2Qpa6R0I", "composer":"Metal Fortress",                     "key":"F Minor",       "bpm":"110", "genre":"Complextro",         },

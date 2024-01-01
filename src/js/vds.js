@@ -1,7 +1,11 @@
       var songlist  = {
           "vds": [
-//2023
 
+//2024
+
+// {"date":"15.12.2023", "vgm":"Team Fortress 2",                           "song":"Frontier Justice",             "link":"H71e76J_5Hs ","composer":"Dapper Dog",                  "key":"F Minor",       "bpm":"96", "genre":"Midtempo<br>Metal",              },
+
+//2023
 {"date":"15.12.2023", "vgm":"Team Fortress 2",                           "song":"Frontier Justice",             "link":"H71e76J_5Hs ","composer":"Dapper Dog",                  "key":"F Minor",       "bpm":"96", "genre":"Midtempo<br>Metal",              },
 {"date":"10.11.2023", "vgm":"Pokemon Pokemon Ruby/Sapphire/Emerald",     "song":"Route 120",                    "link":"Qc_u0lgSv1A", "composer":"Go Ichinose<br>Junichi Masuda<br>Hitomi Sato<br>Morikazu Aoki","key":"A Major", "bpm":"130", "genre":"Metal", },
 {"date":"30.10.2023", "vgm":"Kingdom Hearts",                            "song":"Spooks of Halloween Town",     "link":"HmuXvRxRHhA", "composer":"Yoko Shimomura",                     "key":"Too many keys", "bpm":"160", "genre":"Metal<br>Hardstyle", },
@@ -554,7 +558,7 @@
     var yearoutput = "";
     var yearbar = "<a href=\"#top\">🔼</a>"; //For the anchor bar
     var yearstart = 2012 // Where I start with Youtube
-    var yearcount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,]; //Counter for the years
+    var yearcount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //Counter for the years
     var now = new Date(); //now.getFullYear() for current Year
     now = now.getFullYear();
     console.log("now = " +now);

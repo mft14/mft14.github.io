@@ -557,7 +557,7 @@
     var yearoutput = "";
     var yearbar = "<a href=\"#top\">🔼</a>"; //For the anchor bar
     var yearstart = 2012 // Where I start with Youtube
-    var yearcount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //Counter for the years
+    var yearcount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //Counter for the years
     var now = new Date(); //now.getFullYear() for current Year
     now = now.getFullYear();
     console.log("now = " +now);

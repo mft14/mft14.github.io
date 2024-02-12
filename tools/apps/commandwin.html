@@ -109,7 +109,7 @@ var list  = {
         {"command":"systeminfo | find \"Speicher\"	",         "action":"",                                                 "category":"System Informations", "whereto":"cmd"},
         {"command":"wmic path win32_VideoController get name", "action":"Check graphic card in CMD",                        "category":"System Informations", "whereto":"cmd"},
         {"command":"wmic memorychip",                          "action":"Check RAM info in CMD",                            "category":"System Informations", "whereto":"cmd"},
-        {"command":"wmic logicaldisk get caption",             "action":"Get all Driver Letters",                           "category":"System Informations", "whereto":"cmd"},
+        {"command":"wmic logicaldisk get name",                "action":"Get all Driver Letters/Laufwerksbuchstaben",       "category":"System Informations", "whereto":"cmd"},
 
         //Windows Apps
         {"command":"calc",                    "action":"Calculator (Taschenrechner)",             "category":"Built-in Tools", "whereto":"run"},
@@ -156,11 +156,12 @@ var list  = {
         {"command":"outlook.exe /save",           "action":"Open Outlook in safe mode", "category":"Outlook", "whereto":"run"},
 
         //net commands
-        {"command":"net user USERNAME PW /add",                   "action":"Add new User with Password",      "category":"Net Commands", "whereto":"cmd"},
-        {"command":"net user Administrator /active:yes",          "action":"Activate Administrator Account",  "category":"Net Commands", "whereto":"cmd"},
-        {"command":"net user USERNAME *",                         "action":"Reset Password for User Account", "category":"Net Commands", "whereto":"cmd"},
-        {"command":"net use Z: \\\\server\\path /persistent:Yes", "action":"Add network drive",               "category":"Net Commands", "whereto":"cmd"},
-        //{"command":"","action":"","category":"Net Use Commands","whereto":"cmd"},
+        {"command":"net use",                                     "action":"Show network drives /Zeige Netzlaufwerke", "category":"Net Commands",     "whereto":"cmd"},
+        {"command":"net user USERNAME PW /add",                   "action":"Add new User with Password",               "category":"Net Commands",     "whereto":"cmd"},
+        {"command":"net user Administrator /active:yes",          "action":"Activate Administrator Account",           "category":"Net Commands",     "whereto":"cmd"},
+        {"command":"net user USERNAME *",                         "action":"Reset Password for User Account",          "category":"Net Commands",     "whereto":"cmd"},
+        {"command":"net use Z: \\\\server\\path /persistent:Yes", "action":"Add network drive",                        "category":"Net Commands",     "whereto":"cmd"},
+        //{"command":"",                                          "action":"",                                         "category":"Net Use Commands", "whereto":"cmd"},
 
         //MS Settings
         {"command":"ms-settings:",            "action":"New Win10 Settings",                                       "category":"New Control Panel", "whereto":"run"},

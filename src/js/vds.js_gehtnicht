@@ -8,8 +8,8 @@
 {"date":"09.05.2024", "vgm":"Pokemon ORAS",                  "song":"Zinnia Battle",   "link":"EdVxiEZ36aI",            "composer":"Shota Kageyama<br>Minako Adachi<br>Hideaki Kuroda<br>Hitomi Sato", "key":"F# Minor", "bpm":"174", "genre":"Metal",          },
 {"date":"07.03.2024", "vgm":"Sea of Thieves",                "song":"Becalmed",        "link":"IIxhXdL4VpA",            "composer":"Robin Beanland",                                                   "key":"Eb Major", "bpm":"70",  "genre":"Accordion",      },
 {"date":"01.03.2024", "vgm":"FTL: Faster Than Light",        "song":"Last Stand",      "link":"cdU02mfZWJo",            "composer":"Ben Prunty",                                                       "key":"C# Minor", "bpm":"120", "genre":"Cyberpunk",      },
-{"date":"27.01.2024", "vgm":"<div id=\"2023\">Portal</div>", "song":"Still Alive", "link":"mfk73myDNwI", "composer":"Jonathan Coulton", "key":"D Major", "bpm":"130", "genre":"EDM Metal", },
-              
+{"date":"27.01.2024", "vgm":"<div id=\"2023\">Portal</div>", "song":"Still Alive",     "link":"mfk73myDNwI",            "composer":"Jonathan Coulton",                                                 "key":"D Major",  "bpm":"130", "genre":"EDM Metal",      },
+
 //2023
 {"date":"15.12.2023", "vgm":"Team Fortress 2",                           "song":"Frontier Justice",             "link":"H71e76J_5Hs ","composer":"Dapper Dog",                  "key":"F Minor",       "bpm":"96", "genre":"Midtempo<br>Metal",              },
 {"date":"10.11.2023", "vgm":"Pokemon Pokemon Ruby/Sapphire/Emerald",     "song":"Route 120",                    "link":"Qc_u0lgSv1A", "composer":"Go Ichinose<br>Junichi Masuda<br>Hitomi Sato<br>Morikazu Aoki","key":"A Major", "bpm":"130", "genre":"Metal", },
@@ -691,10 +691,10 @@ $(document).ready(function(){
     $('#tableDiv').html(table_body);
 
     //search function
-    $("#search").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("table tr").filter(function(index) {
-            if(index>0){ $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) }
-        });
-    }); //end keyup
+    // $("#search").on("keyup", function() {
+    //     var value = $(this).val().toLowerCase();
+    //     $("table tr").filter(function(index) {
+    //         if(index>0){ $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1) }
+    //     });
+    // }); //end keyup
 }); //Ready Function

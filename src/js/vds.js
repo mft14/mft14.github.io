@@ -2,13 +2,14 @@
           "vds": [
 
 //2024
-{"date":"30.05.2024", "vgm":"Terraria",                      "song":"Eater of Worlds", "link":"vr4Pnrq03W0",            "composer":"Scott Lloyd Shelly",                                               "key":"F# Minor", "bpm":"",    "genre":"Metal",          },
-{"date":"23.05.2024", "vgm":"Team Fortress 2",               "song":"Rave Fortress",   "link":"d87jw-gBmOM           ", "composer":"East Clubbers + Captain Jack",                                     "key":"C# Minor", "bpm":"",    "genre":"Metal<br>EDM",   },
-{"date":"16.05.2024", "vgm":"Mario Kart Wii",                "song":"Coconut Mall",    "link":"y3MJnn4o8-I",            "composer":"Asuka Hayazaki<br>Ryo Nagamatsu",                                  "key":"F Blues",  "bpm":"130", "genre":"Metal<br>House", },
-{"date":"09.05.2024", "vgm":"Pokemon ORAS",                  "song":"Zinnia Battle",   "link":"EdVxiEZ36aI",            "composer":"Shota Kageyama<br>Minako Adachi<br>Hideaki Kuroda<br>Hitomi Sato", "key":"F# Minor", "bpm":"174", "genre":"Metal",          },
-{"date":"07.03.2024", "vgm":"Sea of Thieves",                "song":"Becalmed",        "link":"IIxhXdL4VpA",            "composer":"Robin Beanland",                                                   "key":"Eb Major", "bpm":"70",  "genre":"Accordion",      },
-{"date":"01.03.2024", "vgm":"FTL: Faster Than Light",        "song":"Last Stand",      "link":"cdU02mfZWJo",            "composer":"Ben Prunty",                                                       "key":"C# Minor", "bpm":"120", "genre":"Cyberpunk",      },
-{"date":"27.01.2024", "vgm":"<div id=\"2023\">Portal</div>", "song":"Still Alive", "link":"mfk73myDNwI", "composer":"Jonathan Coulton", "key":"D Major", "bpm":"130", "genre":"EDM Metal", },
+{"date":"07.06.2024", "vgm":"Pizza Theme",                   "song":"Spider Man 2",    "link":"nXVyBS0kWJM", "composer":"KMFDM, Michael McCuistion",                                        "key":"C+D Major", "bpm":"140-210", "genre":"Metal<br>Frenchcore", },
+{"date":"30.05.2024", "vgm":"Terraria",                      "song":"Eater of Worlds", "link":"vr4Pnrq03W0", "composer":"Scott Lloyd Shelly",                                               "key":"F# Minor",  "bpm":"150",     "genre":"Metal",               },
+{"date":"23.05.2024", "vgm":"Team Fortress 2",               "song":"Rave Fortress",   "link":"d87jw-gBmOM", "composer":"East Clubbers + Captain Jack",                                     "key":"C# Minor",  "bpm":"144",     "genre":"Metal<br>EDM",        },
+{"date":"16.05.2024", "vgm":"Mario Kart Wii",                "song":"Coconut Mall",    "link":"y3MJnn4o8-I", "composer":"Asuka Hayazaki<br>Ryo Nagamatsu",                                  "key":"F Blues",   "bpm":"130",     "genre":"Metal<br>House",      },
+{"date":"09.05.2024", "vgm":"Pokemon ORAS",                  "song":"Zinnia Battle",   "link":"EdVxiEZ36aI", "composer":"Shota Kageyama<br>Minako Adachi<br>Hideaki Kuroda<br>Hitomi Sato", "key":"F# Minor",  "bpm":"174",     "genre":"Metal",               },
+{"date":"07.03.2024", "vgm":"Sea of Thieves",                "song":"Becalmed",        "link":"IIxhXdL4VpA", "composer":"Robin Beanland",                                                   "key":"Eb Major",  "bpm":"70",      "genre":"Accordion",           },
+{"date":"01.03.2024", "vgm":"FTL: Faster Than Light",        "song":"Last Stand",      "link":"cdU02mfZWJo", "composer":"Ben Prunty",                                                       "key":"C# Minor",  "bpm":"120",     "genre":"Cyberpunk",           },
+{"date":"27.01.2024", "vgm":"<div id=\"2023\">Portal</div>", "song":"Still Alive",     "link":"mfk73myDNwI", "composer":"Jonathan Coulton",                                                 "key":"D Major",   "bpm":"130",     "genre":"EDM Metal",           },
               
 //2023
 {"date":"15.12.2023", "vgm":"Team Fortress 2",                           "song":"Frontier Justice",             "link":"H71e76J_5Hs ","composer":"Dapper Dog",                  "key":"F Minor",       "bpm":"96", "genre":"Midtempo<br>Metal",              },

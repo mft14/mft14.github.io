@@ -1,0 +1,133 @@
+<head>
+    <link rel="shortcut icon" href="../icons/cryptocalc.png">
+    <link rel="stylesheet" type="text/css" href="https://mft14.github.io/src/main.css">
+</head>
+<a href="../tools.html"><<<</a>
+<title>Crypto Calc</title>
+
+
+<div class="grid-container-2">
+
+	<div class="uberschrift-2">Crypto Calc</div>
+	<div><img src="../icons/cryptocalc.png" class="pixelart-icon"></div>
+	<div> <h2>Calculate your win/loss</h2> </div>
+	<div><a href="https://coinmarketcap.com/" target="_blank">Check Statistics on Coinmarketcap</a></div>
+	<div><label>Old Crypto Price</label></div>
+	<div><input type="tel" onkeypress="calc()" onkeyup="calc()" id="cry_preis_alt" value="1"></div>
+	<div><label>New Crypto Price</label></div>
+	<div><input type="tel" onkeypress="calc()" onkeyup="calc()" id="cry_preis_neu" value="1"></div>
+	<div><label>Your investment in EUR/USD</label></div>
+	<div><input type="tel" onkeypress="calc()" onkeyup="calc()" id="kaufpreis" value="1"></div>
+	<div><input type="button" id="reset" onclick="reset()" value="Reset"></div>
+	<div><input type="button" id="calc" onclick="calc()" value="Calculate"></div>
+	<div> <p id="txtOutput">&nbsp;</p> </div>
+	<div></div>
+</div>
+
+<div class="grid-container-2">
+	<div> <h2>Calculate your amount</h2> </div>
+	<div></div>
+	<div><label>Your Crypto amount</label></div>
+	<div><input type="tel" onkeydown="calc_amount()" id="cry_amount" value="1"></div>
+	<div><label>Your investment in EUR/USD</label></div>
+	<div><input type="tel" onkeydown="calc_amount()" id="current_usd_price" value="1"></div>
+	<div><input type="button" id="calc" onclick="reset_amount()"value="Reset"></div>
+	<div><input type="button" id="calc" onclick="calc_amount()" value="Calculate"></div>
+	<div> <p id="txtOutput_amount">&nbsp;</p> </div>
+	<div></div>
+	<div></div>
+</div>
+
+<div class="grid-container-2">
+<div><h2>How does it work?</h2> </div>
+<div><p>It's very simple. When you buy BTC for 500€, put that into the "Your investment" field. Remember the current crypto
+	price and put that to the "old crypto price" field. </p> </div>
+<div><p>In the "new crypto price" field, you enter the number you are waiting for and it will give you your current cash,
+	profit and the percentage. You can also check on how much are owning right now when entering the new crypto price.
+</p> </div>
+<div><h2>Happy trading! 😎</h2> </div>
+</div>
+
+<script type="text/javascript">
+	console.log(document.getElementById("kaufpreis"))
+
+	function calc() {
+		var ausgabe = "";
+		var ergebnis = 0;
+		var tempErg = 0; //Zwischenspeicher
+		var cry_preis_alt = 0;
+		var cry_preis_neu = 0;
+		var prozentsatz = 0;
+		var kaufpreis = 0;
+
+		cry_preis_alt = document.getElementById('cry_preis_alt').value;
+		cry_preis_neu = document.getElementById('cry_preis_neu').value;
+		prozentsatz = ((cry_preis_neu / cry_preis_alt) * 100) - 100;
+		kaufpreis = document.getElementById('kaufpreis').value;
+
+		if ((cry_preis_alt == 0) && (cry_preis_neu == 0) && (kaufpreis == 0)) {
+			ausgabe = "<b style=\"color:red;\">Value missing!</b>";
+			document.getElementById('txtOutput').innerHTML = ausgabe;
+		} else {
+			//ParseInt ist wichtig, sonst hatte er die Zahlen aneinanderverkettet
+			//                    ergebnis = ((parseInt(meter)) + (parseInt(km)*1000)) / ((parseInt(hour)*3600) + (parseInt(min)*60) + parseInt(sec));
+			ergebnis = (parseFloat(kaufpreis) / parseFloat(cry_preis_alt)) * parseFloat(cry_preis_neu);
+			ergebnis = parseFloat(ergebnis).toFixed(2);
+
+			if (cry_preis_neu > cry_preis_alt || (ergebnis - kaufpreis) > 0) {
+				ausgabe = "Current: <b style=\"color:green;\">" + ergebnis + " €/$</b> </br>" +
+					"Your profit: <b style=\"color:green;\">" + parseFloat(ergebnis - kaufpreis).toFixed(2) + " €/$</b> </br>" +
+					"%: <b style=\"color:green;\">" + parseFloat(prozentsatz).toFixed(2) + " %</b>";
+			} else {
+				ausgabe = "Current: <b style=\"color:red;\">" + ergebnis + " €/$</b> </br>" +
+					"Your loss: <b style=\"color:red;\">" + parseFloat(ergebnis - kaufpreis).toFixed(2) + " €/$</b> </br>" +
+					"%: <b style=\"color:red;\">" + parseFloat(prozentsatz).toFixed(2) + " %</b>";
+			}
+			//print out
+			document.getElementById('txtOutput').innerHTML = ausgabe;
+		}
+		console.log("-----");
+		console.log("cry_price_old = " + cry_preis_alt);
+		console.log("cry_price_neu = " + cry_preis_neu);
+		console.log("Kaufpreis = " + kaufpreis);
+	}
+
+	function calc_amount() {
+		var wechselkurs = 0.8190; //EUR USD Wechselkurs
+		var ausgabe = "";
+		var ergebnis = 0;
+		var ergebnisEuro = 0;
+		var tempErg = 0; //Zwischenspeicher
+		var cry_amount = 0;
+		var current_usd_price = 0;
+		cry_amount = document.getElementById('cry_amount').value;
+		current_usd_price = document.getElementById('current_usd_price').value;
+		//Wenn einer der Felder leer, dann Feld missing
+		if (cry_amount == 0 || current_usd_price == 0) {
+			ausgabe = "<b style=\"color:red;\">Value missing!</b>";
+			document.getElementById('txtOutput_amount').innerHTML = ausgabe;
+		} else {
+
+			ergebnis = cry_amount * current_usd_price;
+			ergebnisEuro = (cry_amount * current_usd_price) * wechselkurs;
+			ausgabe = "USD earning: <b style=\"color:green;\">" + parseFloat(ergebnis).toFixed(2) + " $</b> </br>" +
+
+				"EUR earning: <b style=\"color:green;\">" + parseFloat(ergebnisEuro).toFixed(2) + " €</b> ";
+			document.getElementById('txtOutput_amount').innerHTML = ausgabe;
+		}
+		console.log("Ergebnis €:" + ergebnisEuro)
+	}
+
+
+	function reset() {
+		document.getElementById('cry_preis_alt').value = "0";
+		document.getElementById('cry_preis_neu').value = "0";
+		document.getElementById('kaufpreis').value = "0";
+		document.getElementById('txtOutput').innerHTML = " ";
+	}
+	function reset_amount() {
+		document.getElementById('cry_amount').value = "0";
+		document.getElementById('current_usd_price').value = "0";
+		document.getElementById('txtOutput_amount').innerHTML = " ";
+	}
+</script>

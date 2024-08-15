@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>Windows Commands</title>
+        <link rel="stylesheet" type="text/css" href="../../src/main.css">
+        <link rel="shortcut icon" href="../icons/commandwin.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        
+        <style>
+            span {display: block;}
+        </style>
+
+    </head>
+    <body>
+    <a href="../tools.html">Back</a>
+
+    <div class="grid-container-2">
+        <div class="uberschrift-2">Windows Commands</div>
+        <div><img src="../icons/commandwin.png" class="pixelart-icon"></div>
+    </div>
+
+    <input type="text" id="search" placeholder="Search here">
+    <div id="createTable"></div>
+
+<script>
+
+    //Copy to Clipboard Function. Source: ChatGPT
+    // <button onclick="copyToClipboard('Dieser Text wird in die Zwischenablage kopiert')">In Zwischenablage kopieren</button>
+
+    function copyToClipboard(text) {
+        var tempInput = document.createElement("input");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+    }
+
+    // Liste der Commands
+    // https://www.giga.de/artikel/die-109-praktischsten-ausfuehren-befehle-fuer-windows-11-10-8-und-7/ 
+
+var list  = {
+    "commandlist": [
+        // Control Panels
+
+            {"command":"control desktop",                       "action":"Desktop Settings (RKL)",                               "category":"Control Panel", "whereto":"run"},
+            {"command":"control firewall / firewall.cpl",       "action":"Firewall Settings",                                    "category":"Control Panel", "whereto":"run"},
+            {"command":"control folders",                       "action":"Folder Options",                                       "category":"Control Panel", "whereto":"run"},
+            {"command":"control keyboard",                      "action":"Keyboard Settings (Tastatur)",                         "category":"Control Panel", "whereto":"run"},
+            {"command":"control keymgr.dll",                    "action":"Windows Credentials (Anmeldeinformationsverwaltung)",  "category":"Control Panel", "whereto":"run"},
+            {"command":"control mouse / main.cpl",              "action":"Mouse Settings",                                       "category":"Control Panel", "whereto":"run"},
+            {"command":"control printers",                      "action":"Printer Settings",                                     "category":"Control Panel", "whereto":"run"},
+            {"command":"rundll32 printui.dll,PrintUIEntry /il", "action":"Advanced Printer Settings (ADMIN)",                    "category":"Control Panel", "whereto":"cmd"},
+            {"command":"control system",                        "action":"System Info (rename PC for example)",                  "category":"Control Panel", "whereto":"run"},
+            {"command":"control update",                        "action":"Windows Updates",                                      "category":"Control Panel", "whereto":"run"},
+            {"command":"control",                               "action":"Control Panel old (in new Windows, it opens new one)", "category":"Control Panel", "whereto":"run"},
+
+            {"command":"timedate.cpl",          "action":"Datum und Uhrzeit",                "category":"Control Panel", "whereto":"run"},
+            {"command":"intl.cpl",              "action":"Region ändern (TT.MM.JJJJ Format)","category":"Control Panel", "whereto":"run"},
+            {"command":"joy.cpl ",              "action":"Gamepad Settings",                 "category":"Control Panel", "whereto":"run"},
+            {"command":"mmsys.cpl",             "action":"Sound Settings (Multimedia)",      "category":"Control Panel", "whereto":"run"},
+            {"command":"powercfg.cpl",          "action":"Energy Options (Energieoptionen)", "category":"Control Panel", "whereto":"run"},
+            {"command":"sndvol",                "action":"Volume Mixer (old)",               "category":"Control Panel", "whereto":"run"},
+            {"command":"sysdm.cpl",             "action":"System Settings (Device Manager)", "category":"Control Panel", "whereto":"run"},
+            {"command":"taskmgr",               "action":"Task Manager",                     "category":"Control Panel", "whereto":"run"},
+            {"command":"wscui.cpl",             "action":"Win Security UI Settings",         "category":"Control Panel", "whereto":"run"},
+            {"command":"dpiscaling , desk.cpl", "action":"Anzeige (Screens)",                "category":"Control Panel", "whereto":"run"},
+            {"command":"cttune",                "action":"ClearType Font Textoptimierung",   "category":"Control Panel", "whereto":"run"},
+            {"command":"displayswitch",         "action":"Change Screen (Win + P)",          "category":"Control Panel", "whereto":"run"},
+            {"command":"useraccountcontrolsettings","action":"Benutzerkontensteuerung",      "category":"Control Panel", "whereto":"run"},
+
+            // Open Locations
+            {"command":"%appdata% Roaming",                   "action":"Open Roaming directly",            "category":"Open Locations", "whereto":"run"},
+            {"command":"%appdata%",                           "action":"Open Appdata",                     "category":"Open Locations", "whereto":"run"},
+            {"command":".",                                   "action":"User folder",                      "category":"Open Locations", "whereto":"run"},
+            {"command":"..",                                  "action":"One folder over User folder",      "category":"Open Locations", "whereto":"run"},
+            {"command":"Documents/Downloads/Pictures/Videos", "action":"Open all these folders quicklier", "category":"Open Locations", "whereto":"run"},
+            {"command":"c: (or any other letter)",            "action":"Opens the root folder",            "category":"Open Locations", "whereto":"run"},
+            {"command":"shell:startup",                       "action":"Open autostart folder",            "category":"Open Locations", "whereto":"run"},
+            {"command":"shell:mycomputerfolder",              "action":"Open THIS PC directly",            "category":"Open Locations", "whereto":"run"},
+
+            // Management Console MMC by Microsoft
+            {"command":"dfrgui",   "action":"Defragement (Defragmentierung)",             "category":"Management Console", "whereto":"run"},
+            {"command":"eventvwr", "action":"Eventviewer (Ereignisanzeige)",              "category":"Management Console", "whereto":"run"},
+            {"command":"perfmon",  "action":"Performance Monitor (Leistungsüberwachung)", "category":"Management Console", "whereto":"run"},
+            {"command":"regedit",  "action":"Registry Editor",                            "category":"Management Console", "whereto":"run"},
+            {"command":"rstrui",   "action":"Restore UI (Systemwiederherstellung)",       "category":"Management Console", "whereto":"run"},
+            {"command":"slui",     "action":"Software Licensing UI (Lizenzaktivierung)",  "category":"Management Console", "whereto":"run"},
+
+            {"command":"devmgmt.msc",  "action":"Device Management",                                "category":"Management Console", "whereto":"run"},
+            {"command":"diskmgmt.msc", "action":"Disk Management (Datenträgerverwaltung)",          "category":"Management Console", "whereto":"run"},
+            {"command":"fsmgmt.msc",   "action":"Folder Share Management (Freigegebende Ordner)",   "category":"Management Console", "whereto":"run"},
+            {"command":"gpedit.msc",   "action":"Group Policy Editor (Lokale Gruppenrichtlinien)",  "category":"Management Console", "whereto":"run"},
+            {"command":"lusrmgr.msc",  "action":"Local User Manager (Lokale Benutzer und Gruppen)", "category":"Management Console", "whereto":"run"},
+            {"command":"secpol.msc",   "action":"Lokale Sicherheitsrichtlinien",                    "category":"Management Console", "whereto":"run"},
+            {"command":"services.msc", "action":"Services (Dienste)",                               "category":"Management Console", "whereto":"run"},
+            {"command":"taskschd.msc", "action":"Task Schedule (Aufgabenplanung)",                  "category":"Management Console", "whereto":"run"},
+            {"command":"virtmgmt.msc", "action":"Hyper-V",                                          "category":"Management Console", "whereto":"run"},
+            {"command":"wf.msc",       "action":"Windows Defender Settings",                        "category":"Management Console", "whereto":"run"},
+            {"command":"certmgr.msc",       "action":"Certificate Settings (Zertifikate)",          "category":"Management Console", "whereto":"run"},
+
+            //Informations
+            {"command":"msconfig",                                 "action":"System Configuration (Systemkonfiguration)",       "category":"System Informations", "whereto":"run"},
+            {"command":"msinfo32",                                 "action":"System Informations",                              "category":"System Informations", "whereto":"run"},
+            {"command":"winver",                                   "action":"Show Windows Version",                             "category":"System Informations", "whereto":"run"},
+            {"command":"dxdiag",                                   "action":"DirectX Dialogue (show graphic card for example)", "category":"System Informations", "whereto":"run"},
+            {"command":"systeminfo",                               "action":"",                                                 "category":"System Informations", "whereto":"cmd"},
+            {"command":"systeminfo | find \"Speicher\"	",         "action":"",                                                 "category":"System Informations", "whereto":"cmd"},
+            {"command":"wmic path win32_VideoController get name", "action":"Check graphic card in CMD",                        "category":"System Informations", "whereto":"cmd"},
+            {"command":"wmic memorychip",                          "action":"Check RAM info in CMD",                            "category":"System Informations", "whereto":"cmd"},
+            {"command":"wmic logicaldisk get name",                "action":"Get all Driver Letters/Laufwerksbuchstaben",       "category":"System Informations", "whereto":"cmd"},
+            {"command":"wmic bios get serialnumber",               "action":"Check serialnumber / Seriennummer auslesen",       "category":"System Informations", "whereto":"cmd"},
+
+            //Windows Apps
+            {"command":"calc",                    "action":"Calculator (Taschenrechner)",             "category":"Built-in Tools", "whereto":"run"},
+            {"command":"charmap",                 "action":"Character Map (Zeichentabelle)",          "category":"Built-in Tools", "whereto":"run"},
+            {"command":"magnify",                 "action":"Glasses / Magnifier (Bildschirmlupe)",    "category":"Built-in Tools", "whereto":"run"},
+            {"command":"notepad(++)",             "action":"Notepad Editor",                          "category":"Built-in Tools", "whereto":"run"},
+            {"command":"osk",                     "action":"on screen keyboard (Bildschirmtastatur)", "category":"Built-in Tools", "whereto":"run"},
+            {"command":"write",                   "action":"Wordpad",                                 "category":"Built-in Tools", "whereto":"run"},
+            {"command":"wmplayer",                "action":"Windows Media Player",                    "category":"Built-in Tools", "whereto":"run"},
+            {"command":"shell:RecycleBinFolder",  "action":"Trash bin(Papierkorb)",                   "category":"Built-in Tools", "whereto":"run"},
+            {"command":"quickassist	",            "action":"Remote Help (not RDP) (Remotehilfe)",     "category":"Built-in Tools", "whereto":"run"},
+            {"command":"shutdown",                "action":"Shutdown",                                "category":"Built-in Tools", "whereto":"run"},
+            {"command":"shutdown /r /fw /f /t 0", "action":"Directly to BIOS / Firmware",             "category":"Built-in Tools", "whereto":"run"},
+            {"command":"logoff",                  "action":"logging off (closing all apps)",          "category":"Built-in Tools", "whereto":"run"},
+            {"command":"tsdiscon",                "action":"switch user",                             "category":"Built-in Tools", "whereto":"run"},
+
+            //Network commands
+            {"command":"arp -a",             "action":"all ip addresses at the gateway",   "category":"Network", "whereto":"cmd"},
+            {"command":"ipconfig (/all)",    "action":"Network informations",              "category":"Network", "whereto":"cmd"},
+            {"command":"ipconfig /flushdns", "action":"Delete DNS cache resolver",         "category":"Network", "whereto":"cmd"},
+            {"command":"netstat (-b -t)",    "action":"Check, who phones back home ツ",    "category":"Network", "whereto":"cmd"},
+            {"command":"ping & nslookup",    "action":"ping address and other way around", "category":"Network", "whereto":"cmd"},
+            {"command":"tracert	",           "action":"Shows all routes",                  "category":"Network", "whereto":"cmd"},
+
+            //System Reparing
+            {"command":"sfc /scannow",                               "action":"Check system damage / repair",                 "category":"System Reparing", "whereto":"cmd"},
+            {"command":"DISM /Online /Cleanup-Image /RestoreHealth", "action":"Checks again",                                 "category":"System Reparing", "whereto":"cmd"},
+            {"command":"chkdsk C: /r",                               "action":"Checking Disk Errors and Bad sector reparing", "category":"System Reparing", "whereto":"cmd"},
+            {"command":"netsh wlan show wlanreport",                 "action":"Report for problems with WLAN",                "category":"System Reparing", "whereto":"cmd"},
+            {"command":"powercfg /energy",                           "action":"Report for problems with power supply",        "category":"System Reparing", "whereto":"cmd"},
+            {"command":"powercfg /batteryreport",                    "action":"Report for problems with battery",             "category":"System Reparing", "whereto":"cmd"},
+
+            //Random Commands
+            {"command":"diskpart --> list volume","action":"show your hard drives / partitions","category":"Random commands","whereto":"cmd"},
+            {"command":"echo texttext > name.txt","action":"writing an empty file within cmd","category":"Random commands","whereto":"cmd"},
+            {"command":"time","action":"Change time (time 12:34) - needs ADMIN","category":"Random commands","whereto":"cmd"},
+            {"command":"date","action":"Change date (date 20.03.2023) - needs ADMIN - depends on your YYYYMMDD layout","category":"Random commands","whereto":"cmd"},
+            {"command":"color 3","action":"Change Terminal Color","category":"Random commands","whereto":"cmd"},
+            {"command":"fc /b file1.txt file2.txt","action":"File Comparison","category":"Random commands","whereto":"cmd"},
+            //{"command":"","action":"","category":"Random commands","whereto":"cmd"},
+
+            //Outlook
+            {"command":"outlook.exe /manageprofiles", "action":"Open profile manager",      "category":"Outlook", "whereto":"run"},
+            {"command":"outlook.exe /save",           "action":"Open Outlook in safe mode", "category":"Outlook", "whereto":"run"},
+
+            //net commands
+            {"command":"net use",                                     "action":"Show network drives /Zeige Netzlaufwerke", "category":"Net Commands",     "whereto":"cmd"},
+            {"command":"net user USERNAME PW /add",                   "action":"Add new User with Password",               "category":"Net Commands",     "whereto":"cmd"},
+            {"command":"net user Administrator /active:yes",          "action":"Activate Administrator Account",           "category":"Net Commands",     "whereto":"cmd"},
+            {"command":"net user USERNAME *",                         "action":"Reset Password for User Account",          "category":"Net Commands",     "whereto":"cmd"},
+            {"command":"net use Z: \\\\server\\path /persistent:Yes", "action":"Add network drive",                        "category":"Net Commands",     "whereto":"cmd"},
+            //{"command":"",                                          "action":"",                                         "category":"Net Use Commands", "whereto":"cmd"},
+
+            //MS Settings
+            {"command":"ms-settings:",            "action":"New Win10 Settings",                                       "category":"New Control Panel", "whereto":"run"},
+            {"command":"ms-settings:display",     "action":"Display Settings",                                         "category":"New Control Panel", "whereto":"run"},
+            {"command":"ms-settings:yourinfo",    "action":"System Information",                                       "category":"New Control Panel", "whereto":"run"},
+            {"command":"ms-settings:workplace",   "action":"Change Accounts (Auf Arbeits, oder Schulkonto zugreifen)", "category":"New Control Panel", "whereto":"run"},
+            {"command":"ms-settings:dateandtime", "action":"Date/Time Settings",                                       "category":"New Control Panel", "whereto":"run"},
+            {"command":"ms-settings:startupapps", "action":"Startup Apps",                                             "category":"New Control Panel", "whereto":"run"},
+            {"command":"ms-settings:defaultapps", "action":"Default Apps",                                             "category":"New Control Panel", "whereto":"run"},
+            //{"command":"ms-settings:","action":"","category":"New Control Panel","whereto":"run"},
+
+            {"command":"control /name Microsoft.FileHistory",      "action":"File History",                            "category":"New Control Panel", "whereto":"run"},
+            {"command":"control /name Microsoft.Language",         "action":"Language Settings",                       "category":"New Control Panel", "whereto":"run"},
+            {"command":"control /name Microsoft.Taskbar",          "action":"Taskbar Settings",                        "category":"New Control Panel", "whereto":"run"},
+            {"command":"control /name Microsoft.WindowsDefender ", "action":"Win Defender (use wf.msc, it's shorter)", "category":"New Control Panel", "whereto":"run"},
+            {"command":"control /name Microsoft.WindowsUpdate",    "action":"Windwows Updates",                        "category":"New Control Panel", "whereto":"run"},
+            {"command":"control /name Microsoft.LocationSettings", "action":"Location Settings",                       "category":"New Control Panel", "whereto":"run"},
+
+            //{"command":"","action":"","category":"New Control Panel","whereto":"run"},
+
+            //Random Commands
+            {"command":"sconfig",             "action":"Open CLI Configuration",                                         "category":"Windows Server Commands", "whereto":"run"},
+            {"command":"control admintools",  "action":"Open all Management Tools",                                      "category":"Windows Server Commands", "whereto":"run"},
+            {"command":"dsa.msc",             "action":"Active Directory User and Computer",                             "category":"Windows Server Commands", "whereto":"run"},
+            {"command":"dnsmgmt.msc",         "action":"DNS Manager",                                                    "category":"Windows Server Commands", "whereto":"run"},
+            {"command":"gpmc.msc",            "action":"Group Policy Management Console (Gruppenrichtlinienverwaltung)", "category":"Windows Server Commands", "whereto":"run"},
+            {"command":"printmanagement.msc", "action":"Print Management (Druckerverwaltung für's Netzwerk)",            "category":"Windows Server Commands", "whereto":"run"},
+            {"command":"psr",                 "action":"Tutorial Schrittaufzeichnung",                                   "category":"Control Panel Settings", "whereto":"run"},
+            {"command":"snippingtool",        "action":"Snipping tool (Screenshots)",                                    "category":"Control Panel Settings", "whereto":"run"},
+
+            //Kryptisch lange Befehle
+            {"command":"explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} \\SystemIcons,,0","action":"SystemIcons","category":"Control Panel Settings","whereto":"run"},
+            {"command":"explorer shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}","action":"Infobereichsymbole","category":"Control Panel Settings","whereto":"run"},
+            {"command":"GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}","action":"GodMode","category":"Control Panel Settings","whereto":"folder name"},
+
+        //{"command":"","action":"","category":"Windows Server Commands","whereto":"run"},
+
+
+// TODO: add this to net use commands: ==== 
+
+    ]
+}
+    
+$(document).ready(function(){
+    var table_body = '<table class="tablegear" id="table"><thead><tr>';
+    table_body += '<th>Nr.</th>';
+    table_body += '<th>Command</th>';
+    table_body += '<th>Action</th>';
+    table_body += '<th>Category</th>';
+    table_body += '<th>Where to Run</th>';
+    table_body += '</tr></thead><tbody>';
+
+    for(i =0;i<list.commandlist.length;i++){ //change the content here
+        table_body+='<tr>';
+        table_body +='<td>'+(i+1)+'</td>';//Number using i
+        //TODO: Beim Anklicken der Commands in Clipboard versenken ? wie 
+        table_body +='<td style=\"color: #02b1f7\">'; table_body +=list.commandlist[i]["command"]; table_body +='</td>';
+        table_body +='<td>'; table_body +=list.commandlist[i]["action"]; table_body +='</td>';
+        table_body +='<td>'; table_body +=list.commandlist[i]["category"]; table_body +='</td>';
+        table_body +='<td>'; table_body +=list.commandlist[i]["whereto"]; table_body +='</td>';
+        table_body+='</tr>';
+    }
+
+    table_body+='</tbody></table>';
+    $('#createTable').html(table_body);
+
+    //search function
+    $("#search").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("table tr").filter(function(index) {
+            if(index>0){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            }
+        });
+    }); //end keyup
+
+}); //end ready function
+</script>
+

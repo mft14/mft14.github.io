@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://mft14.github.io/src/main.css">
+    <link rel="shortcut icon" href="../icons/randomizer.png">
+</head>
+<a href="../tools.html">Back</a>
+<title>Randomizer</title>
+<div class="grid-container-2">
+    <div class="uberschrift-2">Randomizer</div>
+    <div><img src="../icons/randomizer.png" class="pixelart-icon"></div>
+    <div><label>Lower Number </label></div>
+    <div><input type="tel" onclick="this.select()" onkeypress="calc()" onkeyup="calc()" id="w1" min="1" value="0"></div>
+    <div><label>Upper Number </label></div>
+    <div><input type="tel" onclick="this.select()" onkeypress="calc()" onkeyup="calc()" id="w2" min="1" value="10"></div>
+    <div><span id="result_output1"></span></div>
+    <div><input class="btn-pixel" type="button" onclick="calc()" value="Randomize"></div>
+</div>
+
+<script>
+    function shortcuts() { alert('Enter = Generate\nr = Reset\nArrow Up/Down = Change number field'); }
+    document.getElementById("w1").focus(); //At startup Lower Limit gets focus
+    document.getElementById("w1").select(); //and everything selected
+    document.addEventListener('keyup', function (event) {
+        if (event.key === 'ArrowUp') { document.getElementById("w1").focus() }
+        if (event.key === 'ArrowUp') { document.getElementById("w1").select() }
+        if (event.key === 'ArrowDown') { document.getElementById("w2").focus() }
+        if (event.key === 'ArrowDown') { document.getElementById("w2").select() }
+        if (event.key === 'r') { resetten() }
+        if (event.key === 'Enter') { calc() }
+    });
+    var w1, w2, temp, erg; //init
+    function getRndInteger(min, max) { //Randomize Function
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    function calc() {
+        w1 = Number(document.getElementById('w1').value);
+        w2 = Number(document.getElementById('w2').value);
+        if (w1 > w2) { //Change values when lower/upper is not being cared :/
+            temp = w2;
+            w2 = w1;
+            w1 = temp;
+        }
+        erg = getRndInteger(w1, w2);
+        document.getElementById("result_output1").innerHTML = "<span class=\"erg\">Result: <u>" + erg + "</u></span>";
+    }
+    function resetten() {
+        w1 = 0;
+        w2 = 0;
+        document.getElementById("result_output1").innerHTML = "";
+        document.getElementById("w1").value = "0";
+        document.getElementById("w2").value = "10";
+    }
+</script>

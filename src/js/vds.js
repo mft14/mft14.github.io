@@ -642,8 +642,11 @@ $(document).ready(function(){
     var table_body = '<table class="tablegear" id="'+now+'" style="font-size: 14px;"><thead><tr>';
     table_body += '<th>ID</th>'; table_body += '<th>Date</th>'; table_body += '<th>Videogame</th>'; table_body += '<th>Song Title</th>';
     //table_body += '<th>YT Link</th>';
-    table_body += '<th>Composer</th>'; table_body += '<th>Key</th>'; table_body += '<th>BPM</th>';
-    table_body += '<th>Genre</th>'; table_body += '</tr></thead><tbody>';
+    table_body += '<th>Composer</th>'; 
+    // table_body += '<th>Key</th>'; 
+    // table_body += '<th>BPM</th>';
+    // table_body += '<th>Genre</th>'; 
+    table_body += '</tr></thead><tbody>';
 
         for(i =0;i<songlist.vds.length;i++){ //Go through all videos
 
@@ -653,12 +656,14 @@ $(document).ready(function(){
               var curyear = parseInt(songlist.vds[i]["date"].substring(songlist.vds[i]["date"].length - 4));
                 
               //Color the table rows
-              if(istGerade(curyear) == 0) {
-                  table_body +='<tr style="background-color: #121022;">';//Color the rows
-              } else {
-                  table_body +='<tr>';//no Color the rows
-              }
+              // if(istGerade(curyear) == 0) {
+              //     table_body +='<tr style="background-color: #121022;">';//Color the rows
+              // } else {
+              //     table_body +='<tr>';//no Color the rows
+              // }
 
+              table_body +='<tr>';//no Color the rows
+          
               table_body +='<td>'+(songlist.vds.length-(i))+'</td>';//Number using the i 
 
               table_body +='<td>'; table_body +=songlist.vds[i]["date"]; table_body +='</td>';
@@ -677,9 +682,9 @@ $(document).ready(function(){
                   table_body +='<td>'; table_body +=songlist.vds[i]["composer"]; table_body +='</td>';
               }
 
-              table_body +='<td>'; table_body +=songlist.vds[i]["key"]; table_body +='</td>';
-              table_body +='<td>'; table_body +=songlist.vds[i]["bpm"]; table_body +='</td>';
-              table_body +='<td>'; table_body +=songlist.vds[i]["genre"]; table_body +='</td>';
+              // table_body +='<td>'; table_body +=songlist.vds[i]["key"]; table_body +='</td>';
+              // table_body +='<td>'; table_body +=songlist.vds[i]["bpm"]; table_body +='</td>';
+              // table_body +='<td>'; table_body +=songlist.vds[i]["genre"]; table_body +='</td>';
 
               // if(songlist.vds[i]["desc"] != "") {
               //     table_body +='<td><textarea class="textarea-desc" readonly>'; table_body +=songlist.vds[i]["desc"]; table_body +='</textarea></td>';

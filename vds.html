@@ -1,65 +1,44 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Video List - Metal Fortress</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="src/js/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="src/main.css">
-    <link rel="shortcut icon" href="assets/icons/mflogo_64x64.ico">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="src/js/vds.js"></script> 
-</head>
-<body>
+    <link rel="shortcut icon" href="assets/icons/mflogo_64x64.ico">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Video List</title>
+  </head>
 
-<div class="mainvds">
-<header></header> 
+  <body>
+    <div class="container">
+      <nav>
+        <div id="menu"></div>
+        <script> $(function () { $("#menu").load("inc/menu.html"); }); </script>
+      </nav>
 
+      <main>
+        <h1>VideoList();</h1>
+      <!-- Main -->
 
-<a href="index.html">Back Home</a>
+      <div class="tablevdstabs"></div>
 
-<div class="uberschrift">Video List</div>
+        <p><input type="text" id="search" placeholder="Search song here"></input></p>
+        <script>window.onload = function() { document.getElementById("search").focus(); }; </script>
 
-<div class="uberschrift-box">
-    <p>This list contains all my videogame covers + originals, that I have uploaded on Youtube. It was made in hurry so there might be mistakes. Covers on platforms such as Spotify or Soundcloud and other channels are not included. Many information like bpm etc. are missing in the older videos, because I started writing them down in 2021 first. They will be added afterwards, once time is giving. </p>
-</div>
+        <!------------------------------------------ TABLE COMMENCE ------------------------------------------>
+        <div id="tableDiv" style="margin-top: 40px;"></div>
 
-<div class="tablevdstabs"></div>
+        <div>
+          <hr>
+          <h2>Amount of videos per year:</h2>
+          <div id="amountvideos"></div>
 
-<p><span style="color: greenyellow;">New: </span> You can now search right here!</p>
-<input type="text" id="search" placeholder="Search song here"></input>
+          <h2>Game counters:</h2>
+          <div id="amountgames"></div>
+        </div>
 
-<script>
-window.onload = function() {                                                                                                                   
-   document.getElementById("search").focus();                                                                                                 
-}; 
-</script>
-<!------------------------------------------ TABLE COMMENCE ------------------------------------------>
-<div id="tableDiv" style="margin-top: 40px;"></div>
-
-
-<!------------------------------------------ Amount of videos ------------------------------------------>
-<div>
-    <hr>
-    <h2>Amount of videos per year:</h2>
-    <div id="amountvideos"></div>
-
-    <h2>Game counters:</h2>
-    <div id="amountgames"></div>
-</div>
-
-<!--
-    TODO:
-    Abweichend der originalen Playlist fehlen in dieser Liste hier
-    430 2tWIUbEjKQ8 - Undertale Selection (eig ID: 430)
-    eQuOvWXdYCg	- The Final Team Fortress 2 Remixes - FULL STREAM
-    6O58pP7xPkI	- TF2 Final Remix Album Announcement, TF2 FAQ and bad Gameplay from 2012
-    BjnZekj-H0E - FREE Bagpipe Chanter Preset in VITAL [Studio Fortress #1] || Metal Fortress
-    350	JP2FpfFlAQg	All UNRELEASED / UNFINISHED Songs I've ever made! (2011 - 2019)
--->
-
-</div>
-
-<iframe style="width: 100%; border: none;" src="src/pages/footer.html"></iframe>
-
-</body>
+      </main>
+    </div>
+  </body>
 </html>

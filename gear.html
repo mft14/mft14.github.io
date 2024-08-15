@@ -1,290 +1,286 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> Gear - Metal Fortress</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="src/main.css">
-    <script  src="src/js/jquery.min.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="shortcut icon" href="assets/icons/mflogo_64x64.ico">
-</head>
-<body>
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Gear - Metal Fortress</title>
+  </head>
 
-<nav class="menu-widescreen">
-    <a href="index.html"><img class="nav-img-logo" src="assets/img/mf14-logo_2020_klein.png"></a>
-    <a href="index.html">Back Home</a>
-</nav>
+  <body>
+    <div class="container">
+      <nav>
+        <div id="menu"></div>
+        <script> $(function () { $("#menu").load("inc/menu.html"); }); </script>
+      </nav>
+      <main>
 
-<main>
-<header></header> 
-<nav class="menu-phones"> 
-    <a href="index.html">Back Home</a>
-</nav>
-<div class="uberschrift">Gear</div>
-<div class="uberschrift-box">
-	Here you can find the full list of every related gear I use in my videos.
-	Be it for music production, sound design, thumbnails, video production and more.
-	If you have any question on how I make my sound in a certain song, you can ask anytime.
-	The best way doing that is commenting under the specific video.
-	You can also see when I started using it and the last time I used it.
-	<p> <h6>number indicates current condition</h6> </p>
-	<p>No longer used¹ <br> sold² <br> broken³</p>
-    
-</div>
+        <h1>Gear();</h1>
+        <!-- Main -->
 
-<script >
-      var gearlist  = {
+        <div class="uberschrift-box">
+          Here you can find the full list of every related gear I use in my videos.
+          Be it for music production, sound design, thumbnails, video production and more.
+          If you have any question on how I make my sound in a certain song, you can ask anytime.
+          The best way doing that is commenting under the specific video.
+          You can also see when I started using it and the last time I used it.
+          <p> <h6>number indicates current condition</h6> </p>
+          <p>No longer used¹ <br> sold² <br> broken³</p>
+
+        </div>
+
+        <script>
+        var gearlist  = {
           "gear": [
-{"category":"DAW", "gearname":"Bitwig Studio",  "from":"02.08.2023", "to":"todaytoday", "link":"https://www.bitwig.com/"},
-{"category":"DAW", "gearname":"Renoise",        "from":"30.06.2021", "to":"todaytoday", "link":"https://www.renoise.com/"},
-{"category":"DAW", "gearname":"Reaper",         "from":"11.06.2016", "to":"todaytoday", "link":"https://www.reaper.fm"},
-{"category":"DAW", "gearname":"Mixcraft 7¹",    "from":"31.12.2014", "to":"29.05.2016", "link":"https://acoustica.com/mixcraft"},
-{"category":"DAW", "gearname":"Mixcraft 6¹",    "from":"23.05.2014", "to":"15.12.2014", "link":""},
-{"category":"DAW", "gearname":"Mixcraft 5¹",    "from":"07.08.2012", "to":"16.05.2014", "link":""},
+            {"category":"DAW", "gearname":"Bitwig Studio",  "from":"02.08.2023", "to":"todaytoday", "link":"https://www.bitwig.com/"},
+            {"category":"DAW", "gearname":"Renoise",        "from":"30.06.2021", "to":"todaytoday", "link":"https://www.renoise.com/"},
+            {"category":"DAW", "gearname":"Reaper",         "from":"11.06.2016", "to":"todaytoday", "link":"https://www.reaper.fm"},
+            {"category":"DAW", "gearname":"Mixcraft 7¹",    "from":"31.12.2014", "to":"29.05.2016", "link":"https://acoustica.com/mixcraft"},
+            {"category":"DAW", "gearname":"Mixcraft 6¹",    "from":"23.05.2014", "to":"15.12.2014", "link":""},
+            {"category":"DAW", "gearname":"Mixcraft 5¹",    "from":"07.08.2012", "to":"16.05.2014", "link":""},
 
-{"category":"E-Guitars", "gearname":"Schecter Damien 7 Satin Black",               "from":"30.06.2022", "to":"todaytoday", "link":""},
-{"category":"E-Guitars", "gearname":"Harley Benton R-458MN WH Progressive Series", "from":"10.07.2019", "to":"25.07.2019", "link":"https://www.thomann.de/fr/harley_benton_r_458mn_wh_progressive_series.htm"},
-{"category":"E-Guitars", "gearname":"PRS SE Custom 24",                            "from":"21.04.2017", "to":"todaytoday", "link":""},
-{"category":"E-Guitars", "gearname":"Squier Classic Vibe Telecaster 50's BB",      "from":"24.12.2012", "to":"todaytoday", "link":""},
-{"category":"E-Guitars", "gearname":"Schecter Omen 8²",                            "from":"26.07.2013", "to":"03.01.2014", "link":""},
-{"category":"E-Guitars", "gearname":"Ibanez RG350 DX WH³",                         "from":"07.08.2012", "to":"06.09.2013", "link":""},
-{"category":"E-Guitars", "gearname":"Harley Benton Strat¹",                        "from":"09.12.2011", "to":"24.09.2018", "link":""},
-{"category":"E-Bass",    "gearname":"Fender Precision Bass 1966¹",                 "from":"18.09.2015", "to":"30.06.2017", "link":""},
-{"category":"E-Bass",    "gearname":"Harley Benton HBZ-2005²",                     "from":"31.12.2014", "to":"05.09.2017", "link":""},
-{"category":"E-Bass",    "gearname":"Harley Benton MB22-2T¹",                      "from":"07.08.2012", "to":"15.12.2014", "link":""},
+            {"category":"E-Guitars", "gearname":"Schecter Damien 7 Satin Black",               "from":"30.06.2022", "to":"todaytoday", "link":""},
+            {"category":"E-Guitars", "gearname":"Harley Benton R-458MN WH Progressive Series", "from":"10.07.2019", "to":"25.07.2019", "link":"https://www.thomann.de/fr/harley_benton_r_458mn_wh_progressive_series.htm"},
+            {"category":"E-Guitars", "gearname":"PRS SE Custom 24",                            "from":"21.04.2017", "to":"todaytoday", "link":""},
+            {"category":"E-Guitars", "gearname":"Squier Classic Vibe Telecaster 50's BB",      "from":"24.12.2012", "to":"todaytoday", "link":""},
+            {"category":"E-Guitars", "gearname":"Schecter Omen 8²",                            "from":"26.07.2013", "to":"03.01.2014", "link":""},
+            {"category":"E-Guitars", "gearname":"Ibanez RG350 DX WH³",                         "from":"07.08.2012", "to":"06.09.2013", "link":""},
+            {"category":"E-Guitars", "gearname":"Harley Benton Strat¹",                        "from":"09.12.2011", "to":"24.09.2018", "link":""},
+            {"category":"E-Bass",    "gearname":"Fender Precision Bass 1966¹",                 "from":"18.09.2015", "to":"30.06.2017", "link":""},
+            {"category":"E-Bass",    "gearname":"Harley Benton HBZ-2005²",                     "from":"31.12.2014", "to":"05.09.2017", "link":""},
+            {"category":"E-Bass",    "gearname":"Harley Benton MB22-2T¹",                      "from":"07.08.2012", "to":"15.12.2014", "link":""},
 
-{"category":"Samplepack", "gearname":"Moonboy 2021 Bundle",           "from":"26.11.2022", "to":"todaytoday", "link":"https://moonboy.store/products/2021-bundle"},
-{"category":"Samplepack", "gearname":"VR - Heavy Bass Design Vol. 2", "from":"27.11.2020", "to":"todaytoday", "link":"https://splice.com/sounds/disciple-samples/virtual-riot-heavy-bass-design-vol-2"},
-{"category":"Samplepack", "gearname":"Mjölnir Drums (Solemn Tones)",  "from":"02.10.2020", "to":"todaytoday", "link":"https://solemntones.com/products/mjolnir-drums"},
-{"category":"Samplepack", "gearname":"Spicy Riddim Drums Vol. 1",     "from":"31.07.2020", "to":"todaytoday", "link":"https://splice.com/sounds/disciple-samples/virtual-riot-modestep-spicy-riddim-drums-1"},
-{"category":"Samplepack", "gearname":"VR - Heavy Bass Design",        "from":"07.06.2020", "to":"todaytoday", "link":"https://splice.com/sounds/splice/virtual-riot-sample-pack"},
+            {"category":"Samplepack", "gearname":"Moonboy 2021 Bundle",           "from":"26.11.2022", "to":"todaytoday", "link":"https://moonboy.store/products/2021-bundle"},
+            {"category":"Samplepack", "gearname":"VR - Heavy Bass Design Vol. 2", "from":"27.11.2020", "to":"todaytoday", "link":"https://splice.com/sounds/disciple-samples/virtual-riot-heavy-bass-design-vol-2"},
+            {"category":"Samplepack", "gearname":"Mjölnir Drums (Solemn Tones)",  "from":"02.10.2020", "to":"todaytoday", "link":"https://solemntones.com/products/mjolnir-drums"},
+            {"category":"Samplepack", "gearname":"Spicy Riddim Drums Vol. 1",     "from":"31.07.2020", "to":"todaytoday", "link":"https://splice.com/sounds/disciple-samples/virtual-riot-modestep-spicy-riddim-drums-1"},
+            {"category":"Samplepack", "gearname":"VR - Heavy Bass Design",        "from":"07.06.2020", "to":"todaytoday", "link":"https://splice.com/sounds/splice/virtual-riot-sample-pack"},
 
-{"category":"Drum Samples", "gearname":"The Metal Drum Kit (Free)", "from":"09.06.2017", "to":"todaytoday", "link":"http://themetalkickdrum.com"},
-{"category":"Drum VST",     "gearname":"Damage (Heavyocity)",       "from":"13.06.2019", "to":"todaytoday", "link":"https://www.native-instruments.com/en/products/komplete/cinematic/damage/"},
-{"category":"Drum VST",     "gearname":"Metal Machine (EZX)²",      "from":"20.09.2013", "to":"23.07.2017", "link":"https://www.toontrack.com/product/metal-machine-ezx/"},
-{"category":"Drum VST",     "gearname":"ToonTrack EZDrummer²",      "from":"07.08.2012", "to":"13.09.2013", "link":"https://www.toontrack.com/product/poprock-ezx/"},
+            {"category":"Drum Samples", "gearname":"The Metal Drum Kit (Free)", "from":"09.06.2017", "to":"todaytoday", "link":"http://themetalkickdrum.com"},
+            {"category":"Drum VST",     "gearname":"Damage (Heavyocity)",       "from":"13.06.2019", "to":"todaytoday", "link":"https://www.native-instruments.com/en/products/komplete/cinematic/damage/"},
+            {"category":"Drum VST",     "gearname":"Metal Machine (EZX)²",      "from":"20.09.2013", "to":"23.07.2017", "link":"https://www.toontrack.com/product/metal-machine-ezx/"},
+            {"category":"Drum VST",     "gearname":"ToonTrack EZDrummer²",      "from":"07.08.2012", "to":"13.09.2013", "link":"https://www.toontrack.com/product/poprock-ezx/"},
 
-{"category":"Synth VST", "gearname":"Vital VST",                     "from":"08.01.2021", "to":"todaytoday", "link":""},
-{"category":"Synth VST", "gearname":"Xfer Serum ",                   "from":"08.12.2017", "to":"todaytoday", "link":""},
-{"category":"Synth VST", "gearname":"Synthesized Bass (NI Massive)", "from":"25.08.2017", "to":"todaytoday", "link":""},
-{"category":"Synth VST", "gearname":"NI Massive",                    "from":"19.11.2016", "to":"todaytoday", "link":""},
-{"category":"Synth VST", "gearname":"FM8¹",                          "from":"29.06.2019", "to":"13.09.2019", "link":""},
-{"category":"Synth VST", "gearname":"Messiah (Mixcraft)¹",           "from":"15.02.2013", "to":"04.08.2017", "link":""},
-{"category":"Synth VST", "gearname":"Alien 303 (Mixcraft)¹",         "from":"15.02.2013", "to":"15.03.2014", "link":""},
-{"category":"Synth VST", "gearname":"TwinBass v1_2¹",                "from":"15.02.2013", "to":"15.03.2014", "link":"https://freevstplugins.net/twin-bass/"},
+            {"category":"Synth VST", "gearname":"Vital VST",                     "from":"08.01.2021", "to":"todaytoday", "link":""},
+            {"category":"Synth VST", "gearname":"Xfer Serum ",                   "from":"08.12.2017", "to":"todaytoday", "link":""},
+            {"category":"Synth VST", "gearname":"Synthesized Bass (NI Massive)", "from":"25.08.2017", "to":"todaytoday", "link":""},
+            {"category":"Synth VST", "gearname":"NI Massive",                    "from":"19.11.2016", "to":"todaytoday", "link":""},
+            {"category":"Synth VST", "gearname":"FM8¹",                          "from":"29.06.2019", "to":"13.09.2019", "link":""},
+            {"category":"Synth VST", "gearname":"Messiah (Mixcraft)¹",           "from":"15.02.2013", "to":"04.08.2017", "link":""},
+            {"category":"Synth VST", "gearname":"Alien 303 (Mixcraft)¹",         "from":"15.02.2013", "to":"15.03.2014", "link":""},
+            {"category":"Synth VST", "gearname":"TwinBass v1_2¹",                "from":"15.02.2013", "to":"15.03.2014", "link":"https://freevstplugins.net/twin-bass/"},
 
-{"category":"Instrument VST", "gearname":"Kraken (Solemn Tones)",           "from":"11.09.2020", "to":"todaytoday", "link":""},
-{"category":"Instrument VST", "gearname":"Odin 2 (Solemn Tones)",           "from":"11.08.2018", "to":"todaytoday", "link":"https://solemntones.com/products/odindeluxe"},
-{"category":"Instrument VST", "gearname":"Kontakt 6 (Collectors Edition)¹", "from":"18.01.2019", "to":"10.12.2021", "link":""},
-{"category":"Instrument VST", "gearname":"Session Horns Pro",               "from":"10.03.2019", "to":"todaytoday", "link":""},
-{"category":"Instrument VST", "gearname":"Mixcraft MIDI Instruments",       "from":"07.08.2012", "to":"todaytoday", "link":""},
+            {"category":"Instrument VST", "gearname":"Kraken (Solemn Tones)",           "from":"11.09.2020", "to":"todaytoday", "link":""},
+            {"category":"Instrument VST", "gearname":"Odin 2 (Solemn Tones)",           "from":"11.08.2018", "to":"todaytoday", "link":"https://solemntones.com/products/odindeluxe"},
+            {"category":"Instrument VST", "gearname":"Kontakt 6 (Collectors Edition)¹", "from":"18.01.2019", "to":"10.12.2021", "link":""},
+            {"category":"Instrument VST", "gearname":"Session Horns Pro",               "from":"10.03.2019", "to":"todaytoday", "link":""},
+            {"category":"Instrument VST", "gearname":"Mixcraft MIDI Instruments",       "from":"07.08.2012", "to":"todaytoday", "link":""},
 
-{"category":"Effect VST", "gearname":"KX Repositories",                         "from":"17.12.2021", "to":"todaytoday", "link":""},
-{"category":"Effect VST", "gearname":"Renoise Built-in Plugins",                "from":"12.10.2021", "to":"todaytoday", "link":""},
-{"category":"Effect VST", "gearname":"Xfer SerumFX / OTT¹",                     "from":"21.12.2018", "to":"10.12.2021", "link":""},
-{"category":"Effect VST", "gearname":"Calf Plugins + Carla (mastering)",        "from":"17.12.2021", "to":"todaytoday", "link":""},
-{"category":"Effect VST", "gearname":"ReaXComp (mastering)¹",                   "from":"11.09.2020", "to":"10.12.2021", "link":""},
-{"category":"Effect VST", "gearname":"Izotope Ozone 5 & 8 (mastering)¹",        "from":"30.12.2018", "to":"11.09.2020", "link":""},
-{"category":"Effect VST", "gearname":"After + LimiterNo6 (mastering)¹",         "from":"20.10.2016", "to":"27.12.2018", "link":""},
-{"category":"Effect VST", "gearname":"LPGEQ + C3 + MHorse (mastering)¹",        "from":"24.01.2013", "to":"09.10.2016", "link":""},
-{"category":"Effect VST", "gearname":"Izotope Ozone 4¹",                        "from":"07.08.2012", "to":"18.01.2013", "link":""},
-{"category":"Effect VST", "gearname":"Izotope VocalSynth 2",                    "from":"29.02.2020", "to":"todaytoday", "link":""},
-{"category":"Effect VST", "gearname":"Dada Life SausageFattener/EndlessSmile¹", "from":"28.04.2019", "to":"25.10.2019", "link":""},
-{"category":"Effect VST", "gearname":"Cableguys Halftime¹",                     "from":"06.03.2020", "to":"16.09.2021", "link":""},
-{"category":"Effect VST", "gearname":"DBlue Glitch",                            "from":"15.02.2013", "to":"15.04.2016", "link":""},
+            {"category":"Effect VST", "gearname":"KX Repositories",                         "from":"17.12.2021", "to":"todaytoday", "link":""},
+            {"category":"Effect VST", "gearname":"Renoise Built-in Plugins",                "from":"12.10.2021", "to":"todaytoday", "link":""},
+            {"category":"Effect VST", "gearname":"Xfer SerumFX / OTT¹",                     "from":"21.12.2018", "to":"10.12.2021", "link":""},
+            {"category":"Effect VST", "gearname":"Calf Plugins + Carla (mastering)",        "from":"17.12.2021", "to":"todaytoday", "link":""},
+            {"category":"Effect VST", "gearname":"ReaXComp (mastering)¹",                   "from":"11.09.2020", "to":"10.12.2021", "link":""},
+            {"category":"Effect VST", "gearname":"Izotope Ozone 5 & 8 (mastering)¹",        "from":"30.12.2018", "to":"11.09.2020", "link":""},
+            {"category":"Effect VST", "gearname":"After + LimiterNo6 (mastering)¹",         "from":"20.10.2016", "to":"27.12.2018", "link":""},
+            {"category":"Effect VST", "gearname":"LPGEQ + C3 + MHorse (mastering)¹",        "from":"24.01.2013", "to":"09.10.2016", "link":""},
+            {"category":"Effect VST", "gearname":"Izotope Ozone 4¹",                        "from":"07.08.2012", "to":"18.01.2013", "link":""},
+            {"category":"Effect VST", "gearname":"Izotope VocalSynth 2",                    "from":"29.02.2020", "to":"todaytoday", "link":""},
+            {"category":"Effect VST", "gearname":"Dada Life SausageFattener/EndlessSmile¹", "from":"28.04.2019", "to":"25.10.2019", "link":""},
+            {"category":"Effect VST", "gearname":"Cableguys Halftime¹",                     "from":"06.03.2020", "to":"16.09.2021", "link":""},
+            {"category":"Effect VST", "gearname":"DBlue Glitch",                            "from":"15.02.2013", "to":"15.04.2016", "link":""},
 
-{"category":"MIDI Devices", "gearname":"Launchpad X MK3",             "from":"21.01.2023", "to":"todaytoday", "link":""},
-{"category":"MIDI Devices", "gearname":"Nektar Impact GX61",          "from":"12.07.2022", "to":"todaytoday", "link":""},
-{"category":"MIDI Devices", "gearname":"Alesis Q Mini",               "from":"04.03.2021", "to":"todaytoday", "link":""},
-{"category":"MIDI Devices", "gearname":"Komplete Kontrol M32",        "from":"11.10.2019", "to":"todaytoday", "link":""},
-{"category":"MIDI Devices", "gearname":"Launchpad Pro MK2",           "from":"18.01.2019", "to":"todaytoday", "link":""},
-{"category":"MIDI Devices", "gearname":"Miditech Midistart Music 49", "from":"18.08.2017", "to":"24.10.2023", "link":""},
-{"category":"MIDI Devices", "gearname":"Launchpad Mini²",             "from":"09.10.2016", "to":"24.09.2018", "link":""},
-{"category":"MIDI Devices", "gearname":"Miditech GarageKey Groove",   "from":"18.07.2014", "to":"24.09.2018", "link":""},
+            {"category":"MIDI Devices", "gearname":"Launchpad X MK3",             "from":"21.01.2023", "to":"todaytoday", "link":""},
+            {"category":"MIDI Devices", "gearname":"Nektar Impact GX61",          "from":"12.07.2022", "to":"todaytoday", "link":""},
+            {"category":"MIDI Devices", "gearname":"Alesis Q Mini",               "from":"04.03.2021", "to":"todaytoday", "link":""},
+            {"category":"MIDI Devices", "gearname":"Komplete Kontrol M32",        "from":"11.10.2019", "to":"todaytoday", "link":""},
+            {"category":"MIDI Devices", "gearname":"Launchpad Pro MK2",           "from":"18.01.2019", "to":"todaytoday", "link":""},
+            {"category":"MIDI Devices", "gearname":"Miditech Midistart Music 49", "from":"18.08.2017", "to":"24.10.2023", "link":""},
+            {"category":"MIDI Devices", "gearname":"Launchpad Mini²",             "from":"09.10.2016", "to":"24.09.2018", "link":""},
+            {"category":"MIDI Devices", "gearname":"Miditech GarageKey Groove",   "from":"18.07.2014", "to":"24.09.2018", "link":""},
 
-{"category":"Microphones", "gearname":"Rode Wireless GO 2",          "from":"06.08.2023", "to":"todaytoday", "link":""},
-{"category":"Microphones", "gearname":"Rode NT-USB Mini",            "from":"05.12.2021", "to":"unused",     "link":""},
-{"category":"Microphones", "gearname":"AKG Perception Live P5s",     "from":"28.07.2021", "to":"todaytoday", "link":""},
-{"category":"Microphones", "gearname":"Tascam DR 05",                "from":"14.06.2017", "to":"todaytoday", "link":""},
-{"category":"Microphones", "gearname":"The T.Bone MB 55",            "from":"11.03.2016", "to":"18.06.2021", "link":""},
-{"category":"Microphones", "gearname":"Superlux E205/U",             "from":"02.02.2019", "to":"18.06.2021", "link":""},
-{"category":"Microphones", "gearname":"Blue Snowball",               "from":"09.10.2016", "to":"09.03.2018", "link":""},
-{"category":"Microphones", "gearname":"The T.Bone SC 450",           "from":"14.02.2014", "to":"20.11.2017", "link":""},
-{"category":"Microphones", "gearname":"Logitech Desktop Microphone", "from":"26.08.2012", "to":"31.12.2013", "link":""},
+            {"category":"Microphones", "gearname":"Rode Wireless GO 2",          "from":"06.08.2023", "to":"todaytoday", "link":""},
+            {"category":"Microphones", "gearname":"Rode NT-USB Mini",            "from":"05.12.2021", "to":"unused",     "link":""},
+            {"category":"Microphones", "gearname":"AKG Perception Live P5s",     "from":"28.07.2021", "to":"todaytoday", "link":""},
+            {"category":"Microphones", "gearname":"Tascam DR 05",                "from":"14.06.2017", "to":"todaytoday", "link":""},
+            {"category":"Microphones", "gearname":"The T.Bone MB 55",            "from":"11.03.2016", "to":"18.06.2021", "link":""},
+            {"category":"Microphones", "gearname":"Superlux E205/U",             "from":"02.02.2019", "to":"18.06.2021", "link":""},
+            {"category":"Microphones", "gearname":"Blue Snowball",               "from":"09.10.2016", "to":"09.03.2018", "link":""},
+            {"category":"Microphones", "gearname":"The T.Bone SC 450",           "from":"14.02.2014", "to":"20.11.2017", "link":""},
+            {"category":"Microphones", "gearname":"Logitech Desktop Microphone", "from":"26.08.2012", "to":"31.12.2013", "link":""},
 
-{"category":"Audio Interface", "gearname":"Behringer Xenyx Q802USB",      "from":"21.03.0219", "to":"todaytoday", "link":""},
-{"category":"Audio Interface", "gearname":"Behringer U-Phoria UMC202HD",  "from":"26.12.2018", "to":"todaytoday", "link":""},
-{"category":"Audio Interface", "gearname":"Line 6 POD Studio UX1",        "from":"10.08.2012", "to":"30.06.2017", "link":""},
-{"category":"Audio Interface", "gearname":"M-Audio Fast Track",           "from":"07.08.2012", "to":"20.11.2017", "link":""},
+            {"category":"Audio Interface", "gearname":"Behringer Xenyx Q802USB",      "from":"21.03.0219", "to":"todaytoday", "link":""},
+            {"category":"Audio Interface", "gearname":"Behringer U-Phoria UMC202HD",  "from":"26.12.2018", "to":"todaytoday", "link":""},
+            {"category":"Audio Interface", "gearname":"Line 6 POD Studio UX1",        "from":"10.08.2012", "to":"30.06.2017", "link":""},
+            {"category":"Audio Interface", "gearname":"M-Audio Fast Track",           "from":"07.08.2012", "to":"20.11.2017", "link":""},
 
-{"category":"Mixer",    "gearname":"MouKey MAMX1",              "from":"09.09.2022", "to":"todaytoday", "link":""},
-{"category":"Mixer",    "gearname":"MouKey MAMX3",              "from":"23.09.2021", "to":"todaytoday", "link":""},
-{"category":"DJ Mixer", "gearname":"NI Traktor Kontrol X1 MK2", "from":"unused",     "to":"unused",     "link":""},
-{"category":"DJ Mixer", "gearname":"Pioneer DJ DDJ RR",         "from":"23.04.2017", "to":"todaytoday", "link":""},
+            {"category":"Mixer",    "gearname":"MouKey MAMX1",              "from":"09.09.2022", "to":"todaytoday", "link":""},
+            {"category":"Mixer",    "gearname":"MouKey MAMX3",              "from":"23.09.2021", "to":"todaytoday", "link":""},
+            {"category":"DJ Mixer", "gearname":"NI Traktor Kontrol X1 MK2", "from":"unused",     "to":"unused",     "link":""},
+            {"category":"DJ Mixer", "gearname":"Pioneer DJ DDJ RR",         "from":"23.04.2017", "to":"todaytoday", "link":""},
 
-{"category":"Speakers", "gearname":"Bennett & Ross BB-820BK Blackmore 2020", "from":"09.09.2022", "to":"todaytoday", "link":""},
-{"category":"Speakers", "gearname":"PreSonus E3.5",                          "from":"08.12.2021", "to":"todaytoday", "link":""},
-{"category":"Speakers", "gearname":"Blaupunkt PS 1000",                      "from":"22.08.2020", "to":"30.12.2020", "link":""},
-{"category":"Speakers", "gearname":"JBL Flip Essentials",                    "from":"25.07.2020", "to":"21.04.2022", "link":""}, //Enddatum stimmt wahrscheinlich noch nicht ganz
-{"category":"Speakers", "gearname":"JBL Xtreme 2",                           "from":"12.03.2020", "to":"14.04.2020", "link":""},
-{"category":"Speakers", "gearname":"Trust GXT 628",                          "from":"12.04.2018", "to":"04.11.2021", "link":""},
-{"category":"Speakers", "gearname":"Medion MD42491",                         "from":"23.10.2012", "to":"12.04.2018", "link":""},
+            {"category":"Speakers", "gearname":"Bennett & Ross BB-820BK Blackmore 2020", "from":"09.09.2022", "to":"todaytoday", "link":""},
+            {"category":"Speakers", "gearname":"PreSonus E3.5",                          "from":"08.12.2021", "to":"todaytoday", "link":""},
+            {"category":"Speakers", "gearname":"Blaupunkt PS 1000",                      "from":"22.08.2020", "to":"30.12.2020", "link":""},
+            {"category":"Speakers", "gearname":"JBL Flip Essentials",                    "from":"25.07.2020", "to":"21.04.2022", "link":""}, //Enddatum stimmt wahrscheinlich noch nicht ganz
+            {"category":"Speakers", "gearname":"JBL Xtreme 2",                           "from":"12.03.2020", "to":"14.04.2020", "link":""},
+            {"category":"Speakers", "gearname":"Trust GXT 628",                          "from":"12.04.2018", "to":"04.11.2021", "link":""},
+            {"category":"Speakers", "gearname":"Medion MD42491",                         "from":"23.10.2012", "to":"12.04.2018", "link":""},
 
-{"category":"Headphones", "gearname":"AKG K240", "from":"29.04.2019", "to":"todaytoday", "link":""},
-{"category":"Headphones", "gearname":"AKG K72",  "from":"26.02.2016", "to":"29.04.2019", "link":""},
+            {"category":"Headphones", "gearname":"AKG K240", "from":"29.04.2019", "to":"todaytoday", "link":""},
+            {"category":"Headphones", "gearname":"AKG K72",  "from":"26.02.2016", "to":"29.04.2019", "link":""},
 
-{"category":"Guitar Amps", "gearname":"Fender Mustang Micro",        "from":"07.09.2022", "to":"todaytoday", "link":""},
-{"category":"Guitar Amps", "gearname":"Vox AP2-LDx",                 "from":"18.06.2021", "to":"todaytoday", "link":""},
-{"category":"Guitar Amps", "gearname":"Nalex Ninja Amp",             "from":"11.09.2020", "to":"todaytoday", "link":""},
-{"category":"Guitar Amps", "gearname":"Ignite Amps NadIR ",          "from":"11.09.2020", "to":"todaytoday", "link":""},
-{"category":"Guitar Amps", "gearname":"Guitar Rig 5",                "from":"10.03.2019", "to":"23.08.2020", "link":""},
-{"category":"Guitar Amps", "gearname":"BIAS Amp / FX",               "from":"29.05.2016", "to":"11.06.2016", "link":""},
-{"category":"Guitar Amps", "gearname":"Fender Mustang Amp",          "from":"31.12.2013", "to":"todaytoday", "link":""},
-{"category":"Guitar Amps", "gearname":"POD Farm 2 (Metal Shop EXP)", "from":"10.08.2012", "to":"12.08.2018", "link":""},
-{"category":"Guitar Amps", "gearname":"AmpliTube 3 (only demo)",     "from":"01.04.2012", "to":"07.08.2012", "link":""},
+            {"category":"Guitar Amps", "gearname":"Fender Mustang Micro",        "from":"07.09.2022", "to":"todaytoday", "link":""},
+            {"category":"Guitar Amps", "gearname":"Vox AP2-LDx",                 "from":"18.06.2021", "to":"todaytoday", "link":""},
+            {"category":"Guitar Amps", "gearname":"Nalex Ninja Amp",             "from":"11.09.2020", "to":"todaytoday", "link":""},
+            {"category":"Guitar Amps", "gearname":"Ignite Amps NadIR ",          "from":"11.09.2020", "to":"todaytoday", "link":""},
+            {"category":"Guitar Amps", "gearname":"Guitar Rig 5",                "from":"10.03.2019", "to":"23.08.2020", "link":""},
+            {"category":"Guitar Amps", "gearname":"BIAS Amp / FX",               "from":"29.05.2016", "to":"11.06.2016", "link":""},
+            {"category":"Guitar Amps", "gearname":"Fender Mustang Amp",          "from":"31.12.2013", "to":"todaytoday", "link":""},
+            {"category":"Guitar Amps", "gearname":"POD Farm 2 (Metal Shop EXP)", "from":"10.08.2012", "to":"12.08.2018", "link":""},
+            {"category":"Guitar Amps", "gearname":"AmpliTube 3 (only demo)",     "from":"01.04.2012", "to":"07.08.2012", "link":""},
 
-{"category":"Bass Amps",  "gearname":"Orange EBV-35",           			    "from":"30.09.2008","to":"03.01.2014","link":""},
+            {"category":"Bass Amps",  "gearname":"Orange EBV-35",           			    "from":"30.09.2008","to":"03.01.2014","link":""},
 
-{"category":"Accordion/Reed", "gearname":"Silvetta Free Bass (model unknown)", "from":"03.06.2023", "to":"todaytoday", "link":""},
-{"category":"Accordion/Reed", "gearname":"Hohner Tango IV T",        "from":"18.10.2021", "to":"todaytoday", "link":""},
-{"category":"Accordion/Reed", "gearname":"Thomann Victory Melodica", "from":"26.02.2016", "to":"24.09.2018", "link":""},
-{"category":"Accordion/Reed", "gearname":"Hohner Concertio 3",       "from":"01.08.2014", "to":"todaytoday", "link":""},
+            {"category":"Accordion/Reed", "gearname":"Silvetta Free Bass (model unknown)", "from":"03.06.2023", "to":"todaytoday", "link":""},
+            {"category":"Accordion/Reed", "gearname":"Hohner Tango IV T",        "from":"18.10.2021", "to":"todaytoday", "link":""},
+            {"category":"Accordion/Reed", "gearname":"Thomann Victory Melodica", "from":"26.02.2016", "to":"24.09.2018", "link":""},
+            {"category":"Accordion/Reed", "gearname":"Hohner Concertio 3",       "from":"01.08.2014", "to":"todaytoday", "link":""},
 
-{"category":"A-Guitars", "gearname":"Fender T-Bucket 300CE",     "from":"09.10.2016", "to":"20.02.2020", "link":""},
-{"category":"A-Guitars", "gearname":"Epiphone EJ 200 CE VS",     "from":"14.08.2012", "to":"26.02.2016", "link":""},
-{"category":"C-Guitars", "gearname":"GEWA",                      "from":"15.06.2020", "to":"15.06.2020", "link":""},
-{"category":"C-Guitars", "gearname":"Framus 5/22 (01210) Ideal", "from":"15.11.2013", "to":"06.01.2016", "link":""},
-{"category":"C-Guitars", "gearname":"Framus Audition",           "from":"26.08.2012", "to":"30.08.2012", "link":""},
+            {"category":"A-Guitars", "gearname":"Fender T-Bucket 300CE",     "from":"09.10.2016", "to":"20.02.2020", "link":""},
+            {"category":"A-Guitars", "gearname":"Epiphone EJ 200 CE VS",     "from":"14.08.2012", "to":"26.02.2016", "link":""},
+            {"category":"C-Guitars", "gearname":"GEWA",                      "from":"15.06.2020", "to":"15.06.2020", "link":""},
+            {"category":"C-Guitars", "gearname":"Framus 5/22 (01210) Ideal", "from":"15.11.2013", "to":"06.01.2016", "link":""},
+            {"category":"C-Guitars", "gearname":"Framus Audition",           "from":"26.08.2012", "to":"30.08.2012", "link":""},
 
-{"category":"Bagpipes", "gearname":"Rauschpfeife (Folkfriends)", "from":"unused",     "to":"unused",     "link":""},
-{"category":"Bagpipes", "gearname":"Celtic Pipes (VST)",         "from":"18.01.2019", "to":"15.02.2020", "link":""},
-{"category":"Bagpipes", "gearname":"Scottish Highland Pipe",     "from":"11.09.2018", "to":"11.10.2019", "link":""},
+            {"category":"Bagpipes", "gearname":"Rauschpfeife (Folkfriends)", "from":"unused",     "to":"unused",     "link":""},
+            {"category":"Bagpipes", "gearname":"Celtic Pipes (VST)",         "from":"18.01.2019", "to":"15.02.2020", "link":""},
+            {"category":"Bagpipes", "gearname":"Scottish Highland Pipe",     "from":"11.09.2018", "to":"11.10.2019", "link":""},
 
-{"category":"E-Drum Set",     "gearname":"Millenium MD-90",                    "from":"29.05.2016", "to":"24.09.2018", "link":""},
-{"category":"Ocarina",        "gearname":"Thomann Ocarina 12 Hole",            "from":"08.03.2013", "to":"24.09.2018", "link":""},
-{"category":"Piano",          "gearname":"Yamaha E-60",                        "from":"23.10.2012", "to":"26.12.2016", "link":""},
-{"category":"Step Sequencer", "gearname":"Anbernic RG300 (using LSDJ)",        "from":"26.03.2022", "to":"todaytoday", "link":"https://www.amazon.de/dp/B07T7HJGHH"},
-{"category":"Step Sequencer", "gearname":"Teenage Engineering PO-20 Arcade",   "from":"26.10.2017", "to":"24.09.2018", "link":"https://www.amazon.de/dp/B01BKO0HKW"},
-{"category":"Trumpet",        "gearname":"Thomann TR 200 Bb-Trumpet",          "from":"08.04.2021", "to":"todaytoday", "link":""},
-{"category":"Ukulele",        "gearname":"Harley Benton UK-12 Stain Ash Blue", "from":"02.08.2021", "to":"todaytoday", "link":""},
-{"category":"Violin",         "gearname":"Harley Benton HBV 990SKL 4/4",       "from":"26.10.2017", "to":"25.05.2018", "link":""},
+            {"category":"E-Drum Set",     "gearname":"Millenium MD-90",                    "from":"29.05.2016", "to":"24.09.2018", "link":""},
+            {"category":"Ocarina",        "gearname":"Thomann Ocarina 12 Hole",            "from":"08.03.2013", "to":"24.09.2018", "link":""},
+            {"category":"Piano",          "gearname":"Yamaha E-60",                        "from":"23.10.2012", "to":"26.12.2016", "link":""},
+            {"category":"Step Sequencer", "gearname":"Anbernic RG300 (using LSDJ)",        "from":"26.03.2022", "to":"todaytoday", "link":"https://www.amazon.de/dp/B07T7HJGHH"},
+            {"category":"Step Sequencer", "gearname":"Teenage Engineering PO-20 Arcade",   "from":"26.10.2017", "to":"24.09.2018", "link":"https://www.amazon.de/dp/B01BKO0HKW"},
+            {"category":"Trumpet",        "gearname":"Thomann TR 200 Bb-Trumpet",          "from":"08.04.2021", "to":"todaytoday", "link":""},
+            {"category":"Ukulele",        "gearname":"Harley Benton UK-12 Stain Ash Blue", "from":"02.08.2021", "to":"todaytoday", "link":""},
+            {"category":"Violin",         "gearname":"Harley Benton HBV 990SKL 4/4",       "from":"26.10.2017", "to":"25.05.2018", "link":""},
 
-{"category":"Video Camera", "gearname":"Sony ZV-E10",                 "from":"05.06.2023", "to":"todaytoday", "link":""},
-{"category":"Video Camera", "gearname":"Oppo Reno 4 Pro",             "from":"28.04.2022", "to":"todaytoday", "link":""},
-{"category":"Video Camera", "gearname":"Crosstour CT8500 Action Cam", "from":"11.10.2019", "to":"01.04.2022", "link":""},
-{"category":"Video Camera", "gearname":"Logitech C920",               "from":"09.10.2016", "to":"01.04.2022", "link":""},
-{"category":"Video Camera", "gearname":"Kodak Z5 Playsport",          "from":"31.05.2013", "to":"03.10.2016", "link":""},
-{"category":"Video Camera", "gearname":"Sony Cybershot W370",         "from":"07.08.2012", "to":"24.05.2013", "link":""},
+            {"category":"Video Camera", "gearname":"Sony ZV-E10",                 "from":"05.06.2023", "to":"todaytoday", "link":""},
+            {"category":"Video Camera", "gearname":"Oppo Reno 4 Pro",             "from":"28.04.2022", "to":"todaytoday", "link":""},
+            {"category":"Video Camera", "gearname":"Crosstour CT8500 Action Cam", "from":"11.10.2019", "to":"01.04.2022", "link":""},
+            {"category":"Video Camera", "gearname":"Logitech C920",               "from":"09.10.2016", "to":"01.04.2022", "link":""},
+            {"category":"Video Camera", "gearname":"Kodak Z5 Playsport",          "from":"31.05.2013", "to":"03.10.2016", "link":""},
+            {"category":"Video Camera", "gearname":"Sony Cybershot W370",         "from":"07.08.2012", "to":"24.05.2013", "link":""},
 
-{"category":"Video Editing", "gearname":"Hitfilm Express ",          "from":"27.01.2020", "to":"todaytoday", "link":""},
-{"category":"Video Editing", "gearname":"Vegas Movie Studio 16",     "from":"28.04.2019", "to":"15.12.2019", "link":""},
-{"category":"Video Editing", "gearname":"Vegas Pro 14 Edit",         "from":"13.01.2018", "to":"23.03.2019", "link":""},
-{"category":"Video Editing", "gearname":"Vegas Movie Studio 14",     "from":"26.10.2017", "to":"23.03.2019", "link":""},
-{"category":"Video Editing", "gearname":"Sony Vegas Move Studio 11", "from":"07.06.2013", "to":"06.10.2017", "link":""},
-{"category":"Video Editing", "gearname":"Sony Vegas Move Studio 9",  "from":"07.08.2012", "to":"31.05.2013", "link":""},
+            {"category":"Video Editing", "gearname":"Hitfilm Express ",          "from":"27.01.2020", "to":"todaytoday", "link":""},
+            {"category":"Video Editing", "gearname":"Vegas Movie Studio 16",     "from":"28.04.2019", "to":"15.12.2019", "link":""},
+            {"category":"Video Editing", "gearname":"Vegas Pro 14 Edit",         "from":"13.01.2018", "to":"23.03.2019", "link":""},
+            {"category":"Video Editing", "gearname":"Vegas Movie Studio 14",     "from":"26.10.2017", "to":"23.03.2019", "link":""},
+            {"category":"Video Editing", "gearname":"Sony Vegas Move Studio 11", "from":"07.06.2013", "to":"06.10.2017", "link":""},
+            {"category":"Video Editing", "gearname":"Sony Vegas Move Studio 9",  "from":"07.08.2012", "to":"31.05.2013", "link":""},
 
-{"category":"Audio Visualizers", "gearname":"Astrofox",                         "from":"22.12.2021", "to":"todaytoday", "link":""},
-{"category":"Audio Visualizers", "gearname":"Avee Player",                      "from":"29.05.2020", "to":"06.11.2020", "link":""},
-{"category":"Audio Visualizers", "gearname":"Motion: Audio Visual for Hitfilm", "from":"27.01.2020", "to":"todaytoday", "link":"https://fxhome.com/store/hitfilm-express#motion-audio-visual"},
-{"category":"Audio Visualizers", "gearname":"Wallpaper Engine",                 "from":"20.06.2019", "to":"15.12.2019", "link":""},
-{"category":"Audio Visualizers", "gearname":"HTML5 Audio API by Wayou",         "from":"19.11.2016", "to":"13.06.2019", "link":"https://wayou.github.io/HTML5_Audio_Visualizer/"},
+            {"category":"Audio Visualizers", "gearname":"Astrofox",                         "from":"22.12.2021", "to":"todaytoday", "link":""},
+            {"category":"Audio Visualizers", "gearname":"Avee Player",                      "from":"29.05.2020", "to":"06.11.2020", "link":""},
+            {"category":"Audio Visualizers", "gearname":"Motion: Audio Visual for Hitfilm", "from":"27.01.2020", "to":"todaytoday", "link":"https://fxhome.com/store/hitfilm-express#motion-audio-visual"},
+            {"category":"Audio Visualizers", "gearname":"Wallpaper Engine",                 "from":"20.06.2019", "to":"15.12.2019", "link":""},
+            {"category":"Audio Visualizers", "gearname":"HTML5 Audio API by Wayou",         "from":"19.11.2016", "to":"13.06.2019", "link":"https://wayou.github.io/HTML5_Audio_Visualizer/"},
 
-{"category":"Graphic Editor", "gearname":"Krita",        "from":"01.07.2021", "to":"todaytoday", "link":""},
-{"category":"Graphic Editor", "gearname":"GIMP",         "from":"01.12.2016", "to":"todaytoday", "link":""},
-{"category":"Graphic Editor", "gearname":"Photoshop U3", "from":"07.08.2012", "to":"15.12.2014", "link":""},
+            {"category":"Graphic Editor", "gearname":"Krita",        "from":"01.07.2021", "to":"todaytoday", "link":""},
+            {"category":"Graphic Editor", "gearname":"GIMP",         "from":"01.12.2016", "to":"todaytoday", "link":""},
+            {"category":"Graphic Editor", "gearname":"Photoshop U3", "from":"07.08.2012", "to":"15.12.2014", "link":""},
 
-{"category":"Additional", "gearname":"Capodaster: Shubb C2", "from":"20.09.2012", "to":"09.10.2016", "link":""},
+            {"category":"Additional", "gearname":"Capodaster: Shubb C2", "from":"20.09.2012", "to":"09.10.2016", "link":""},
 
-{"category":"Computer", "gearname":"Steamdeck OLED 1TB",          "from":"02.01.2024", "to":"todaytoday", "link":"https://www.steamdeck.com/"},
-{"category":"Computer", "gearname":"Minisforum HM80",             "from":"01.09.2022", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"Lenovo Legion 5 Pro",         "from":"04.11.2021", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad P51",         "from":"29.05.2021", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad X250",        "from":"21.01.2021", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad W530",        "from":"29.05.2020", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad X260",        "from":"28.12.2019", "to":"25.04.2020", "link":""},
-{"category":"Computer", "gearname":"MacBook Air Mid 2012",        "from":"11.12.2018", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad T440",        "from":"17.08.2018", "to":"02.01.2024", "link":""},
-{"category":"Computer", "gearname":"Acer Predator Helios 300 G3", "from":"18.05.2018", "to":"25.03.2021", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad T430",        "from":"10.02.2018", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"MacBook Pro Mid 2012",        "from":"30.06.2017", "to":"06.01.2019", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad X230",        "from":"09.03.2017", "to":"todaytoday", "link":""},
-{"category":"Computer", "gearname":"Lenovo Thinkpad T420",        "from":"03.10.2016", "to":"03.02.2018", "link":""},
-{"category":"Computer", "gearname":"Asus N551JX-CN079H",          "from":"19.10.2015", "to":"19.11.2018", "link":""},
-{"category":"Computer", "gearname":"AMD Athlon II X2 4400e",      "from":"07.08.2012", "to":"15.10.2015", "link":""},
-//"ASRock Mainboard 3GB RAM 80GB HDD 320GB External Storage AMD ATI Radeon 4850"
+            {"category":"Computer", "gearname":"Mac Mini M2 Pro",             "from":"02.05.2024", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Steamdeck OLED 1TB",          "from":"02.01.2024", "to":"todaytoday", "link":"https://www.steamdeck.com/"},
+            {"category":"Computer", "gearname":"Minisforum HM80",             "from":"01.09.2022", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Legion 5 Pro",         "from":"04.11.2021", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad P51",         "from":"29.05.2021", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad X250",        "from":"21.01.2021", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad W530",        "from":"29.05.2020", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad X260",        "from":"28.12.2019", "to":"25.04.2020", "link":""},
+            {"category":"Computer", "gearname":"MacBook Air Mid 2012",        "from":"11.12.2018", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad T440",        "from":"17.08.2018", "to":"02.01.2024", "link":""},
+            {"category":"Computer", "gearname":"Acer Predator Helios 300 G3", "from":"18.05.2018", "to":"25.03.2021", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad T430",        "from":"10.02.2018", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"MacBook Pro Mid 2012",        "from":"30.06.2017", "to":"06.01.2019", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad X230",        "from":"09.03.2017", "to":"todaytoday", "link":""},
+            {"category":"Computer", "gearname":"Lenovo Thinkpad T420",        "from":"03.10.2016", "to":"03.02.2018", "link":""},
+            {"category":"Computer", "gearname":"Asus N551JX-CN079H",          "from":"19.10.2015", "to":"19.11.2018", "link":""},
+            {"category":"Computer", "gearname":"AMD Athlon II X2 4400e",      "from":"07.08.2012", "to":"15.10.2015", "link":""},
+            //"ASRock Mainboard 3GB RAM 80GB HDD 320GB External Storage AMD ATI Radeon 4850"
 
-    ]
- }
-	const d = new Date(); //Date to an instance
-	//Richtige Formatierung mit der 0 am Monatsende
-	if(d.getMonth() < 8) { var dateString = d.getDate() + ".0" + (d.getMonth()+1) + "." + d.getFullYear(); } 
-	else { var dateString = d.getDate() + "."  + (d.getMonth()+1) + "." + d.getFullYear(); }
+          ]
+        }
+        const d = new Date(); //Date to an instance
+        //Richtige Formatierung mit der 0 am Monatsende
+        if(d.getMonth() < 8) { var dateString = d.getDate() + ".0" + (d.getMonth()+1) + "." + d.getFullYear(); } 
+        else { var dateString = d.getDate() + "."  + (d.getMonth()+1) + "." + d.getFullYear(); }
 
 
-$(document).ready(function(){
-      var table_body = '<table class="tablegear" id="table"><thead><tr>';
-      table_body += '<th>Nr.</th>';
-      table_body += '<th>Category</th>';
-      table_body += '<th>Gear Name</th>';
-      table_body += '<th>From</th>';
-      table_body += '<th>To</th>';
-      table_body += '<th>Link</th>';
-      table_body += '</tr></thead><tbody>';
+        $(document).ready(function(){
+          var table_body = '<table class="tablegear" id="table"><thead><tr>';
+          table_body += '<th>Nr.</th>';
+          table_body += '<th>Category</th>';
+          table_body += '<th>Gear Name</th>';
+          table_body += '<th>From</th>';
+          table_body += '<th>To</th>';
+          table_body += '<th>Link</th>';
+          table_body += '</tr></thead><tbody>';
 
           for(i =0;i<gearlist.gear.length;i++){
 
-                table_body+='<tr>';
-                table_body +='<td>'+(i+1)+'</td>';//Number using the i 
-                table_body +='<td>'; table_body +=gearlist.gear[i]["category"]; table_body +='</td>';
-                table_body +='<td>'; table_body +=gearlist.gear[i]["gearname"]; table_body +='</td>';
-                table_body +='<td>'; table_body +=gearlist.gear[i]["from"]; table_body +='</td>';
+            table_body+='<tr>';
+            table_body +='<td>'+(i+1)+'</td>';//Number using the i 
+            table_body +='<td>'; table_body +=gearlist.gear[i]["category"]; table_body +='</td>';
+            table_body +='<td>'; table_body +=gearlist.gear[i]["gearname"]; table_body +='</td>';
+            table_body +='<td>'; table_body +=gearlist.gear[i]["from"]; table_body +='</td>';
 
-                //Print todays date
-                if (gearlist.gear[i]["to"] == "todaytoday") { //if placeholder todaytoday, print date. Date was implemented before
-                    table_body +='<td style="color: greenyellow;">' + dateString + '</td>'; 
-                } else { //otherwise use the date in the JSON table
-                    table_body +='<td>'; table_body +=gearlist.gear[i]["to"]; table_body +='</td>';
-                }
+            //Print todays date
+            if (gearlist.gear[i]["to"] == "todaytoday") { //if placeholder todaytoday, print date. Date was implemented before
+              table_body +='<td style="color: greenyellow;">' + dateString + '</td>'; 
+            } else { //otherwise use the date in the JSON table
+              table_body +='<td>'; table_body +=gearlist.gear[i]["to"]; table_body +='</td>';
+            }
 
-                //Links
-                if (gearlist.gear[i]["link"] != "") { //if link is empty, don't print
-                    table_body +='<td><a target="_blank" href="'; 
-                    table_body +=gearlist.gear[i]["link"]; 
-                    table_body +='">Link</a></td>';
-                }                
+            //Links
+            if (gearlist.gear[i]["link"] != "") { //if link is empty, don't print
+              table_body +='<td><a target="_blank" href="'; 
+              table_body +=gearlist.gear[i]["link"]; 
+              table_body +='">Link</a></td>';
+            }                
 
-                table_body+='</tr>';
+            table_body+='</tr>';
           }
-        table_body+='</tbody></table>';
-       $('#tableDiv').html(table_body);
+          table_body+='</tbody></table>';
+          $('#tableDiv').html(table_body);
 
 
-        //search function
-        $("#search").on("keyup", function() {
-        var value = $(this).val().toLowerCase();
-        $("table tr").filter(function(index) {
-          if(index>0){
-             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                  }
+          //search function
+          $("#search").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("table tr").filter(function(index) {
+              if(index>0){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              }
             });
-        }); //end keyup
+          }); //end keyup
 
         });
-</script>
+        </script>
 
-<p><span style="color: greenyellow;">New: </span> You can now search right here!</p>
-<input type="text" id="search" placeholder="Search gear here"></input>
-    <div id="tableDiv" style="margin-top: 40px">
+        <p><span style="color: greenyellow;">New: </span> You can now search right here!</p>
+        <input type="text" id="search" placeholder="Search gear here"></input>
+        <div id="tableDiv" style="margin-top: 40px">
+        </div>
+
+        <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">⏫</button> <script src="src/js/scrollButtons.js"></script>
+        <script src="src/js/topbutton.js"></script>
+
+      </main>
     </div>
-
-
-</main>
-
-<iframe style="width: 100%; border: none;" src="src/pages/footer.html"></iframe>
-
-<!----Top Button----->
-<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">⏫</button> <script src="src/js/scrollButtons.js"></script>
-<script src="src/js/topbutton.js"></script>
-
-</body>
+  </body>
 </html>

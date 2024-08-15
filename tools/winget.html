@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://mft14.github.io/src/main.css">
+        <link rel="shortcut icon" href="../icons/winget.png">
+        <style>
+            span {display: block;}
+        </style>
+    </head>
+    <a href="../tools.html">Back</a>
+    <title>Winget</title>
+
+    <div class="grid-container-2">
+        <div class="uberschrift-2">Winget</div>
+        <div><img src="../icons/winget.png" class="pixelart-icon"></div>
+    </div>
+    <p>winget is a CLI package manager for Windows, which is similar to Linux. Finally, we are able to install software using the command line.</p>
+    <p>Note: For a smoother installation, please start cmd as admin. Press Win+R, type 'cmd' and before you hit return, hold CTRL+Shift while pressing return.</p>
+    <p>If you type winget in the command prompt and it says, it can not find it, winget is not installed then. In future versions of windows, it will come by default. Until then, download the latest release manually <a href="https://github.com/microsoft/winget-cli/releases" target="_blank">here!</a> <br>Press F3 and type 'msixbundle' to quickly find the installer in this long release page. ツ</p>
+
+    <hr>
+    <!-- <span><input type="checkbox" id="" name="installs" value=""> <label for=""></label></span> -->
+    <button onclick="selectall()">Select all</button>
+    <button onclick="selectnone()">Unselect All</button>
+
+    <span><input type="checkbox" id="acrobat32"         name="installs" value="Adobe.Acrobat.Reader.32-bit">     <label for="acrobat32">Acrobat Reader32-bit</label></span>
+    <span><input type="checkbox" id="acrobat64"         name="installs" value="Adobe.Acrobat.Reader.64-bit">     <label for="acrobat64">Acrobat Reader64-bit</label></span>
+    <span><input type="checkbox" id="ahk"               name="installs" value="AutoHotkey.AutoHotkey">           <label for="ahk">AutoHotkey</label></span> 
+    <span><input type="checkbox" id="audacity"          name="installs" value="Audacity.Audacity">               <label for="audacity">Audacity</label></span>
+    <span><input type="checkbox" id="calibre"           name="installs" value="calibre.calibre">                 <label for="calibre">Calibre</label></span>
+    <span><input type="checkbox" id="barrier"           name="installs" value="DebaucheeOpenSourceGroup.Barrier"><label for="barrier">Barrier</label></span>
+    <span><input type="checkbox" id="chrome"            name="installs" value="Google.Chrome">                   <label for="chrome">Google Chrome</label></span> 
+    <span><input type="checkbox" id="discord"           name="installs" value="Discord.Discord">                 <label for="discord">Discord</label></span>
+    <span><input type="checkbox" id="firefox"           name="installs" value="Mozilla.Firefox">                 <label for="firefox">Firefox</label></span> 
+    <span><input type="checkbox" id="gimp"              name="installs" value="GIMP.GIMP">                       <label for="gimp">Gimp</label></span> 
+    <span><input type="checkbox" id="git"               name="installs" value="Git.Git">                         <label for="git">Git</label></span> 
+    <span><input type="checkbox" id="libreofficelts"    name="installs" value="TheDocumentFoundation.LibreOffice.LTS"> <label for="libreofficelts">LibreOffice LTS</label></span>
+    <span><input type="checkbox" id="mega"              name="installs" value="Mega.MEGASync">                   <label for="mega">MEGASync</label></span> 
+    <span><input type="checkbox" id="ni"                name="installs" value="NativeInstruments.NativeAccess">  <label for="ni">Native Access</label></span>
+    <span><input type="checkbox" id="neovim"            name="installs" value="Neovim.Neovim">                   <label for="neovim">Neovim</label></span>
+    <span><input type="checkbox" id="nodejs"            name="installs" value="OpenJS.NodeJS">                   <label for="nodejs">NodeJS</label></span> 
+    <span><input type="checkbox" id="notepad"           name="installs" value="Notepad++.Notepad++">             <label for="notepad">Notepad++</label></span> 
+    <span><input type="checkbox" id="obs"               name="installs" value="OBSProject.OBSStudio">            <label for="obs">OBS Studio</label></span>
+    <span><input type="checkbox" id="office365"         name="installs" value="Microsoft.Office">                <label for="office365">Office 365</label></span>
+    <span><input type="checkbox" id="powertoys"         name="installs" value="Microsoft.PowerToys">             <label for="powertoys">PowerToys</label></span>
+    <span><input type="checkbox" id="reaper"            name="installs" value="Cockos.REAPER">                   <label for="reaper">REAPER</label></span> 
+    <span><input type="checkbox" id="shotcut"           name="installs" value="Meltytech.Shotcut">               <label for="shotcut">Shotcut</label></span> 
+    <span><input type="checkbox" id="steam"             name="installs" value="Valve.Steam">                     <label for="steam">Steam</label></span>
+    <span><input type="checkbox" id="syncthing"         name="installs" value="SyncTrayzor.SyncTrayzor">         <label for="syncthing">Syncthing</label></span>
+    <span><input type="checkbox" id="totalcmd"          name="installs" value="Ghisler.TotalCommander">          <label for="totalcmd">Total Commander</label></span> 
+    <span><input type="checkbox" id="vim"               name="installs" value="vim.vim">                         <label for="vim">Vim</label></span>
+    <span><input type="checkbox" id="vivaldi"           name="installs" value="VivaldiTechnologies.Vivaldi">     <label for="vivaldi">Vivaldi</label></span> 
+    <span><input type="checkbox" id="vlc"               name="installs" value="VideoLAN.VLC">                    <label for="vlc">VLC Player</label></span>
+    <span><input type="checkbox" id="vscode"            name="installs" value="Microsoft.VisualStudioCode">      <label for="vscode">Visualstudio Code</label></span> 
+    <span><input type="checkbox" id="winamp"            name="installs" value="Winamp.Winamp">                   <label for="winamp">Winamp</label></span>
+
+
+    <button onclick="getValue()"> Generate the winget commands </button>
+
+    <p>Output</p>
+    <textarea id="output" name="output" cols="100" rows="10"></textarea>
+
+    <!-------------------- JavaScript -------------------->
+    <script type="text/javascript"> 
+
+        function selectall() {
+                    var allcheck = document.getElementsByName('installs');
+                    for( var i=0; i< allcheck.length; i++){
+                                allcheck[i].checked = true;
+                            }
+                    getValue();
+                }
+
+        function selectnone() {
+                    document.getElementById('output').innerHTML = "";
+                    var allcheck = document.getElementsByName('installs');
+                    for( var i=0; i< allcheck.length; i++){
+                                allcheck[i].checked = false;
+                            }
+                }
+
+        function getValue() {
+                    var checkboxes = document.getElementsByName('installs');
+                    var result = "";
+
+                    for (var i = 0; i < checkboxes.length; i++) {
+                                if (checkboxes[i].checked) {
+                                            result += "winget install " + checkboxes[i].value + " && ";
+                                        }
+                            }
+                    var newresult = result.slice(0,-3);
+                    document.getElementById('output').innerHTML = newresult;
+                }
+    </script>
+</html>

@@ -3,7 +3,7 @@
 
 //2024
           
-// {"date":"22.08.2024", "vgm":"Castle Theme",                  "song":"Super Mario World","link":"", "composer":"Koji Kondo",                                                       "key":"C Minor",   "bpm":"102, 130",     "genre":"Metal<br>Orchestra", },
+{"date":"22.08.2024", "vgm":"Castle Theme",                  "song":"Super Mario World","link":"QLe4GTmPqFE", "composer":"Koji Kondo",                                                       "key":"C Minor",   "bpm":"102, 130",     "genre":"Metal<br>Orchestra", },
 {"date":"05.07.2024", "vgm":"Staff Roll",                    "song":"Super Mario 64",  "link":"zOj5gAymT3o", "composer":"Koji Kondo",                                                       "key":"C Major",   "bpm":"100",     "genre":"Metal<br>Midtempo", },
 {"date":"27.06.2024", "vgm":"Normal Duel",                   "song":"Pokemon TCG",     "link":"kINhizsqCJg", "composer":"Ichiro Shimakura",                                                 "key":"E Major",   "bpm":"130",     "genre":"Metal", },
 {"date":"07.06.2024", "vgm":"Pizza Theme",                   "song":"Spider Man 2",    "link":"nXVyBS0kWJM", "composer":"KMFDM, Michael McCuistion",                                        "key":"C+D Major", "bpm":"140-210", "genre":"Metal<br>Frenchcore", },

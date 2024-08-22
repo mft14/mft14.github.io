@@ -150,6 +150,10 @@ input[type=button]:hover{ color: black; background-color: var(--accentcolor); cu
 button:disabled{border: 1px dashed gray; background-color: #010101; cursor: crosshair;}
 
 
+.anschrift { width: 300px; height: auto; }
+
+
+
 
 @media (max-width: 1000px) {
 

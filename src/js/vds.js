@@ -3,10 +3,10 @@
 
 //2024
           
-{"date":"22.08.2024", "vgm":"Castle Theme",                  "song":"Super Mario World","link":"QLe4GTmPqFE", "composer":"Koji Kondo",                                                       "key":"C Minor",   "bpm":"102, 130",     "genre":"Metal<br>Orchestra", },
-{"date":"05.07.2024", "vgm":"Staff Roll",                    "song":"Super Mario 64",  "link":"zOj5gAymT3o", "composer":"Koji Kondo",                                                       "key":"C Major",   "bpm":"100",     "genre":"Metal<br>Midtempo", },
-{"date":"27.06.2024", "vgm":"Normal Duel",                   "song":"Pokemon TCG",     "link":"kINhizsqCJg", "composer":"Ichiro Shimakura",                                                 "key":"E Major",   "bpm":"130",     "genre":"Metal", },
-{"date":"07.06.2024", "vgm":"Pizza Theme",                   "song":"Spider Man 2",    "link":"nXVyBS0kWJM", "composer":"KMFDM, Michael McCuistion",                                        "key":"C+D Major", "bpm":"140-210", "genre":"Metal<br>Frenchcore", },
+{"date":"22.08.2024", "vgm":"Super Mario World",            "song":"Castle Theme",     "link":"QLe4GTmPqFE", "composer":"Koji Kondo",                                                       "key":"C Minor",   "bpm":"102, 130",     "genre":"Metal<br>Orchestra", },
+{"date":"05.07.2024", "vgm":"Super Mario 64",                "song":"Staff Roll",      "link":"zOj5gAymT3o", "composer":"Koji Kondo",                                                       "key":"C Major",   "bpm":"100",     "genre":"Metal<br>Midtempo", },
+{"date":"27.06.2024", "vgm":"Pokemon TCG",                   "song":"Normal Duel",     "link":"kINhizsqCJg", "composer":"Ichiro Shimakura",                                                 "key":"E Major",   "bpm":"130",     "genre":"Metal", },
+{"date":"07.06.2024", "vgm":"Spider Man 2",                  "song":"Pizza Theme",     "link":"nXVyBS0kWJM", "composer":"KMFDM, Michael McCuistion",                                        "key":"C+D Major", "bpm":"140-210", "genre":"Metal<br>Frenchcore", },
 {"date":"30.05.2024", "vgm":"Terraria",                      "song":"Eater of Worlds", "link":"vr4Pnrq03W0", "composer":"Scott Lloyd Shelly",                                               "key":"F# Minor",  "bpm":"150",     "genre":"Metal",               },
 {"date":"23.05.2024", "vgm":"Team Fortress 2",               "song":"Rave Fortress",   "link":"d87jw-gBmOM", "composer":"East Clubbers + Captain Jack",                                     "key":"C# Minor",  "bpm":"144",     "genre":"Metal<br>EDM",        },
 {"date":"16.05.2024", "vgm":"Mario Kart Wii",                "song":"Coconut Mall",    "link":"y3MJnn4o8-I", "composer":"Asuka Hayazaki<br>Ryo Nagamatsu",                                  "key":"F Blues",   "bpm":"130",     "genre":"Metal<br>House",      },

@@ -3,7 +3,8 @@
 
 //2024
           
-{"date":"22.08.2024", "vgm":"Super Mario World",            "song":"Castle Theme",     "link":"QLe4GTmPqFE", "composer":"Koji Kondo",                                                       "key":"C Minor",   "bpm":"102, 130",     "genre":"Metal<br>Orchestra", },
+{"date":"27.09.2024", "vgm":"Kirby: Super Star",            "song":"Gourmet Race",     "link":"ojNpO3DoeHE ","composer":"Jun Ishikawa<br>Dan Miyakawa",                                     "key":"C Minor",   "bpm":"180",     "genre":"Metal<br>EDM", },
+{"date":"22.08.2024", "vgm":"Super Mario World",            "song":"Castle Theme",     "link":"QLe4GTmPqFE", "composer":"Koji Kondo",                                                       "key":"C Minor",   "bpm":"102, 130","genre":"Metal<br>Orchestra", },
 {"date":"05.07.2024", "vgm":"Super Mario 64",                "song":"Staff Roll",      "link":"zOj5gAymT3o", "composer":"Koji Kondo",                                                       "key":"C Major",   "bpm":"100",     "genre":"Metal<br>Midtempo", },
 {"date":"27.06.2024", "vgm":"Pokemon TCG",                   "song":"Normal Duel",     "link":"kINhizsqCJg", "composer":"Ichiro Shimakura",                                                 "key":"E Major",   "bpm":"130",     "genre":"Metal", },
 {"date":"07.06.2024", "vgm":"Spider Man 2",                  "song":"Pizza Theme",     "link":"nXVyBS0kWJM", "composer":"KMFDM, Michael McCuistion",                                        "key":"C+D Major", "bpm":"140-210", "genre":"Metal<br>Frenchcore", },

@@ -1,8 +1,14 @@
       var songlist  = {
           "vds": [
 
+// use vdsnewentry from luasnips to quickly add new entries
 //2024
-          
+
+{"date":"30.11.2024", "vgm":"Banjo-Tooie"        , "song":"Glitter Gulch Mine"         , "link":"lmv99Qh0tEE", "composer":"Grant Kirkhope" ,                                "key":"C Major",   "bpm":"130"  ,     "genre":"Metal", },
+{"date":"29.11.2024", "vgm":"Donkey Kong 64"     , "song":"Hunky Chunky"               , "link":"tKC65IebR54"      , "composer":"Grant Kirkhope", "key":"A Minor"                               , "bpm":"130"    , "genre":"Metal"    , }              ,
+{"date":"28.11.2024", "vgm":"Super Mario Eclipse", "song":"Erto Rock"                  , "link":"1-f6K1zE7FI"      , "composer":"StevenShockly  , Trever Scott"                                 , "key":"B Minor", "bpm":"164"        , "genre":"Metal", },
+{"date":"27.11.2024", "vgm":"Half-Life 2"        , "song":"CP Violation"               , "link":"cu_-lYNEOnQ"      , "composer":"Mike Morasky"  , "key":"D Minor"                               , "bpm":"102"    , "genre":"Metal"    , }              ,
+
 {"date":"08.11.2024", "vgm":"Pokemon Black White",          "song":"Nimbasa City",       "link":"xBlKWrlRe9w","composer":"Jun Ishikawa<br>Dan Miyakawa",                                    "key":"C Minor",   "bpm":"166",     "genre":"Metal<br>EDM", },
 {"date":"04.10.2024", "vgm":"Pokemon Black White",          "song":"Battle: Team Plasma","link":"YWiTLyVVblw","composer":"Jun Ishikawa<br>Dan Miyakawa",                                    "key":"C Minor",   "bpm":"180",     "genre":"Metal<br>EDM", },
 {"date":"27.09.2024", "vgm":"Kirby: Super Star",            "song":"Gourmet Race",     "link":"ojNpO3DoeHE ","composer":"Jun Ishikawa<br>Dan Miyakawa",                                     "key":"C Minor",   "bpm":"180",     "genre":"Metal<br>EDM", },

@@ -179,3 +179,6 @@ A list of all gear I used to make music, programming and art.
 | Computer          | Asus N551JX-CN079H                          | 19.10.2015 | 19.11.2018 |
 | Computer          | AMD Athlon II X2 4400e                      | 07.08.2012 | 15.10.2015 |
 | Computer          | Acer Aspire ES 11 ES1-131 C7ZF              | 22.06.2024 |            |
+
+
+[Back to top](#gear)

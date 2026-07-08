@@ -64,6 +64,8 @@ An overview of my video uploads. Work in progress. Still needs:
 ## Year 2025
 Total: 11 Videos
 
+[Back to top](#vds)
+
 | Date     | Videogame                              | Song Title                 | Composer                                                   | Youtube Link                 | Key     | BPM | Genre              | Time  |
 |----------|----------------------------------------|----------------------------|------------------------------------------------------------|------------------------------|---------|-----|--------------------|-------|
 | 31.12.25 | Mario Kart 7                           | Rainbow Road               | Kenta Nagata - Satomi Terui                                | https://youtu.be/AhoxtoEdgCk | E Major | 136 | Metalstep          | 02:35 |
@@ -81,6 +83,8 @@ Total: 11 Videos
 
 ## Year 2024
 Total: 20 Videos
+
+[Back to top](#vds)
 
 | Date     | Videogame              | Song Title          | Composer                                                      | Youtube Link                 | Key       | BPM      | Genre              | Time  |
 |----------|------------------------|---------------------|---------------------------------------------------------------|------------------------------|-----------|----------|--------------------|-------|
@@ -106,8 +110,10 @@ Total: 20 Videos
 | 27.01.24 | Portal                 | Still Alive         | Jonathan Coulton                                              | https://youtu.be/mfk73myDNwI | D Major   | 130      | EDM Metal          | 02:41 |
 
 ## Year 2023
-
 Total: 38 Videos
+
+[Back to top](#vds)
+
 
 | Date     | Videogame                                 | Song Title                | Composer                                                   | Youtube Link                 | Key           | BPM      | Genre                | Time  |
 |----------|-------------------------------------------|---------------------------|------------------------------------------------------------|------------------------------|---------------|----------|----------------------|-------|
@@ -154,6 +160,9 @@ Total: 38 Videos
 ## Year 2022
 Total: 23 videos
 
+[Back to top](#vds)
+
+
 | Date     | Videogame                            | Song Title                    | Composer                    | Youtube Link                 | Key      | BPM      | Genre         | Time  |
 |----------|--------------------------------------|-------------------------------|-----------------------------|------------------------------|----------|----------|---------------|-------|
 | 30.12.22 | GTA San Andreas                      | GTA San Andreas Theme         | Michael Hunter              | https://youtu.be/UyXPX4mTkqI | G Minor  | 97       | House         | 03:06 |
@@ -182,6 +191,9 @@ Total: 23 videos
 
 ## Year 2021
 Total: 63 videos
+
+[Back to top](#vds)
+
 
 | Date     | Videogame                                | Song Title                      | Composer                                                               | Youtube Link                 | Key           | BPM      | Genre           | Time  |
 | -------- | ---------------------------------------- | ------------------------------- | ---------------------------------------------------------------------- | ---------------------------- | ------------- | -------- | --------------- | ----- |
@@ -254,6 +266,9 @@ Total: 63 videos
 ## Year 2020
 Total: 45 videos
 
+[Back to top](#vds)
+
+
 | Date     | Videogame                                | Song Title                                 | Composer                                                  | Youtube Link                 | Key | BPM | Genre      | Time  |
 |----------|------------------------------------------|--------------------------------------------|-----------------------------------------------------------|------------------------------|-----|-----|------------|-------|
 | 31.12.20 | Team Fortress 2                          | Dapper Cadaver                             | Mike Morasky                                              | https://youtu.be/0DPc8R1C3Is |     |     | Metalstep  | 04:10 |
@@ -305,6 +320,9 @@ Total: 45 videos
 ## Year 2019
 Total: 35 videos
 
+[Back to top](#vds)
+
+
 | Date     | Videogame                             | Song Title                                   | Composer                                                   | Youtube Link                 | Key     | BPM | Genre                       | Time  |
 |----------|---------------------------------------|----------------------------------------------|------------------------------------------------------------|------------------------------|---------|-----|-----------------------------|-------|
 | 15.12.19 |                                       | Wildfire                                     | Fatal Force & Crusher P                                    | https://youtu.be/wW1AaADLlno |         |     | Dubstep                     | 05:57 |
@@ -347,6 +365,8 @@ Total: 35 videos
 ## Year 2018
 Total: 31 videos
 
+[Back to top](#vds)
+
 | Date     | Videogame                            | Song Title                               | Composer                                                   | Youtube Link                 | Key     | BPM | Genre               | Time  |
 |----------|--------------------------------------|------------------------------------------|------------------------------------------------------------|------------------------------|---------|-----|---------------------|-------|
 | 30.12.18 | Bioshock Infinite                    | Will The Circle Be Unbroken              | Gary Schyman                                               | https://youtu.be/TSSw8COcFgA |         |     | Indie Rock          | 01:50 |
@@ -385,6 +405,7 @@ Total: 31 videos
 ## Year 2017
 Total: 22 videos
 
+[Back to top](#vds)
 
 | Date     | Videogame                               | Song Title                      | Composer                                                   | Youtube Link                 | Key | BPM | Genre              | Time  |
 |----------|-----------------------------------------|---------------------------------|------------------------------------------------------------|------------------------------|-----|-----|--------------------|-------|
@@ -413,6 +434,8 @@ Total: 22 videos
 
 ## Year 2016
 Total: 53 videos
+
+[Back to top](#vds)
 
 | Date     | Videogame                                | Song Title                         | Composer                                                                       | Youtube Link                 | Key              | BPM | Genre           | Time  |
 |----------|------------------------------------------|------------------------------------|--------------------------------------------------------------------------------|------------------------------|------------------|-----|-----------------|-------|
@@ -474,6 +497,7 @@ Total: 53 videos
 ## Year 2015
 Total: 35 videos
  
+[Back to top](#vds)
 
 | Date     | Videogame                                 | Song Title                             | Composer                                                                       | Youtube Link                 | Key              | BPM | Genre           | Time   |
 |----------|------------------------------------------ |------------------------------------    |--------------------------------------------------------------------------------|------------------------------|------------------|-----|-----------------|------- |
@@ -515,6 +539,8 @@ Total: 35 videos
 
 ## Year 2014
 Total: 70 videos
+
+[Back to top](#vds)
 
 | Date     | Videogame                                 | Song Title                                                  | Composer                                                                       | Youtube Link                 | Key              | BPM | Genre           | Time   |
 |----------|------------------------------------------ |------------------------------------                         |--------------------------------------------------------------------------------|------------------------------|------------------|-----|-----------------|------- |
@@ -593,6 +619,8 @@ Total: 70 videos
 ### Year 2013
 Total: 66 videos
 
+[Back to top](#vds)
+
 |          |                                             |                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                   |                              |   |   |   |       |
 |----------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------|---|---|---|-------|
 | 31.12.13 | Terraria Medley 1.2 Medley                  | 0:00 Alternate Day-, 1:42 Ocean -, 2:56 Rain-, 4:30 Ice-, 5:54 Crimson-, 6:39 Corruption-, 7:16 Eclipse-, 8:31 Lunar Boss-, 9:49 Plantera-, 11:10 Day Theme Reprise-, 11:25 Space                                                                                                                                                        | Scott Lloyd Shelly                                                                                                                | https://youtu.be/3fBDBhe1pU8 |   |   |   | 13:04 |
@@ -665,6 +693,8 @@ Total: 66 videos
 ### Year 2012
 Total: 30 videos
 
+[Back to top](#vds)
+
 |          |                                     |                            |                                                            |                              |   |   |   |       |
 |----------|-------------------------------------|----------------------------|------------------------------------------------------------|------------------------------|---|---|---|-------|
 | 31.12.12 | Team Fortress 2                     | Medic!                     | Mike Morasky                                               | https://youtu.be/bRg8yr4s2Fo |   |   |   | 02:50 |
@@ -699,6 +729,8 @@ Total: 30 videos
 | 07.08.12 | Call of Duty: Modern Warfare 3      | Main Theme                 | Brian Tyler                                                | https://youtu.be/NuWl2_m3xDA |   |   |   | 02:00 |
 
 -----
+
+[Back to top](#vds)
 
 ## Medleys
 
@@ -1090,6 +1122,10 @@ Date: 26.04.13 | Composer: Scott Lloyd Shelly | Genre: Rock | Time: 07:07 |
 | [2:49](https://youtu.be/bav8obIv-Cc?t=169) | Underground Hallow |
 | [4:07](https://youtu.be/bav8obIv-Cc?t=247) | Boss 3             |
 | [5:55](https://youtu.be/bav8obIv-Cc?t=355) | Boss 1             |
+
+
+[Back to top](#vds)
+
 
 ## Various Composer
 

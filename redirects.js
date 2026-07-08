@@ -1,5 +1,12 @@
 // Single source of truth for redirects
 const REDIRECTS = {
+  "main": {
+    url: "https://github.com/mft14/mft14.github.io/blob/main/README.md",
+    title: "Main",
+    description: "Main README landing page",
+    icon: "github",
+    category: "Developer"
+  },
   "github": {
     url: "https://github.com/mft14",
     title: "GitHub Profile",

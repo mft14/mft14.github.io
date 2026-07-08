@@ -4,19 +4,19 @@
 | DAW               | Bitwig Studio                               | 02.08.2023 | today      |
 | DAW               | Renoise                                     | 30.06.2021 | today      |
 | DAW               | Reaper                                      | 11.06.2016 | today      |
-| DAW               | Mixcraft 7¹                                 | 31.12.2014 | 29.05.2016 |
-| DAW               | Mixcraft 6¹                                 | 23.05.2014 | 15.12.2014 |
-| DAW               | Mixcraft 5¹                                 | 07.08.2012 | 16.05.2014 |
+| DAW               | Mixcraft 7                                  | 31.12.2014 | 29.05.2016 |
+| DAW               | Mixcraft 6                                  | 23.05.2014 | 15.12.2014 |
+| DAW               | Mixcraft 5                                  | 07.08.2012 | 16.05.2014 |
 | E-Guitars         | Schecter Damien 7 Satin Black               | 30.06.2022 | 18.04.2026 |
 | E-Guitars         | Harley Benton R-458MN WH Progressive Series | 10.07.2019 | 25.07.2019 |
 | E-Guitars         | PRS SE Custom 24                            | 21.04.2017 | today      |
 | E-Guitars         | Squier Classic Vibe Telecaster 50's BB      | 24.12.2012 | today      |
-| E-Guitars         | Schecter Omen 8²                            | 26.07.2013 | 03.01.2014 |
-| E-Guitars         | Ibanez RG350 DX WH³                         | 07.08.2012 | 06.09.2013 |
-| E-Guitars         | Harley Benton Strat¹                        | 09.12.2011 | 24.09.2018 |
-| E-Bass            | Fender Precision Bass 1966¹                 | 18.09.2015 | 30.06.2017 |
-| E-Bass            | Harley Benton HBZ-2005²                     | 31.12.2014 | 05.09.2017 |
-| E-Bass            | Harley Benton MB22-2T¹                      | 07.08.2012 | 15.12.2014 |
+| E-Guitars         | Schecter Omen 8                             | 26.07.2013 | 03.01.2014 |
+| E-Guitars         | Ibanez RG350 DX WH                          | 07.08.2012 | 06.09.2013 |
+| E-Guitars         | Harley Benton Strat                         | 09.12.2011 | 24.09.2018 |
+| E-Bass            | Fender Precision Bass 1966                  | 18.09.2015 | 30.06.2017 |
+| E-Bass            | Harley Benton HBZ-2005                      | 31.12.2014 | 05.09.2017 |
+| E-Bass            | Harley Benton MB22-2T                       | 07.08.2012 | 15.12.2014 |
 | Samplepack        | VR Devastator Pack                          | 21.10.2025 | today      |
 | Samplepack        | Spicy Riddim Drums Vol. 3                   | 25.05.2025 | today      |
 | Samplepack        | Moonboy 2021 Bundle                         | 26.11.2022 | today      |
@@ -27,32 +27,32 @@
 | Drum Samples      | The Metal Drum Kit (Free)                   | 09.06.2017 | today      |
 | Sampler VST       | Renoise Redux                               | 22.10.2021 | today      |
 | Drum VST          | Damage (Heavyocity)                         | 13.06.2019 | today      |
-| Drum VST          | Metal Machine (EZX)²                        | 20.09.2013 | 23.07.2017 |
-| Drum VST          | ToonTrack EZDrummer²                        | 07.08.2012 | 13.09.2013 |
+| Drum VST          | Metal Machine (EZX)                         | 20.09.2013 | 23.07.2017 |
+| Drum VST          | ToonTrack EZDrummer                         | 07.08.2012 | 13.09.2013 |
 | Synth VST         | Vital VST                                   | 08.01.2021 | today      |
-| Synth VST         | FM8¹                                        | 29.06.2019 | 13.09.2019 |
+| Synth VST         | FM8                                         | 29.06.2019 | 13.09.2019 |
 | Synth VST         | Xfer Serum                                  | 08.12.2017 | today      |
 | Synth VST         | NI Massive                                  | 19.11.2016 | today      |
-| Synth VST         | Messiah (Mixcraft)¹                         | 15.02.2013 | 04.08.2017 |
-| Synth VST         | Alien 303 (Mixcraft)¹                       | 15.02.2013 | 15.03.2014 |
-| Synth VST         | TwinBass v1_2¹                              | 15.02.2013 | 15.03.2014 |
+| Synth VST         | Messiah (Mixcraft)                          | 15.02.2013 | 04.08.2017 |
+| Synth VST         | Alien 303 (Mixcraft)                        | 15.02.2013 | 15.03.2014 |
+| Synth VST         | TwinBass v1_2                               | 15.02.2013 | 15.03.2014 |
 | Instrument VST    | Kraken (Solemn Tones)                       | 11.09.2020 | today      |
 | Instrument VST    | Odin 2 (Solemn Tones)                       | 11.08.2018 | today      |
-| Instrument VST    | Kontakt 6 (Collectors Edition)¹             | 18.01.2019 | 10.12.2021 |
+| Instrument VST    | Kontakt 6 (Collectors Edition)              | 18.01.2019 | 10.12.2021 |
 | Instrument VST    | Session Horns Pro                           | 10.03.2019 | today      |
 | Instrument VST    | Mixcraft MIDI Instruments                   | 07.08.2012 | today      |
 | Effect VST        | KX Repositories                             | 17.12.2021 | today      |
 | Effect VST        | Renoise Built-in Plugins                    | 12.10.2021 | today      |
-| Effect VST        | Xfer SerumFX / OTT¹                         | 21.12.2018 | 10.12.2021 |
+| Effect VST        | Xfer SerumFX / OTT                          | 21.12.2018 | 10.12.2021 |
 | Effect VST        | Calf Plugins + Carla (mastering)            | 17.12.2021 | today      |
-| Effect VST        | ReaXComp (mastering)¹                       | 11.09.2020 | 10.12.2021 |
-| Effect VST        | Izotope Ozone 5 & 8 (mastering)¹            | 30.12.2018 | 11.09.2020 |
-| Effect VST        | After + LimiterNo6 (mastering)¹             | 20.10.2016 | 27.12.2018 |
-| Effect VST        | LPGEQ + C3 + MHorse (mastering)¹            | 24.01.2013 | 09.10.2016 |
-| Effect VST        | Izotope Ozone 4¹                            | 07.08.2012 | 18.01.2013 |
+| Effect VST        | ReaXComp (mastering)                        | 11.09.2020 | 10.12.2021 |
+| Effect VST        | Izotope Ozone 5 & 8 (mastering)             | 30.12.2018 | 11.09.2020 |
+| Effect VST        | After + LimiterNo6 (mastering)              | 20.10.2016 | 27.12.2018 |
+| Effect VST        | LPGEQ + C3 + MHorse (mastering)             | 24.01.2013 | 09.10.2016 |
+| Effect VST        | Izotope Ozone 4                             | 07.08.2012 | 18.01.2013 |
 | Effect VST        | Izotope VocalSynth 2                        | 29.02.2020 | today      |
-| Effect VST        | Dada Life SausageFattener/EndlessSmile¹     | 28.04.2019 | 25.10.2019 |
-| Effect VST        | Cableguys Halftime¹                         | 06.03.2020 | 16.09.2021 |
+| Effect VST        | Dada Life SausageFattener/EndlessSmile      | 28.04.2019 | 25.10.2019 |
+| Effect VST        | Cableguys Halftime                          | 06.03.2020 | 16.09.2021 |
 | Effect VST        | DBlue Glitch                                | 15.02.2013 | 15.04.2016 |
 | MIDI Devices      | Launchpad X MK3                             | 21.01.2023 | today      |
 | MIDI Devices      | Nektar Impact GX61                          | 12.07.2022 | today      |
@@ -60,7 +60,7 @@
 | MIDI Devices      | Komplete Kontrol M32                        | 11.10.2019 | today      |
 | MIDI Devices      | Launchpad Pro MK2                           | 18.01.2019 | today      |
 | MIDI Devices      | Miditech Midistart Music 49                 | 18.08.2017 | 24.10.2023 |
-| MIDI Devices      | Launchpad Mini²                             | 09.10.2016 | 24.09.2018 |
+| MIDI Devices      | Launchpad Mini                              | 09.10.2016 | 24.09.2018 |
 | MIDI Devices      | Miditech GarageKey Groove                   | 18.07.2014 | 24.09.2018 |
 | Microphones       | Rode Wireless GO 2                          | 06.08.2023 | today      |
 | Microphones       | Rode NT-USB Mini                            | 05.12.2021 | today      |

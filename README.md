@@ -10,7 +10,6 @@ alias `MetalFortress14 - FortressXIV - MF14 - mft14`
 - [Amazon](https://mft14.github.io/amazon)
 - [Apple Music](https://mft14.github.io/apple)
 - [Deezer](https://mft14.github.io/deezer)
-- [Deviantart](https://mft14.github.io/deviantart)
 
 ### Youtube
 - [Youtube Music](https://mft14.github.io/ytmusic)
@@ -24,11 +23,12 @@ alias `MetalFortress14 - FortressXIV - MF14 - mft14`
 ### Community and Support
 - [Discord Server](https://mft14.github.io/discord)
 - [Soundcloud](https://soundcloud.com/metalfortress)
+- [Deviantart](https://mft14.github.io/deviantart)
 - [Paypal](https://mft14.github.io/paypal)
 
 ### Information Material
-- [Videolist](https://mft14.github.io/vds)
-- [Gear List](https://mft14.github.io/gear)
+- [Videolist](/info/vds.md)
+- [Gear List](/info/gear.md)
 
 ### Tutorials
 

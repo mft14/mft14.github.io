@@ -1,3 +1,14 @@
+# gear
+
+[Back to Home](/README.md)
+
+<!--toc:start-->
+- [gear](#gear)
+<!--toc:end-->
+
+A list of all gear I used to make music, programming and art.
+
+
 | Category          | Gear Name                                   | From       | To         |
 |-------------------|---------------------------------------------|------------|------------|
 | DAW               | FL Studio                                   | 26.11.2024 | today      |

@@ -1,5 +1,16 @@
+# vds
+
+[Back to Home](/README.md)
+
+An overview of my video uploads. Work in progress. Still needs:
+- youtube shorts
+- collaborations
+- original songs
+
+
 <!--toc:start-->
-- [Video List](#video-list)
+- [vds](#vds)
+  - [Video List](#video-list)
   - [Year 2025](#year-2025)
   - [Year 2024](#year-2024)
   - [Year 2023](#year-2023)
@@ -14,7 +25,7 @@
   - [Year 2014](#year-2014)
     - [Year 2013](#year-2013)
     - [Year 2012](#year-2012)
-- [Medleys](#medleys)
+  - [Medleys](#medleys)
     - [Super Mario Sunshine Medley 2](#super-mario-sunshine-medley-2)
     - [Starfox Adventures Medley 2](#starfox-adventures-medley-2)
     - [Mario Kart Doubledash Medley](#mario-kart-doubledash-medley)
@@ -43,12 +54,12 @@
     - [Super Mario Sunshine Medley](#super-mario-sunshine-medley)
     - [Sonic Medley](#sonic-medley)
     - [Terraria Medley](#terraria-medley)
-- [Various Composer](#various-composer)
+  - [Various Composer](#various-composer)
     - [Composer Super Smash Bros Wii U](#composer-super-smash-bros-wii-u)
 <!--toc:end-->
 
 
-# Video List
+## Video List
 
 ## Year 2025
 Total: 11 Videos
@@ -689,7 +700,7 @@ Total: 30 videos
 
 -----
 
-# Medleys
+## Medleys
 
 ### Super Mario Sunshine Medley 2
 Date: 11.09.20 | Composer: Koji Kondo - Shinobu Tanaka | Genre: Metalstep | Time: 11:37
@@ -1080,7 +1091,7 @@ Date: 26.04.13 | Composer: Scott Lloyd Shelly | Genre: Rock | Time: 07:07 |
 | [4:07](https://youtu.be/bav8obIv-Cc?t=247) | Boss 3             |
 | [5:55](https://youtu.be/bav8obIv-Cc?t=355) | Boss 1             |
 
-# Various Composer
+## Various Composer
 
 ### Composer Super Smash Bros Wii U
 Keiki Kobayashi - Junichi Nakatsuru - Hiroki Hashimoto - Hiroyuki Kawada - Eriko Sakurai - Akihiko Ishikawa - Yoshinori Hirai

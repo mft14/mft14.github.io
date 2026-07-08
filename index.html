@@ -1,1 +1,209 @@
-<meta http-equiv="refresh" content="0; url='https://github.com/mft14/mft14.github.io" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="refresh" content="0; url='https://github.com/mft14/mft14.github.io" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metal Fortress Links</title>
+  <meta name="description" content="Official shortcut redirects and link portal for Metal Fortress.">
+  <link rel="stylesheet" href="/style.css">
+  
+  <!-- Unique IDs for interaction verification -->
+  <meta id="meta-app-name" content="mft14-redirector">
+
+  <!-- Load redirects database -->
+  <script src="/redirects.js"></script>
+
+  <script>
+    // Early redirect handler to execute before the DOM renders
+    (function() {
+      // Get redirection key from URL parameters or hash
+      const urlParams = new URLSearchParams(window.location.search);
+      let key = urlParams.get('to') || urlParams.get('r') || urlParams.get('id');
+      
+      // Fallback to hash if query param not present (e.g., #spotify)
+      if (!key && window.location.hash) {
+        key = window.location.hash.substring(1);
+      }
+      
+      if (key) {
+        key = key.trim().toLowerCase();
+        // Check if redirects database is loaded and has the key
+        if (typeof REDIRECTS !== 'undefined' && REDIRECTS[key]) {
+          const destination = REDIRECTS[key].url;
+          // Set a fast redirect
+          window.location.replace(destination);
+          
+          // In case replace takes a moment, render the loader in the document
+          document.write(`
+            <div class="loader-panel" id="loader-panel">
+              <div class="spinner"></div>
+              <h2 class="loader-title">Redirecting to ${REDIRECTS[key].title}...</h2>
+              <p class="loader-sub">Taking you to: <code>${destination}</code></p>
+            </div>
+          `);
+        } else {
+          // Store invalid key to show notice to the user on load
+          window.invalidRedirectKey = key;
+        }
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="container" id="main-container">
+    <!-- Notice for failed redirects -->
+    <div id="notice-banner" style="display: none; background: rgba(255, 123, 114, 0.1); border: 1px solid rgba(255, 123, 114, 0.3); border-radius: var(--radius-md); padding: 12px 16px; font-size: 0.9rem; color: #ff7b72; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+      <span id="notice-text"></span>
+      <button onclick="dismissNotice()" style="background: none; border: none; color: inherit; cursor: pointer; font-weight: bold; font-size: 1.1rem; opacity: 0.6; padding: 0 4px;">&times;</button>
+    </div>
+
+    <!-- Profile section -->
+    <header class="profile">
+      <div class="avatar-wrapper">
+        <img class="avatar" src="/howto/img/mf14-logo_2020.png" alt="Metal Fortress Logo" onerror="this.src='https://github.com/mft14.png'">
+      </div>
+      <h1 id="main-title">Metal Fortress</h1>
+      <p id="main-subtitle">Shortcuts, software configurations, downloads, and music releases.</p>
+    </header>
+
+    <!-- Search and filter controls -->
+    <div class="controls-card">
+      <div class="search-wrapper">
+        <svg class="search-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="search-bar" class="search-input" placeholder="Search redirects (e.g. spotify, gear, yt)..." oninput="filterLinks()">
+      </div>
+      
+      <div class="categories" id="category-tabs">
+        <button class="category-btn active" id="btn-cat-all" onclick="setCategory('All')">All Links</button>
+        <!-- Dynamic categories will be generated here -->
+      </div>
+    </div>
+
+    <!-- Links list -->
+    <main class="links-grid" id="links-container">
+      <!-- Links will be rendered dynamically here -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Configure shortcuts via <a href="/github" id="lnk-repo-footer">mft14.github.io</a>. Made with &hearts;</p>
+    </footer>
+  </div>
+
+  <script>
+    let activeCategory = 'All';
+
+    // Populate page content
+    window.addEventListener('DOMContentLoaded', () => {
+      // Check if there was a notice to show
+      if (window.invalidRedirectKey) {
+        const noticeBanner = document.getElementById('notice-banner');
+        const noticeText = document.getElementById('notice-text');
+        noticeText.textContent = `The shortcut "${window.invalidRedirectKey}" does not exist. Showing all available links below.`;
+        noticeBanner.style.display = 'flex';
+      }
+
+      generateCategories();
+      renderLinks();
+    });
+
+    function dismissNotice() {
+      document.getElementById('notice-banner').style.display = 'none';
+      // Clear URL parameter without reloading
+      const url = new URL(window.location);
+      url.search = '';
+      window.history.replaceState({}, '', url);
+    }
+
+    function generateCategories() {
+      const categories = new Set();
+      Object.values(REDIRECTS).forEach(item => {
+        if (item.category) categories.add(item.category);
+      });
+
+      const tabsContainer = document.getElementById('category-tabs');
+      categories.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = 'category-btn';
+        btn.id = `btn-cat-${cat.toLowerCase()}`;
+        btn.textContent = cat;
+        btn.onclick = () => setCategory(cat);
+        tabsContainer.appendChild(btn);
+      });
+    }
+
+    function setCategory(category) {
+      activeCategory = category;
+      
+      // Update active tab styling
+      const buttons = document.querySelectorAll('.category-btn');
+      buttons.forEach(btn => {
+        if (btn.textContent === category || (category === 'All' && btn.id === 'btn-cat-all')) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      filterLinks();
+    }
+
+    function renderLinks() {
+      const container = document.getElementById('links-container');
+      container.innerHTML = '';
+
+      const query = document.getElementById('search-bar').value.toLowerCase().trim();
+
+      // Get entry pairs and filter them
+      const filteredEntries = Object.entries(REDIRECTS).filter(([key, data]) => {
+        const matchesCategory = activeCategory === 'All' || data.category === activeCategory;
+        const matchesSearch = key.includes(query) || 
+                              data.title.toLowerCase().includes(query) || 
+                              data.description.toLowerCase().includes(query) ||
+                              data.category.toLowerCase().includes(query);
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filteredEntries.length === 0) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 40px 20px; color: var(--text-muted);">
+            <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">No redirects match your search</p>
+            <p style="font-size: 0.85rem;">Try searching for something else or change categories.</p>
+          </div>
+        `;
+        return;
+      }
+
+      filteredEntries.forEach(([key, data]) => {
+        const card = document.createElement('a');
+        card.href = data.url;
+        card.className = 'link-card';
+        card.id = `lnk-${key}`;
+        card.target = "_blank";
+        card.rel = "noopener noreferrer";
+
+        const iconSvg = ICONS[data.icon] || ICONS['music'];
+
+        card.innerHTML = `
+          <div class="link-icon-container">
+            ${iconSvg}
+          </div>
+          <div class="link-info">
+            <span class="link-title">${data.title}</span>
+            <span class="link-desc">${data.description}</span>
+          </div>
+          <svg class="link-arrow" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    function filterLinks() {
+      renderLinks();
+    }
+  </script>
+</body>
+</html>

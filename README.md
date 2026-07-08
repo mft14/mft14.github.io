@@ -1,29 +1,34 @@
-## Welcome to Metal Fortress
-alias `MetalFortress14 - FortressXIV - MF14`
+# Welcome to Metal Fortress
+alias `MetalFortress14 - FortressXIV - MF14 - mft14`
 
 > Programmer, musician, artist and cyclist
 
-### Social Links
+## Social Links
 
-- [Amazon](https://music.amazon.de/artists/B07YCTBCYH/metal-fortress)
-- [Apple Music](https://music.apple.com/us/artist/metal-fortress/1481270675)
-- [Deezer](https://www.deezer.com/en/artist/74797042)
-- [Deviantart](https://www.deviantart.com/metalfortress)
+### Streaming Platforms
+- [Spotify](https://mft14.github.io/spotify)
+- [Amazon](https://mft14.github.io/amazon)
+- [Apple Music](https://mft14.github.io/apple)
+- [Deezer](https://mft14.github.io/deezer)
+- [Deviantart](https://mft14.github.io/deviantart)
 
-- [Discord Server](https://discord.gg/bT7rE5KFjy)
-- [Freesound](https://freesound.org/people/metalfortress/)
-- [GD Downloads](https://drive.google.com/open?id=1mKWlWIlyXQVGjYdqXGZ8-k0ycb7WZ7K-)
-- [GD MP3](https://drive.google.com/drive/folders/1L4mnUOdoPB7TT7L1nzAcr-lRR2FAAyeU)
+### Youtube
+- [Youtube Music](https://mft14.github.io/ytmusic)
+- [Youtube](https://mft14.github.io/yt)
 
-- [Gear List](https://github.com/mft14/mft14.github.io/blob/main/info/gear.md)
-- [Paypal](https://paypal.me/metalfortress14)
+### Downloads
+- [Freesound](https://mft14.github.io/freesound)
+- [GD Downloads](https://mft14.github.io/gd-downloads)
+- [GD MP3](https://mft14.github.io/gd-mp3)
+
+### Community and Support
+- [Discord Server](https://mft14.github.io/discord)
 - [Soundcloud](https://soundcloud.com/metalfortress)
-- [Spotify](https://open.spotify.com/artist/2qNbfCQOolQ0ybnCkpEuP9)
+- [Paypal](https://mft14.github.io/paypal)
 
-- [Videolist](https://docs.google.com/spreadsheets/d/1Kfz2tOI5PcQ4bUat3iSGFwVU1q9yQkBi9hTuoOwbpss/edit?usp=sharing)
-- [Youtube Music](https://music.youtube.com/channel/UCUC0b2sbL3BigMcq5Yr0DSw)
-- [Youtube Videos](https://www.youtube.com/user/MetalFortress14/videos)
-- [Youtube](https://www.youtube.com/c/MetalFortress14)
+### Information Material
+- [Videolist](https://mft14.github.io/vds)
+- [Gear List](https://mft14.github.io/gear)
 
 ### Tutorials
 

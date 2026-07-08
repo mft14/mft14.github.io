@@ -3,6 +3,8 @@
 Welcome to my Howto Page. Here you can find out how the magic happens behind the scenes!
 Be it for creating music, making the visuals or how my workflow is: Everything comes together.
 
+[Back to Home](/README.md)
+
 ### Table of Content
 
 - [Video Editing](/howto/video_editing.md)

@@ -36,7 +36,7 @@ const REDIRECTS = {
     category: "Developer"
   },
   "howto": {
-    url: "https://github.com/mft14/mft14.github.io/blob/main/info/howto.md",
+    url: "https://github.com/mft14/mft14.github.io/blob/main/howto/howto.md",
     title: "Howto and Tutorials",
     description: "Everything about I do",
     icon: "server",

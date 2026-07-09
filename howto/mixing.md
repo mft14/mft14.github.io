@@ -7,7 +7,7 @@
 <!--toc:start-->
 - [Mixing](#mixing)
   - [My ways of mixing and mastering](#my-ways-of-mixing-and-mastering)
-    - [Mastering chain - On Windows:](#mastering-chain-on-windows)
+    - [Mastering chain - On Windows and Linux:](#mastering-chain-on-windows-and-linux)
     - [Mastering chain - On Linux:](#mastering-chain-on-linux)
         - [Short explanation of KX repositories:](#short-explanation-of-kx-repositories)
       - [Track order:](#track-order)
@@ -22,23 +22,29 @@
 
 ## My ways of mixing and mastering
 
-Mixing is an essential part in music production - it obviously manages to balance audio clips to its right volume so in the end, the whole song sounds well balanced. On this page, I want to share my ways of mixing and what I have learned over all these years.
+Mixing is an essential part in music production - it manages to balance audio to its right volume and frequencies so the whole song sounds well balanced. On this page, I want to share my mixing techniques of mixing and what I have learned over all these years.
 
-Please note that I am not a professional audio engineer. My skills in this area are limited and are based on personal preferences, try & error and tutorials from all over the web. However, if you may want to achieve a similar/exact sound like me, follow these steps. Mixing is very niggling though, it could sound completely bad with your recordings. Thanks for reading and let's go:
 
-My current mastering setup:
+> [!NOTE]
+> I am not a professional audio engineer. My skills in that area is limited and based on personal preferences, try & error and tutorials from all over the web. However, if you may want to achieve a similar sound, follow these steps. Mixing is very niggling though, it could sound completely bad with your recordings.
 
-At the moment, my master chain consists of an EQ, a limiter and a Multiband Compressor. Around Janury 2021, I aimed for a stronger low end with a decent amount of highs and a softer mid range area. Especially in heavier genres like metal and dubstep, bass can make the change being heavy or not.
+**My current mastering setup:**
+
+My master chain consists of an EQ, a limiter and a Multiband Compressor. Around Janury 2021, I aimed for a stronger low end with a decent amount of highs and a softer mid range area. Especially in heavier genres like metal and dubstep, bass can make the difference.
 
 You can recreate my chain easily on Windows or Linux. On Windows I use ReaPlugins, which you can [download for free here](https://www.reaper.fm/reaplugs/). On Linux, I use Calf plugins, powered by Carla from the [KX repositories](https://kx.studio/Repositories).
 
-### Mastering chain - On Windows:
+> [!NOTE]
+> Update from 2026: Reaper is officially supported under Linux. The FX chain from Reaper can now be simply applied on Linux as well, if you are using Reaper. There is no need for the KX repositories anymore if you are fine enough with the built-in tools.
+
+### Mastering chain using Reaper
 
 On Windows you just need to download the free [ReaPlugins](https://www.reaper.fm/reaplugs/). If you install it with the basic settings, it is going to be installed into `C:\Programs\VSTplugins\`
 
-![](xing/reaxcomp-1.png)
+![](img/reaxcomp-1.png)
 
-The other ReaXComp band settings:
+<details>
+  <summary>The other ReaXComp band settings:</summary>
 
 ![](img/reaxcomp-2.png)
 
@@ -46,9 +52,11 @@ The other ReaXComp band settings:
 
 ![](img/reaxcomp-4.png)   
 
-These are my settings. A Multiband splits usually 3 or more parts of the whole frequency spectrum, where you can now control the compression of this area. This is what really enhances, for example, bass in your songs - not (only) an EQ. (This is what they do when you stumble across "Bass Bosted" on Youtube for your favourite bass song.).
+</details>
 
-I use these settings for longer now and they are perfect. But **please note** that this can vary from style to arrangement; it could be That this mastering chain does not sound any good for your song. Here are my settings: If you have your own mutliband compression, they should have similar options:
+These are my settings. A Multiband splits usually 3 or more parts of the whole frequency spectrum, where you can then control the compression of its area. This is what can enhances bass in your songs - not (only) an EQ. (This is what people do when you stumble across "Bass Bosted" remixes on Youtube).
+
+I use these settings for quite some time and I am still pleased. **Please note** that this can vary from style to arrangement; it could be that this mastering chain might not sound any good for your song. Here are my settings: If you have your own mutliband compression, they should have similar options:
 
 | Band         | Top Freq(Hz) | Threshold (dB) | Ratio (:1) | Knee (dB) | Attack (ms) | Release (ms) | Auto makeup gain |
 |--------      |-----         |-----           |----        |---        |----         |-----         |---               |
@@ -57,16 +65,26 @@ I use these settings for longer now and they are perfect. But **please note** th
 | 3: High-Mid  | 8000         | -22            | 4          | 0         | 20          | 86           | x                |
 | 4: Treble    | 24000        | -19,6          | 8          | 0,2       | 10          | 12           | x                |
 
-### Mastering chain - On Linux:
+If you are also using Reaper, you can download the effect mastering chain as a Track Template right here:
+[Reaper Mastering Chain v1](assets/mastering_chain_v1.RfxChain)
+
+### Mastering chain using KX repositories:
 
 ##### Short explanation of KX repositories:
 
 KX repositories are basically a collection of free and opensource audio plugins and applications. This repo is neither enabled by default nor are (most of) the plugins available on the offical servers from Ubuntu.  
-If you run a debian based Linux distrobution like Linux Mint or Ubuntu, just go the KX repositories link and execute the 4 commands being shown on that site. After that, you might want to run another time `sudo apt update` if the next step is not working. The update function updates the new added repo.
+If you run a debian based Linux distribution like Linux Mint or Ubuntu, just go the KX repositories link and execute the four commands shown on the site. After that, you might want to run another `sudo apt update` if the next step is not working. This functions to update the new repo.
 
-Then you can go to the [KX Plugins](https://kx.studio/Repositories:Plugins) page, where you see a list of all plugins, you can download! Doing that is very simple: You just need the package(s) name you want to try and type `sudo apt install PACKAGENAME //example   sudo apt install carla calf-plugins`
+You can then go to the [KX Plugins](https://kx.studio/Repositories:Plugins) page, where you see a list of all plugins available. Doing that is very simple: You just need the package(s) name you need
 
-This is going to download Carla + Calf plugins that I use. Of course you can check out all the other cool plugins there as well as audio applications if you so wish. vitalum-vst is my new go-to synthesizer on Linux, I highly recommend installing it too! Carla is the plugin host, that you are going to need to run more plugins in Linux. It helps handling all the plugin formats if your DAW does not support it natively. My DAW of choice is Renoise at the moment. It supports LADSPA format but not LV2. If your DAW does support it, you probably won't need Carla.
+```bash
+sudo apt install carla calf-plugins
+# example: sudo apt install PACKAGENAME
+```
+
+This is going to download Carla + Calf plugins that I use. Of course you can check out all the other cool plugins and audio applications as well if you wish. I highly recommend the synthesizer vitalium-vst!
+
+Carla is the plugin host, that you are going to need to run more plugins in Linux. It helps handling all the plugin formats if your DAW does not support it natively. My DAW of choice is Renoise at the moment. It supports LADSPA format but not LV2. If your DAW does support it, you probably won't need Carla.
 
 ![](img/calf-multiband-1.png)
 
@@ -92,7 +110,7 @@ The other Calf Multiband band settings:
 
 </details>
 
-As addition, I also like to put Calf Limiter before the multiband compression. This step is not needed but I do it because the whole routing in Renoise feels a bit different and I have more control over the dynamics.
+In addition, I like to put Calf Limiter before the multiband compression. This step is not needed but I do it because the whole routing in Renoise feels a bit different and I have more control over the dynamics.
 
 ![](img/calf-limiter.png)
 
@@ -100,84 +118,95 @@ As addition, I also like to put Calf Limiter before the multiband compression. T
 
 When I start a new fresh song, I generally start sorting the tracks a bit. I always start with the drums, which are seperated into more drum tracks:  
 
-*   Dubstep /E Drum (usually drum and snare only)
+*   Acoustic Drum Set ([TMDK](http://themetalkickdrum.com) - free Metal Drumkit)
+*   Samples, 
 *   Percussion 1 (Hi hats, Claps, Crashes)
 *   Percussion 2 (usually I load up here "Damage" from Kontakt, general percussion + (FX) Foleys
-*   Acoustic Drum Set ([TMDK](http://themetalkickdrum.com) - free Metal Drumkit)
 *   Sidechain Group (every following is inside this group)
-*   Guitar 1 + Guitar 2 (each has its own cab but the same amp)
-*   Bass + Sub (bass being a real bass guitar while sub mostly being a static sine tone or dense attack)
-*   Dubstep Growls Track
-*   Trumpet/Synth Leads (additionally with a distortion)
-*   Strings, Pads
-*   Other synths
-*   Other Instruments
-*   Low Pass Filter Track
-*   Effects like White Noise, SFX and more
+  *   Guitar 1 + Guitar 2 (each has its own cab but the same amp)
+  *   Bass + Sub (bass being a real bass guitar while sub mostly being a static sine tone or dense attack)
+  *   Dubstep Growls Track
+  *   Trumpet/Synth Leads (additionally with a distortion)
+  *   Strings, Pads
+  *   Other synths
+  *   Other Instruments
+  *   Low Pass Filter Track
+  *   Effects like White Noise, SFX and more
 
 ### Mixing instruments
 
 #### Guitar and Bass
 
-Mixing guitar is always a tricky topic. I tend to use the lows to make space for the bass guitar not removing all lows will also sound less heavier. It's always a matter of small Hz which makes the difference. There is not really a standard setting, I always rely on for the EQ but around 400-500Hz is, where I lower the bass. However, it depends, in my opinion, always on the song. My bass I currently use, is the Kraken VST, which has a crunchy sounding. I noticed this helps a lot supporting the guitar tone. Enhancing this with an EQ helps too. If I feel like, the bass needs more low end, I either use a normal EQ as well or I take a gainer, who just pushes volume and slightly distort the sound. I prefer not to push too much of the low level as a bass is already a bass.
+Mixing guitar is always tricky. I tend to use the low end to make space for the bass guitar—removing all lows will make it sound less heavy. It often comes down to small frequency adjustments that make the difference. There is no real standard EQ setting I rely on, but I often reduce around 400–500 Hz. However, in my opinion, it always depends on the song.
 
-When I have my tones, I add another guitar to add stereo width. I usually have everything in mono for a "tighter" sound but the second guitar plays the same riff with the same amp model only with just another cab. Note that even if you copy your rhythm guitar track, this still can get phasing issues, which does not sound good unless you want to achieve that sound in the first place.
+The bass I currently use is the Kraken VST, which has a crunchy sound. I’ve noticed this helps a lot in supporting the guitar tone. Enhancing it further with an EQ also helps. If I feel like the bass needs more low end, I either use a regular EQ or a gainer that boosts volume and slightly distorts the signal. I try not to push the low end too much, since a bass is already naturally low-heavy.
+
+Once I have my tones, I add another guitar for stereo width. I usually keep everything in mono for a “tighter” sound, but the second guitar plays the same riff with the same amp model, just with a different cab. Note that simply copying your rhythm guitar track can cause phasing issues, which usually sound bad unless you are intentionally going for that effect.
 
 #### Drums and Percussions
 
-When the guitar tone is properly set, I start off with the electronic dubstep. I usually tend to use strong kicks and nasty snares, that are super loud. I personally prefer that the raw samples are already strong enough so I do not need no more mixing on that. In very rare cases, I add a compressor on this track to bring both on a same level. But depending on how the sidechain is set up, this is mostly not needed
+Once the guitar tone is set, I move on to the electronic dubstep drums. I tend to use strong kicks and aggressive snares that are very loud. I prefer using raw samples that are already powerful enough so I don’t need much additional processing. In rare cases, I add a compressor to balance them, but depending on how the sidechain is set up, this is usually unnecessary.
 
-This track also triggers the sidechain, which is pretty much important, if you work with strong electronic drums. In the case of Renoise, sidechaining is pretty simple:  
+This track also triggers the sidechain, which is essential when working with strong electronic drums. In Renoise, sidechaining is quite straightforward:
 
 #### Sidechain with a signal follower (here in Renoise)
 
-On your e-drum track, you put a "Signal Follower" effect. This triggers every output that happens on this track. This "signal" can be then routed into another and into a certain effect. You could now just route this to the mixer of the sidechain group, but I prefer to route it to the input of "Hydra" - in Renoise Hydra is basically a makro, where you on the other hand assign 8 more levers with one main lever. This main lever however will be now controlled by the signal follower of the drum track. Whenever the kick&snare is playing, it should now lower the volume. Let's sum up the FX Chains:  
+On your e-drum track, add a “Signal Follower” effect. This reacts to every output on the track. The signal can then be routed to another track and into a specific effect. You could route it directly to the mixer of the sidechain group, but I prefer routing it into “Hydra.” In Renoise, Hydra is essentially a macro that lets you control multiple parameters with one main control. This main control will now be driven by the signal follower from the drum track. Whenever the kick or snare plays, it should lower the volume.
 
-*   Signal Follower on EDrum Track
-*   Hydra (the Makro FX) on Group track for Sidechain
-*   Prefered volume plugin on Group track for Sidechain (in my case: Gainer)
+Let’s summarize the FX chains:
 
-![](img/sidechain-mixer.png)
+* Signal Follower on E-Drum track  
+* Hydra (macro FX) on the sidechain group track  
+* Preferred volume plugin on the sidechain group track (in my case: Gainer)  
 
-On the left, Signal follower gives a signal to Hydra, then Hydra controls the mixer or the gainer. I prefer the gainer so I still can be flexible with the volume and add distortion when I need to on a drop. Controlling the volume would be possible too surely.
+![img/sidechain-mixer.png](img/sidechain-mixer.png)
 
-The signal follower indeed needs a small tweak before using. The standard setting would mute the sidechain all the time and opens the gate when drums are playing. We want to have it exactly vice versa. But before let's take a look on Hydra:
+On the left, the Signal Follower sends a signal to Hydra, which then controls the mixer or the gainer. I prefer the gainer because it allows more flexibility with volume and lets me add distortion during drops. Controlling the mixer volume would also work.
 
-![](img/sidechain-hydra.png)
+The Signal Follower needs a small adjustment before use. The default setting mutes the sidechain constantly and opens it when drums play. We want the exact opposite. But first, let’s look at Hydra:
 
-Reading from "Out 1": "CT" means current track, so this means, we want to control an FX in the same track. The second column is targeting the FX plugin, while the third column controls its knob from the targeted FX. If you did not add a gainer, you need to add one before. In renoise, you can also add the mixer in that column. If you are using a different DAW, you need to check, how this works. It should be similar. The min and max values are untouched are for the area of volume that my sidechain is being in. The min definitely should go to zero or -INFdb.
+![img/sidechain-hydra.png](img/sidechain-hydra.png)
 
-When this is done, let's now take a look at how the Signal Follower should be set up:
+Starting from “Out 1”: “CT” means current track, so we are controlling an FX on the same track. The second column selects the FX plugin, and the third column controls a parameter (knob) of that plugin. If you haven’t added a gainer yet, you need to do so. In Renoise, you can also select the mixer in that column. In other DAWs, the process is similar but may differ slightly.
 
-![](img/-signalfollower.png)
+The min and max values define the volume range of the sidechain. The minimum should definitely be set to zero or \(-\infty \, \text{dB}\).
 
-Starting from Dest: the 10 just again targets the track, now this is not CT but another track - select it here. Then it's the same in Hydra. Select Hydra and its main knob for controlling all the parameters. Or, if you just use a volume knob, select Mixer > Volume.
+Now let’s look at the Signal Follower setup:
 
-The Dest Min. means the "off" state, so when nothing is playing. This should be in the middle at 50% right? If you would make it 100%, then the gainer would be on 100% too, which causes clipping in hell. Dest Max. then adjusts the value where you want to go after your drums are playing. In this case, it needs to e on 0% - your volume/gain should lower whenever you play.
+![img/-signalfollower.png](img/-signalfollower.png)
 
-Now there are more interesting fine tune parameters, that I often change within a song. The Attack controls how fast your signal will be taken - in this case, I want the sidechain immediately lowering its volume, since my edrums are having a high transient. The release should have at least some miliseconds to go back to normal state. If you set the release as quick as your attack, this could create some unwanted clicky noises.
+Starting with “Dest”: the value (e.g., 10) targets another track—select it accordingly. Then, as with Hydra, choose Hydra and its main knob, or select Mixer > Volume if you are controlling volume directly.
 
-The sensitivy may not be in every signal follower chain but this can easily control on how strong the sidechain effect should affect the volume. In Renoise, being around 90% is light, 70% is mid-strong while down below is very strong and can "annoy" by creating this pumping effect. since my edrums are not getting any kind of compression, this would sound too strong, ending up having that raw kick your ears while sound is not getting back again quickly enough and trust me, this does not sound too good.
+“Dest Min” represents the “off” state (when nothing is playing). Setting it around 50% is reasonable. If you set it to 100%, the gainer would also be at 100%, which could cause heavy clipping. “Dest Max” defines the value when drums are playing—in this case, it should be 0%, so the volume is reduced when triggered.
 
-It's also pretty neat that you can specify the scaling, which controls a quicker reduce and longer release or the other way around. In some songs, this could sound more better than the other. There's no rule for that, just a matter of personal preference and, as I said, the song itself.
+There are additional fine-tuning parameters I often adjust per song. “Attack” controls how quickly the signal responds. For sidechaining, I want the volume reduction to happen immediately due to the strong transients of the drums. “Release” should have some milliseconds to return to normal; setting it too fast can introduce unwanted clicks.
 
-These two settings are making my sound
+“Sensitivity” (if available) controls how strongly the sidechain affects the volume. In Renoise, around 90% is subtle, 70% is medium-strong, and lower values become very aggressive, creating a pronounced pumping effect. Since my drums are not heavily compressed, overly strong settings can sound harsh and unbalanced.
 
-I explained this topic of my mixing chain and the side chain very detailed, as I noticed that this was the game changer, when I went from "classic" metal/rock mixing to metalstep mixing. EDM and dubstep has taught me plenty of new things in mixing that I said to myself: this is the perfect mix of my classic metal tone combining with dubstep elements and sounds. If you are not familiar with that genre, I hope I could bring you an insight of how I make my particular sound.
+You can also adjust scaling, which changes how quickly the signal reduces versus how it releases. Depending on the track, one setting may sound better than the other—there’s no strict rule here.
+
+These settings are a key part of shaping my sound.
+
+I explained this section in detail because it was a major turning point for me. Moving from classic metal/rock mixing to metalstep mixing, EDM and dubstep taught me many new techniques. It became the perfect blend of my traditional metal tone with dubstep elements. If you’re not familiar with the genre, I hope this gives some insight into how I shape my sound.
 
 All the other instruments:
 
-The rest is pretty straight forward. To cut through the mix, metal and especially synths, classic instruments need more gain, power, and exciting trebles. I mostly achieve that through distortion or Exciters beside an EQ, that should always remove the noisy low ends, since natural instruments are always being recorded (more or less good) with a microphone, which always brings a little hiss to the samples.
+The rest is fairly straightforward. To cut through the mix—especially alongside metal and synths—classic instruments need more gain, power, and bright high frequencies. I usually achieve this with distortion or exciters in addition to EQ. The EQ should always clean up noisy low ends, since recorded instruments often contain some background noise from microphones.
 
 #### Trumpets
 
-Trumpets are getting Reverb and Distortion from me. The thing I like mostly about good trumpet libraries are that they are super flexible in their sound. They can do staccato, chopped, growlish and many more sounds. Crystal clear recorded trumpets (I use Sessoin Horns Pro from Native Instruments) have a good balance of high ends, so they can easily cut through the mix of a wild metal arrangement. I can just relegate to my TF2 Final Remix album, which uses trumpets only to keep the TF2 vibe - all of them have no problem to shine in the mix. It was a lot of fun to use them, in particular with the articulations.
+I typically apply reverb and distortion to trumpets. What I like most about good trumpet libraries is their flexibility—they can produce staccato, chopped, growling, and many other articulations. Well-recorded trumpet libraries (I use Session Horns Pro from Native Instruments) have a strong high-end presence, allowing them to cut through dense metal mixes.
 
-#### Strings and Pads:
+For example, in my TF2 Final Remix album, I used only trumpets to maintain the TF2 vibe—they consistently stand out in the mix. Working with their articulations was especially enjoyable.
 
-Strings and soft Pads are always getting Reverb, Delay, eventually Phaser/Flanger effects. The good thing is that they do not need to cut through, but they just need to be there. I prefer to remove the lows completely, while keeping a lot of mids and boost, as always, the highs. If I need more "appearance" from them, I prefer to put a stereo expander on the track, which increases the existance of them even more. Depending on the song, I put them sometimes outside or inside the sidechain. Inside the sidechain group can create a cool pumping affect too!
+#### Strings and Pads
+
+Strings and soft pads usually get reverb, delay, and sometimes phaser or flanger effects. They don’t need to cut through the mix as much—they mainly need to fill space. I often remove the low end entirely, keep the mids, and boost the highs.
+
+If I want them to be more noticeable, I use a stereo expander to increase their presence. Depending on the track, I may include them in the sidechain group or leave them out. Including them can create a nice pumping effect.
 
 #### Dubstep sounds and growls
 
-Dubstep growls are often very random in terms of sounds and design. This makes it hard to bring them all under the hood. I usually use a bandreject filter to remove the mids as personally, I think the sounds are matching better together, since different dubstep sounds tend to be heavy on certain frequencies. I know that growls often tend to be mid-heavy so a bandreject would do the opposite. But that's how I got to like it over the years. I rarely use a multiband compression too to adjust this inequality and still boost some parts of the spectrum. Also since growls are often very loud, a limiter is a duty most of the time. But this is just one approach - in my opinion, you can never really tell the best settings for each dubstep track - it depends on the song.
+Dubstep growls are often very diverse in both sound and design, which makes them difficult to balance. I usually apply a band-reject filter to reduce the mids, as I feel this helps different sounds blend better. Many growls are naturally mid-heavy, so this approach counteracts that.
 
+I also occasionally use multiband compression to control uneven frequencies while still enhancing parts of the spectrum. Since growls are often very loud, a limiter is usually necessary. However, this is just one approach—there’s no universal setting for dubstep sounds. It always depends on the track.

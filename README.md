@@ -1,5 +1,4 @@
-# Welcome to Metal Fortress
-alias `MetalFortress14 - FortressXIV - MF14 - mft14`
+# Welcome to Fortress
 
 > Programmer, musician, artist and cyclist
 

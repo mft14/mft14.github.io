@@ -11,6 +11,7 @@ An overview of my video uploads. Work in progress. Still needs:
 <!--toc:start-->
 - [vds](#vds)
   - [Video List](#video-list)
+  - [Year 2026](#year-2025)
   - [Year 2025](#year-2025)
   - [Year 2024](#year-2024)
   - [Year 2023](#year-2023)
@@ -60,6 +61,15 @@ An overview of my video uploads. Work in progress. Still needs:
 
 
 ## Video List
+
+## Year 2026
+Total: 3 Videos
+
+| Date     | Videogame                            | Song Title  | Composer   | Youtube Link                 | Key     | BPM | Genre           | Time  |
+|----------|--------------------------------------|-------------|------------|------------------------------|---------|-----|-----------------|-------|
+| 07.08.26 | Deltarune: Chapter 1                 | The Legend  | Toby Fox   | https://youtu.be/rGauqQeQcMY | A Minor | 100 | Melodic Dubstep | 02:36 |
+| 31.07.26 | The Legend of Zelda: Ocarina of Time | Lost Woods  | Koji Kondo | https://youtu.be/fw3dhy_WwUk | F Major | 150 | Melodic Dubstep | 02:36 |
+| 24.07.26 | The Legend of Zelda: Ocarina of Time | Title Theme | Koji Kondo | https://youtu.be/vHM3YmZjq-Y | D Minor | 150 | Melodic Dubstep | 02:44 |
 
 ## Year 2025
 Total: 11 Videos

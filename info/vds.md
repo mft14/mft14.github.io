@@ -66,14 +66,13 @@ An overview of my video uploads. Work in progress. Still needs:
 Total: 3 Videos
 
 
-
-
-| Date     | Videogame                            | Song Title  | Composer   | Youtube Link                 | Key     | BPM | Genre           | Time  |
-|----------|--------------------------------------|-------------|------------|------------------------------|---------|-----|-----------------|-------|
-| 14.08.26 | The Legend of Zelda: Ocarina of Time | House       | Koji Kondo | https://youtu.be/MEi76DMjlxs | D Major | 150 | Melodic Riddim  | 02:09 |
-| 07.08.26 | Deltarune: Chapter 1                 | The Legend  | Toby Fox   | https://youtu.be/rGauqQeQcMY | A Minor | 100 | Melodic Dubstep | 02:34 |
-| 31.07.26 | The Legend of Zelda: Ocarina of Time | Lost Woods  | Koji Kondo | https://youtu.be/fw3dhy_WwUk | F Major | 150 | Melodic Dubstep | 02:36 |
-| 24.07.26 | The Legend of Zelda: Ocarina of Time | Title Theme | Koji Kondo | https://youtu.be/vHM3YmZjq-Y | D Minor | 150 | Melodic Dubstep | 02:44 |
+| Date     | Videogame                            | Song Title  | Composer       | Youtube Link                 | Key     | BPM | Genre           | Time  |
+|----------|--------------------------------------|-------------|------------    |------------------------------|---------|-----|-----------------|-------|
+| 21.08.26 | Conkers Bad Fur Day                  | Windy       | Robin Beanland | https://youtu.be/-s14QXfHJs4 | A Major | 174 | Drumstep Swing  | 02:27 |
+| 14.08.26 | The Legend of Zelda: Ocarina of Time | House       | Koji Kondo     | https://youtu.be/MEi76DMjlxs | D Major | 150 | Melodic Riddim  | 02:09 |
+| 07.08.26 | Deltarune: Chapter 1                 | The Legend  | Toby Fox       | https://youtu.be/rGauqQeQcMY | A Minor | 100 | Melodic Dubstep | 02:34 |
+| 31.07.26 | The Legend of Zelda: Ocarina of Time | Lost Woods  | Koji Kondo     | https://youtu.be/fw3dhy_WwUk | F Major | 150 | Melodic Dubstep | 02:36 |
+| 24.07.26 | The Legend of Zelda: Ocarina of Time | Title Theme | Koji Kondo     | https://youtu.be/vHM3YmZjq-Y | D Minor | 150 | Melodic Dubstep | 02:44 |
 
 ### Year 2025
 Total: 11 Videos

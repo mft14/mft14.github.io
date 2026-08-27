@@ -63,11 +63,13 @@ An overview of my video uploads. Work in progress. Still needs:
 ## Video List
 
 ### Year 2026
-Total: 3 Videos
+Total: 6 Videos
 
+[Back to top](#vds)
 
 | Date     | Videogame                            | Song Title  | Composer       | Youtube Link                 | Key     | BPM | Genre           | Time  |
-|----------|--------------------------------------|-------------|------------    |------------------------------|---------|-----|-----------------|-------|
+|----------|--------------------------------------|-------------|----------------|------------------------------|---------|-----|-----------------|-------|
+| 28.08.26 | Deltarune: Chapter 5                 | Petal Dance | Toby Fox       | https://youtu.be/NLw8WmkTGDc | C Major | 150 | Metal Dubstep   | 02:33 |
 | 21.08.26 | Conkers Bad Fur Day                  | Windy       | Robin Beanland | https://youtu.be/-s14QXfHJs4 | A Major | 174 | Drumstep Swing  | 02:27 |
 | 14.08.26 | The Legend of Zelda: Ocarina of Time | House       | Koji Kondo     | https://youtu.be/MEi76DMjlxs | D Major | 150 | Melodic Riddim  | 02:09 |
 | 07.08.26 | Deltarune: Chapter 1                 | The Legend  | Toby Fox       | https://youtu.be/rGauqQeQcMY | A Minor | 100 | Melodic Dubstep | 02:34 |

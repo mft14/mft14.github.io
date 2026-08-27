@@ -25,6 +25,7 @@ A list of all gear I used to make music, programming and art.
 | E-Guitars         | Schecter Omen 8                                 | 26.07.2013 | 03.01.2014 | sold               |
 | E-Guitars         | Ibanez RG350 DX WH                              | 07.08.2012 | 06.09.2013 | sold               |
 | E-Guitars         | Harley Benton Strat                             | 09.12.2011 | 24.09.2018 | sold               |
+| E-Bass            | Squier Sonic Precision 2TSB                     | 11.04.2026 | 26.08.2026 | sold               |
 | E-Bass            | Fender Precision Bass 1966                      | 18.09.2015 | today      | will never sell    |
 | E-Bass            | Harley Benton HBZ-2005                          | 31.12.2014 | 05.09.2017 | sold               |
 | E-Bass            | Harley Benton MB22-2T                           | 07.08.2012 | 15.12.2014 | sold for 10€       |

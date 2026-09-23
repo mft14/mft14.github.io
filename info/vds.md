@@ -67,14 +67,16 @@ Total: 6 Videos
 
 [Back to top](#vds)
 
-| Date     | Videogame                            | Song Title  | Composer       | Youtube Link                 | Key     | BPM | Genre           | Time  |
-|----------|--------------------------------------|-------------|----------------|------------------------------|---------|-----|-----------------|-------|
-| 28.08.26 | Deltarune: Chapter 5                 | Petal Dance | Toby Fox       | https://youtu.be/NLw8WmkTGDc | C Major | 150 | Metal Dubstep   | 02:33 |
-| 21.08.26 | Conkers Bad Fur Day                  | Windy       | Robin Beanland | https://youtu.be/-s14QXfHJs4 | A Major | 174 | Drumstep Swing  | 02:27 |
-| 14.08.26 | The Legend of Zelda: Ocarina of Time | House       | Koji Kondo     | https://youtu.be/MEi76DMjlxs | D Major | 150 | Melodic Riddim  | 02:09 |
-| 07.08.26 | Deltarune: Chapter 1                 | The Legend  | Toby Fox       | https://youtu.be/rGauqQeQcMY | A Minor | 100 | Melodic Dubstep | 02:34 |
-| 31.07.26 | The Legend of Zelda: Ocarina of Time | Lost Woods  | Koji Kondo     | https://youtu.be/fw3dhy_WwUk | F Major | 150 | Melodic Dubstep | 02:36 |
-| 24.07.26 | The Legend of Zelda: Ocarina of Time | Title Theme | Koji Kondo     | https://youtu.be/vHM3YmZjq-Y | D Minor | 150 | Melodic Dubstep | 02:44 |
+| Date     | Videogame                            | Song Title          | Composer       | Youtube Link                 | Key      | BPM | Genre           | Time  |
+|----------|--------------------------------------|-------------        |----------------|------------------------------|--------- |-----|-----------------|-------|
+| 25.09.26 | The Legend of Zelda: Ocarina of Time | Kakariko Village    | Koji Kondo     | https://youtu.be/YjCt-uo9oRM | Bb Major | 105 | Melodic Dubstep | 03:20 |
+| 11.09.26 | Deltarune: Chapter 5                 | Cutie Mew Mew Magic | Toby Fox       | https://youtu.be/c72r7EqS7hk | C Minor  | 150 | Metal Dubstep   | 02:33 |
+| 28.08.26 | Deltarune: Chapter 5                 | Petal Dance         | Toby Fox       | https://youtu.be/NLw8WmkTGDc | C Major  | 150 | Metal Dubstep   | 02:33 |
+| 21.08.26 | Conkers Bad Fur Day                  | Windy               | Robin Beanland | https://youtu.be/-s14QXfHJs4 | A Major  | 174 | Drumstep Swing  | 02:27 |
+| 14.08.26 | The Legend of Zelda: Ocarina of Time | House               | Koji Kondo     | https://youtu.be/MEi76DMjlxs | D Major  | 150 | Melodic Riddim  | 02:09 |
+| 07.08.26 | Deltarune: Chapter 1                 | The Legend          | Toby Fox       | https://youtu.be/rGauqQeQcMY | A Minor  | 100 | Melodic Dubstep | 02:34 |
+| 31.07.26 | The Legend of Zelda: Ocarina of Time | Lost Woods          | Koji Kondo     | https://youtu.be/fw3dhy_WwUk | F Major  | 150 | Melodic Dubstep | 02:36 |
+| 24.07.26 | The Legend of Zelda: Ocarina of Time | Title Theme         | Koji Kondo     | https://youtu.be/vHM3YmZjq-Y | D Minor  | 150 | Melodic Dubstep | 02:44 |
 
 ### Year 2025
 Total: 11 Videos

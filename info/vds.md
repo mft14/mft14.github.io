@@ -63,12 +63,13 @@ An overview of my video uploads. Work in progress. Still needs:
 ## Video List
 
 ### Year 2026
-Total: 6 Videos
+Total: 9 Videos
 
 [Back to top](#vds)
 
 | Date     | Videogame                            | Song Title          | Composer       | Youtube Link                 | Key      | BPM | Genre           | Time  |
 |----------|--------------------------------------|-------------        |----------------|------------------------------|--------- |-----|-----------------|-------|
+| 08.10.26 | Banjo-Tooie                          | Targitzan           | Grant Kirkhope | https://youtu.be/ALUBirBbrz0 | C Minor  | 190 | Metalstep       | 02:40 |
 | 25.09.26 | The Legend of Zelda: Ocarina of Time | Kakariko Village    | Koji Kondo     | https://youtu.be/YjCt-uo9oRM | Bb Major | 105 | Melodic Dubstep | 03:20 |
 | 11.09.26 | Deltarune: Chapter 5                 | Cutie Mew Mew Magic | Toby Fox       | https://youtu.be/c72r7EqS7hk | C Minor  | 150 | Metal Dubstep   | 02:33 |
 | 28.08.26 | Deltarune: Chapter 5                 | Petal Dance         | Toby Fox       | https://youtu.be/NLw8WmkTGDc | C Major  | 150 | Metal Dubstep   | 02:33 |

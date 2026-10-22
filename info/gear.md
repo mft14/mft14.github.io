@@ -84,12 +84,14 @@ A list of all gear I used to make music, programming and art.
 | Microphones       | Blue Snowball                                   | 09.10.2016 | 09.03.2018 | broken             |
 | Microphones       | The T.Bone SC 450                               | 14.02.2014 | 20.11.2017 | sold               |
 | Microphones       | Logitech Desktop Microphone                     | 26.08.2012 | 31.12.2013 | the best           |
+| Audio Interface   | Behringer U-Phoria UMC404HD                     | 22.10.2026 | today      |                    |
 | Audio Interface   | Behringer Xenyx Q802USB                         | 21.03.0219 | 23.06.2024 | sold               |
-| Audio Interface   | Behringer U-Phoria UMC202HD                     | 26.12.2018 | today      |                    |
+| Audio Interface   | Behringer U-Phoria UMC202HD                     | 26.12.2018 | 23.06.2024      |                    |
 | Audio Interface   | Line 6 POD Studio UX1                           | 10.08.2012 | 30.06.2017 |                    |
 | Audio Interface   | M-Audio Fast Track                              | 07.08.2012 | 20.11.2017 |                    |
 | Mixer             | MouKey MAMX1                                    | 09.09.2022 | today      |                    |
 | Mixer             | MouKey MAMX3                                    | 23.09.2021 | today      |                    |
+| DJ Mixer          | Allen & Heath Xone 24C                          | 11.10.2026 | today      |                    |
 | DJ Mixer          | Denon DJ SC Live 4                              | 25.06.2026 | today      |                    |
 | DJ Mixer          | NI Traktor Kontrol X1 MK2                       | unused     | unused     |                    |
 | DJ Mixer          | Pioneer DJ DDJ RR                               | 23.04.2017 | 28.10.2024 |                    |
@@ -101,6 +103,7 @@ A list of all gear I used to make music, programming and art.
 | Speakers          | JBL Xtreme 2                                    | 12.03.2020 | 14.04.2020 |                    |
 | Speakers          | Trust GXT 628                                   | 12.04.2018 | 04.11.2021 |                    |
 | Speakers          | Medion MD42491                                  | 23.10.2012 | 12.04.2018 |                    |
+| Headphones        | AKG 52                                          | 22.10.2026 | today      |                    |
 | Headphones        | AKG K240                                        | 29.04.2019 | today      |                    |
 | Headphones        | AKG K72                                         | 26.02.2016 | 29.04.2019 |                    |
 | Effect Pedal      | Boss GX-10                                      | 06.11.2024 | today      |                    |

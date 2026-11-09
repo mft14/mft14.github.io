@@ -69,7 +69,7 @@ Total: 9 Videos
 
 | Date     | Videogame                            | Song Title                                                     | Composer             | Youtube Link                 | Key      | BPM | Genre           | Time  |
 |----------|--------------------------------------|-------------                                                   |----------------      |------------------------------|--------- |-----|-----------------|-------|
-| 04.10.26 | The Legend of Zelda: Ocarina of Time | Songlist [[#The Legend of Zelda: Ocarina of Time Dubstep Mix]] | Koji Kondo           | https://youtu.be/qwCtcotkoOM |          |     | Melodic Dubstep | 18:21 |
+| 04.10.26 | The Legend of Zelda: Ocarina of Time | [Songlist](#The-Legend-of-Zelda-Ocarina-of-Time-Dubstep-Mix) | Koji Kondo           | https://youtu.be/qwCtcotkoOM |          |     | Melodic Dubstep | 18:21 |
 | 30.10.26 | FNAF: Secrets of the Mimic           | It Doesn't Matter                                              | The Living Tombstone | https://youtu.be/K6Q-LpYSr0U | B Minor  | 192 | Drumstep        | 03:43 |
 | 08.10.26 | Banjo-Tooie                          | Targitzan                                                      | Grant Kirkhope       | https://youtu.be/ALUBirBbrz0 | C Minor  | 190 | Metalstep       | 02:40 |
 | 25.09.26 | The Legend of Zelda: Ocarina of Time | Kakariko Village                                               | Koji Kondo           | https://youtu.be/YjCt-uo9oRM | Bb Major | 105 | Melodic Dubstep | 03:20 |

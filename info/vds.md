@@ -67,17 +67,19 @@ Total: 9 Videos
 
 [Back to top](#vds)
 
-| Date     | Videogame                            | Song Title          | Composer       | Youtube Link                 | Key      | BPM | Genre           | Time  |
-|----------|--------------------------------------|-------------        |----------------|------------------------------|--------- |-----|-----------------|-------|
-| 08.10.26 | Banjo-Tooie                          | Targitzan           | Grant Kirkhope | https://youtu.be/ALUBirBbrz0 | C Minor  | 190 | Metalstep       | 02:40 |
-| 25.09.26 | The Legend of Zelda: Ocarina of Time | Kakariko Village    | Koji Kondo     | https://youtu.be/YjCt-uo9oRM | Bb Major | 105 | Melodic Dubstep | 03:20 |
-| 11.09.26 | Deltarune: Chapter 5                 | Cutie Mew Mew Magic | Toby Fox       | https://youtu.be/c72r7EqS7hk | C Minor  | 150 | Metal Dubstep   | 02:33 |
-| 28.08.26 | Deltarune: Chapter 5                 | Petal Dance         | Toby Fox       | https://youtu.be/NLw8WmkTGDc | C Major  | 150 | Metal Dubstep   | 02:33 |
-| 21.08.26 | Conkers Bad Fur Day                  | Windy               | Robin Beanland | https://youtu.be/-s14QXfHJs4 | A Major  | 174 | Drumstep Swing  | 02:27 |
-| 14.08.26 | The Legend of Zelda: Ocarina of Time | House               | Koji Kondo     | https://youtu.be/MEi76DMjlxs | D Major  | 150 | Melodic Riddim  | 02:09 |
-| 07.08.26 | Deltarune: Chapter 1                 | The Legend          | Toby Fox       | https://youtu.be/rGauqQeQcMY | A Minor  | 100 | Melodic Dubstep | 02:34 |
-| 31.07.26 | The Legend of Zelda: Ocarina of Time | Lost Woods          | Koji Kondo     | https://youtu.be/fw3dhy_WwUk | F Major  | 150 | Melodic Dubstep | 02:36 |
-| 24.07.26 | The Legend of Zelda: Ocarina of Time | Title Theme         | Koji Kondo     | https://youtu.be/vHM3YmZjq-Y | D Minor  | 150 | Melodic Dubstep | 02:44 |
+| Date     | Videogame                            | Song Title                                                     | Composer             | Youtube Link                 | Key      | BPM | Genre           | Time  |
+|----------|--------------------------------------|-------------                                                   |----------------      |------------------------------|--------- |-----|-----------------|-------|
+| 04.10.26 | The Legend of Zelda: Ocarina of Time | Songlist [[#The Legend of Zelda: Ocarina of Time Dubstep Mix]] | Koji Kondo           | https://youtu.be/qwCtcotkoOM |          |     | Melodic Dubstep | 18:21 |
+| 30.10.26 | FNAF: Secrets of the Mimic           | It Doesn't Matter                                              | The Living Tombstone | https://youtu.be/K6Q-LpYSr0U | B Minor  | 192 | Drumstep        | 03:43 |
+| 08.10.26 | Banjo-Tooie                          | Targitzan                                                      | Grant Kirkhope       | https://youtu.be/ALUBirBbrz0 | C Minor  | 190 | Metalstep       | 02:40 |
+| 25.09.26 | The Legend of Zelda: Ocarina of Time | Kakariko Village                                               | Koji Kondo           | https://youtu.be/YjCt-uo9oRM | Bb Major | 105 | Melodic Dubstep | 03:20 |
+| 11.09.26 | Deltarune: Chapter 5                 | Cutie Mew Mew Magic                                            | Toby Fox             | https://youtu.be/c72r7EqS7hk | C Minor  | 150 | Metal Dubstep   | 02:33 |
+| 28.08.26 | Deltarune: Chapter 5                 | Petal Dance                                                    | Toby Fox             | https://youtu.be/NLw8WmkTGDc | C Major  | 150 | Metal Dubstep   | 02:33 |
+| 21.08.26 | Conkers Bad Fur Day                  | Windy                                                          | Robin Beanland       | https://youtu.be/-s14QXfHJs4 | A Major  | 174 | Drumstep Swing  | 02:27 |
+| 14.08.26 | The Legend of Zelda: Ocarina of Time | House                                                          | Koji Kondo           | https://youtu.be/MEi76DMjlxs | D Major  | 150 | Melodic Riddim  | 02:09 |
+| 07.08.26 | Deltarune: Chapter 1                 | The Legend                                                     | Toby Fox             | https://youtu.be/rGauqQeQcMY | A Minor  | 100 | Melodic Dubstep | 02:34 |
+| 31.07.26 | The Legend of Zelda: Ocarina of Time | Lost Woods                                                     | Koji Kondo           | https://youtu.be/fw3dhy_WwUk | F Major  | 150 | Melodic Dubstep | 02:36 |
+| 24.07.26 | The Legend of Zelda: Ocarina of Time | Title Theme                                                    | Koji Kondo           | https://youtu.be/vHM3YmZjq-Y | D Minor  | 150 | Melodic Dubstep | 02:44 |
 
 ### Year 2025
 Total: 11 Videos
@@ -751,6 +753,24 @@ Total: 30 videos
 [Back to top](#vds)
 
 ## Medleys
+
+### The Legend of Zelda: Ocarina of Time Dubstep Mix
+Date: 05.11.26 | Composer: Koji Kondo | Genre: Dubstep | Time: 18:21
+
+| Youtube Timestamp                           | Song Title                        |
+|---------------------------------------------|-----------------------------------|
+| [0:00](https://youtu.be/qwCtcotkoOM)        | Title Theme                       |
+| [2:35](https://youtu.be/qwCtcotkoOM?t=155)  | Fairy Flying                      |
+| [4:25](https://youtu.be/qwCtcotkoOM?t=265)  | House Theme                       |
+| [5:22](https://youtu.be/qwCtcotkoOM?t=322)  | Kokiri Forest                     |
+| [6:48](https://youtu.be/qwCtcotkoOM?t=409)  | Lost Woods                        |
+| [8:45](https://youtu.be/qwCtcotkoOM?t=525)  | Kokiri Village                    |
+| [10:17](https://youtu.be/qwCtcotkoOM?t=617) | Song of Storms                    |
+| [11:32](https://youtu.be/qwCtcotkoOM?t=692) | Boss Battle                       |
+| [12:47](https://youtu.be/qwCtcotkoOM?t=767) | Lon Lon Farm                      |
+| [14:11](https://youtu.be/qwCtcotkoOM?t=851) | Gerudo Valley                     |
+| [15:23](https://youtu.be/qwCtcotkoOM?t=923) | Twinrova                          |
+| [16:41](https://youtu.be/qwCtcotkoOM?t=999) | End Credits                       |
 
 ### Super Mario Sunshine Medley 2
 Date: 11.09.20 | Composer: Koji Kondo - Shinobu Tanaka | Genre: Metalstep | Time: 11:37

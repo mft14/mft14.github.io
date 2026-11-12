@@ -63,13 +63,14 @@ An overview of my video uploads. Work in progress. Still needs:
 ## Video List
 
 ### Year 2026
-Total: 9 Videos
+Total: 12 Videos
 
 [Back to top](#vds)
 
 | Date     | Videogame                            | Song Title                                                     | Composer             | Youtube Link                 | Key      | BPM | Genre           | Time  |
-|----------|--------------------------------------|-------------                                                   |----------------      |------------------------------|--------- |-----|-----------------|-------|
-| 04.10.26 | The Legend of Zelda: Ocarina of Time | [Songlist](#The-Legend-of-Zelda-Ocarina-of-Time-Dubstep-Mix) | Koji Kondo           | https://youtu.be/qwCtcotkoOM |          |     | Melodic Dubstep | 18:21 |
+|----------|--------------------------------------|----------------------------------------------------------------|----------------------|------------------------------|--------- |-----|-----------------|-------|
+| 13.11.26 | The Legend of Zelda: Ocarina of Time | Lon Lon Farm                                                   | Koji Kondo           | https://youtu.be/D5OIKP3ugKo | D Major  | 105 | Melodic Dubstep | 02:43 |
+| 04.11.26 | The Legend of Zelda: Ocarina of Time | [Songlist](#The-Legend-of-Zelda-Ocarina-of-Time-Dubstep-Mix)   | Koji Kondo           | https://youtu.be/qwCtcotkoOM |          |     | Melodic Dubstep | 18:21 |
 | 30.10.26 | FNAF: Secrets of the Mimic           | It Doesn't Matter                                              | The Living Tombstone | https://youtu.be/K6Q-LpYSr0U | B Minor  | 192 | Drumstep        | 03:43 |
 | 08.10.26 | Banjo-Tooie                          | Targitzan                                                      | Grant Kirkhope       | https://youtu.be/ALUBirBbrz0 | C Minor  | 190 | Metalstep       | 02:40 |
 | 25.09.26 | The Legend of Zelda: Ocarina of Time | Kakariko Village                                               | Koji Kondo           | https://youtu.be/YjCt-uo9oRM | Bb Major | 105 | Melodic Dubstep | 03:20 |

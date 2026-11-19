@@ -7,5 +7,15 @@ I only share plugins that are valuable for others and that are 100% compatible s
 [Back to Home](/README.md)
 
 ### How to install
-Go to your REAPER folder and you can drag and drop the folders into the REAPER folder.
-To not mix it up with other effects, all presets and templates are into the fortress folder.
+Navigate to your REAPER folder and drag and drop the "fortress" folder into the correct template folder of REAPER.
+
+Folder structure Example:
+```
+Before: REAPER/TrackTemplates (<-- your REAPER folder)
+After:  REAPER/TrackTemplates/fortress
+
+Before: REAPER/FXChains
+After:  REAPER/FXChains/fortress
+
+etc.
+```

@@ -1,0 +1,84 @@
+<TRACK
+  NAME "Reasyne Sub"
+  PEAKCOL 16843186
+  BEAT -1
+  AUTOMODE 0
+  PANLAWFLAGS 3
+  VOLPAN 0.84084642809367 0 -1 -1 1
+  MUTESOLO 0 2 0
+  IPHASE 0
+  PLAYOFFS 0 1
+  ISBUS 0 0
+  BUSCOMP 0 0 0 0 0
+  SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+  FIXEDLANES 9 0 0 0 0
+  LANEREC -1 -1 -1 0
+  REC 0 5088 1 0 0 0 0 0
+  VU 2
+  TRACKHEIGHT 25 0 0 0 0 0 0
+  INQ 0 0 0 0.5 100 0 0 100
+  NCHAN 2
+  FX 1
+  TRACKID {B57BF23C-FB0C-A36B-3B17-66A8B5FF8909}
+  PERF 0
+  UNDO_HAS_TRACKENV
+  MIDIOUT -1
+  MAINSEND 1 0
+  <FXCHAIN
+    WNDRECT 976 162 843 208
+    SHOW 0
+    LASTSEL 4
+    DOCKED 0
+    BYPASS 0 0 0
+    <JS midi/midi_note_filter ""
+      21 108 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    >
+    FLOATPOS 0 0 0 0
+    FXID {DB438DBF-870F-E916-24A2-1A7378D56B8A}
+    WAK 0 0
+    BYPASS 0 0 0
+    <JS midi/midi_transpose ""
+      0 1 0 127 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    >
+    FLOATPOS 0 0 0 0
+    FXID {980A6CA7-962D-34ED-55D6-A2427F1706C6}
+    WAK 0 0
+    BYPASS 0 0 0
+    <VST "VSTi: ReaSynth (Cockos)" reasynth.vst.so 0 "" 1919251321<5653547265737972656173796E746800> ""
+      eXNlcu9e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAABEAAAAAAAAAAAAEAA=
+      776t3g3wrd4OFcc8goK8PHNoET8AAAAAAACAPwAAgD/pZ4g9lkNLPwAAAD8HfRA8QmClPgAAAAAAAAAA/arHOwAAAAA=
+      AFN0YW5kYXJkIFRyaWFuZ2xlABAAAAA=
+    >
+    PRESETNAME "Standard Triangle"
+    FLOATPOS 0 0 0 0
+    FXID {1D043CB8-CF9D-E51B-9A19-C2AB988C091C}
+    WAK 0 0
+    BYPASS 0 0 0
+    <JS guitar/distortion ""
+      20 6 -12 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    >
+    FLOATPOS 0 0 0 0
+    FXID {1D15D96E-1EFE-7854-2AD4-CD2A32D4CE29}
+    WAK 0 0
+    BYPASS 0 0 0
+    <JS guitar/distortion ""
+      20 6 -12 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    >
+    FLOATPOS 0 0 0 0
+    FXID {5D5CE37D-90CF-EF77-A693-8F1F16F2BA4C}
+    WAK 0 0
+    BYPASS 0 0 0
+    <VST "VSTi: ReaSamplOmatic5000 (Cockos)" reasamplomatic.vst.so 0 "" 1920167789<56535472736F6D72656173616D706C6F> ""
+      bW9zcu5e7f4AAAAAAgAAAAEAAAAAAAAAAgAAAAAAAABJAQAAAQAAAAAAEAA=
+      L2hvbWUvbWYxNC9yZWFwZXJfbGludXgvRWNoYW50aWxsb24vZHJ1bXMvSG91c2UgS2ljayAwOS5mbGFjAAAAAAAAAPA/AAAAAAAA4D8AAAAAAADwPwAAAAAAAAAAAAAA
+      AAAA8D8AAAAAAADAP83MzMzMzOs/AAAAAAAAAAAcx3Ecx3HcP/yp8dJNYkA//Knx0k1iQD8AAAAAAADwPwAAAAAAAAAAAAAAAAAAAAAAAAAAAADwPwAAAAAAAOA/AgAA
+      AAAAAAAAAAAAAAAAAAAA8D9AAAAAVVVVVVVVxT//////CAQCgUAggD8AAAAAAADwPwAAAAAAAPA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADOpCEhGmWQ
+      PwAAAAAAAPA//Knx0k1iMD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+      AFN0YW5kYXJkABAAAAA=
+    >
+    PRESETNAME Standard
+    FLOATPOS 0 0 0 0
+    FXID {9B192381-CA83-5462-4678-BB60EA2099D8}
+    WAK 0 0
+  >
+>

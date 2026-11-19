@@ -1,6 +1,4 @@
-# Welcome to Fortress
-
-> Programmer, musician, artist and cyclist
+# Welcome to my Fortress
 
 ## Social Links
 
@@ -28,6 +26,7 @@
 ### Information Material
 - [Videolist](/info/vds.md)
 - [Gear List](/info/gear.md)
+- [Reaper](/reaper/reaper.md)
 
 ### Tutorials
 

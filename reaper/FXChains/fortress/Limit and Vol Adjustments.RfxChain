@@ -1,0 +1,27 @@
+BYPASS 0 0
+<CONTAINER Container "Limit and Vol Adjustments"
+  CONTAINER_CFG 2 2 2 0
+  <IN_PINS
+  >
+  <OUT_PINS
+  >
+  SHOW 1
+  LASTSEL 0
+  DOCKED 0
+  BYPASS 0 0 0
+  <JS loser/SP1LimiterJS ""
+    -0.2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  >
+  FLOATPOS 0 0 0 0
+  FXID {0EC5A644-9AED-675A-9584-9612CCBF8898}
+  WAK 0 0
+  BYPASS 0 0 0
+  <JS utility/volume ""
+    0 -0.15 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  >
+  FLOATPOS 0 0 0 0
+  FXID {9B8230F3-5554-1A61-5FE3-28B5D8350F38}
+  WAK 0 0
+>
+FXID {29883C76-2EF8-6DAA-27CC-EC2EF9C1B116}
+WAK 0 0

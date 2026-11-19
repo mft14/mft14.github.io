@@ -1,0 +1,165 @@
+<TRACK
+  NAME "White Noise"
+  PEAKCOL 33554431
+  BEAT -1
+  AUTOMODE 0
+  PANLAWFLAGS 3
+  VOLPAN 1 0 -1 -1 1
+  MUTESOLO 0 0 0
+  IPHASE 0
+  PLAYOFFS 0 1
+  ISBUS 2 -2
+  BUSCOMP 0 0 0 0 0
+  SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+  FIXEDLANES 9 0 0 0 0
+  LANEREC -1 -1 -1 0
+  REC 0 0 0 0 0 0 0 0
+  VU 2
+  TRACKHEIGHT 0 0 0 0 0 0 0
+  INQ 0 0 0 0.5 100 0 0 100
+  NCHAN 2
+  FX 1
+  TRACKID {EA03C564-EB09-36C2-A89C-4AE12194B09E}
+  PERF 0
+  UNDO_HAS_TRACKENV
+  MIDIOUT -1
+  MAINSEND 1 0
+  <VOLENV2
+    EGUID {DC6A90D7-0AEB-4447-537D-E9830D74AF6D}
+    ACT 1 -1
+    VIS 1 1 1
+    LANEHEIGHT 0 0
+    ARM 1
+    DEFSHAPE 0 -1 -1
+    VOLTYPE 1
+    <POOLEDENV
+      ID 2
+      NAME "1"
+      SRCLEN 32
+      LFO 0 0 0 0 0 0 0
+      PPT 0 1 0 0 0
+      PPT 31.999998 1 0 0 0
+    >
+    POOLEDENVINST 2 26.66666666666667 10.66666666666667 0 1 0 0.5 1 1 80 32 2 0 0 0.012 1 1
+    PT 0 1 0 0 0 0 0 0
+  >
+  <FXCHAIN
+    WNDRECT 32 109 1095 544
+    SHOW 0
+    LASTSEL 0
+    DOCKED 0
+    BYPASS 0 0 0
+    <CONTAINER Container "White Noise Highpass Stock"
+      CONTAINER_CFG 2 2 2 0
+      <IN_PINS
+      >
+      <OUT_PINS
+      >
+      SHOW 0
+      LASTSEL 2
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS "ReaTeam JSFX/Utility/ReaperBlog_Macro Controller.jsfx" ""
+        0 - 50 - 50 - 50 - 50 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 433 656 619 191
+      FXID {BA3B2407-DD4D-C43C-94F0-FB02A7728E62}
+      WAK 0 0
+      BYPASS 1 0 0
+      <JS loser/WhiteNoise ""
+        -120 -31 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {676C06D3-629D-B07B-F013-EBD3B42A13A3}
+      <PROGRAMENV 1 0 "Noise Volume (dB) / White Noise Generator"
+        PARAMBASE -60
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK 0.37 0:-1 0 -0.02 ""
+        MODWND 0 1316 383 1747 667
+      >
+      <PROGRAMENV 2:bypass 0 "Bypass / White Noise Generator"
+        PARAMBASE 0.502
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK -0.88 0:-1 0 0 ""
+        MODWND 0 1822 352 2253 636
+      >
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.so 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAagAAAAEAAAAAABAA
+        IQAAAAIAAAAHAAAAAQAAAAAAAAAAADRAbs1xl+i5zz8UrkfhehTmPwEDAAAAAQAAAAEAAAAAcNdAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAAAIQC
+        AACWAQAAAgAAAA==
+        AEZpbHRlcgAQAAAA
+      >
+      PRESETNAME Filter
+      FLOATPOS 0 0 0 0
+      FXID {6F31C9F7-F561-D79E-32D8-AAF2C8E466AA}
+      <PROGRAMENV 0:_Freq_High_Pass_1 0 "Freq-High Pass 1 / ReaEQ"
+        PARAMBASE 0
+        LFO 0
+        LFOWT 1 1
+        AUDIOCTL 0
+        AUDIOCTLWT 1 1
+        PLINK 0.97 0:-2 0 0 ""
+        MODWND 0 1782 363 2213 647
+      >
+      WAK 0 0
+      BYPASS 0 0 0
+      <CONTAINER Container "Limit and Vol Adjustments"
+        CONTAINER_CFG 2 2 2 0
+        <IN_PINS
+        >
+        <OUT_PINS
+        >
+        SHOW 0
+        LASTSEL 0
+        DOCKED 0
+        BYPASS 0 0 0
+        <JS loser/SP1LimiterJS ""
+          -0.2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        >
+        FLOATPOS 0 0 0 0
+        FXID {83C8C121-E609-3B8A-BB15-FDF2A740C85B}
+        WAK 0 0
+        BYPASS 0 0 0
+        <JS utility/volume ""
+          0 -0.15 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        >
+        FLOATPOS 0 0 0 0
+        FXID {2460BCEA-8984-877A-FFB2-3FA0CED1934A}
+        WAK 0 0
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8C9711F5-DEC0-50F8-69BD-B813837B7D62}
+      WAK 0 0
+      CONTAINER_PARM 1 0 0 "" 
+    >
+    FLOATPOS 0 0 0 0
+    FXID {28A75727-313C-8FDB-3B12-44E3EF14C2DA}
+    <PARMENV 0:1 0 100 50 "ReaperBlog_Macro Controller.jsfx: Riser / White Noise Highpass Stock"
+      EGUID {34FD3A55-E235-E2B2-0019-DBB1D04B61ED}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      <POOLEDENV
+        ID 3
+        NAME "2"
+        SRCLEN 32
+        LFO 0 0 0 0 0 0 0
+        PPT 0 1 0 0 0
+        PPT 31.999997 0 0 0 0
+      >
+      POOLEDENVINST 3 26.66666666666667 10.66666666666667 0 1 0 0.5 1 1 80 32 3 0 0 0.012 1 1
+      PT 0 0 0 0 0 0 0 0
+    >
+    WAK 0 0
+  >
+>

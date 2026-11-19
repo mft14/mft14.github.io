@@ -26,7 +26,7 @@
 ### Information Material
 - [Videolist](/info/vds.md)
 - [Gear List](/info/gear.md)
-- [Reaper](/reaper/reaper.md)
+- [Reaper](/reaper/README.md)
 
 ### Tutorials
 
